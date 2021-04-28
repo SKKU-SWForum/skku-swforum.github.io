@@ -19,17 +19,30 @@
                 href="https://skkuoverflow.com/posts/inuiyeji/"
                 />
   </url><url>
-    <loc>https://skkuoverflow.com/posts/linux/</loc>
+    <loc>https://skkuoverflow.com/posts/linux/cat/</loc>
     <lastmod>2021-04-29T00:07:30+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://skkuoverflow.com/ko/posts/linux/"
+                href="https://skkuoverflow.com/ko/posts/linux/cat/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://skkuoverflow.com/posts/linux/"
+                href="https://skkuoverflow.com/posts/linux/cat/"
+                />
+  </url><url>
+    <loc>https://skkuoverflow.com/posts/linux/list/</loc>
+    <lastmod>2021-04-29T00:07:30+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://skkuoverflow.com/ko/posts/linux/list/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://skkuoverflow.com/posts/linux/list/"
                 />
   </url><url>
     <loc>https://skkuoverflow.com/posts/mobaxterm/</loc>

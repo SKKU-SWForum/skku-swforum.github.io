@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Linux commands</title>
+    <title>Linux command: cat</title>
     
 
 
@@ -38,7 +38,7 @@
 <link rel="stylesheet" href="/css/style.css"/>
 
     
-<meta name="description" content="Linux commands" />
+<meta name="description" content="Linux command: cat" />
 <link
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css"
@@ -104,7 +104,7 @@
     </a>
     <div class="dropdown-menu" aria-labelledby="languageSelector">
       
-        <a class="dropdown-item nav-link languages-item" href="/ko/posts/linux">
+        <a class="dropdown-item nav-link languages-item" href="/ko/posts/linux/cat">
           
           <span class="flag-icon flag-icon-ko"></span>
           한국어
@@ -163,177 +163,65 @@
         </div>
 
         <div class="title">
-          <h1>Linux commands</h1>
+          <h1>Linux command: cat</h1>
         </div>
 
         <div class="post-content" id="post-content">
-          <h2 id="basic-linux-commands">Basic Linux Commands</h2>
+          <h3 id="cat---concatenate-files-and-print-on-the-standard-output">cat - concatenate files and print on the standard output</h3>
 <ol>
 <li>
-<h3 id="information">Information</h3>
-<ul>
-<li>Commands that are applicable to both files and directories typically require additional options when attempting to apply to directories. Please check the options before you apply them.</li>
-<li>Please refer to the table below for other notations.</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>Notation</th>
-<th>Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>(&mdash;&mdash;-)</td>
-<td>Additional Options (Not required)</td>
-</tr>
-<tr>
-<td>[&mdash;&mdash;]</td>
-<td>Required Options</td>
-</tr>
-<tr>
-<td>usage</td>
-<td>Links to more detailed explanations</td>
-</tr>
-</tbody>
-</table>
+<p>Usage: Used to verify the contents of a file.</p>
 </li>
 <li>
-<h3 id="linux-filesystem">Linux filesystem</h3>
+<p>Options</p>
 <table>
 <thead>
 <tr>
-<th>Command</th>
-<th style="text-align:left">Description</th>
-<th>Example</th>
-<th>Man page</th>
+<th>Useful options</th>
 <th>Usage</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>ls (option) (directory)</td>
-<td style="text-align:left">View the contents of (directory)</td>
-<td>ls</td>
-<td><a href="https://man7.org/linux/man-pages/man1/ls.1.html">Link</a></td>
-<td><a href="./LinuxCommand/ls.md">Link</a></td>
+<td>-A</td>
+<td>The same results as -vET.</td>
 </tr>
 <tr>
-<td>cd (directory)</td>
-<td style="text-align:left">Navigate through (directory)</td>
-<td>cd Test/</td>
-<td><a href="https://man7.org/linux/man-pages/man1/cd.1p.html">Link</a></td>
-<td><a href="./LinuxCommand/cd.md">Link</a></td>
+<td>-v</td>
+<td>Prints strings that are not originally printed separately in the form of ^ and M-.</td>
 </tr>
 <tr>
-<td>mkdir [name]</td>
-<td style="text-align:left">Make a new directory with the name [name]</td>
-<td>mkdir Test</td>
-<td><a href="https://man7.org/linux/man-pages/man1/mkdir.1.html">Link</a></td>
-<td></td>
+<td>-E</td>
+<td>Prints $ at the end of each line.</td>
 </tr>
 <tr>
-<td>cp (option) [name1] [name2]</td>
-<td style="text-align:left">Copy name1 files/directories to name2 files/directories</td>
-<td>cp test1 test2</td>
-<td><a href="https://man7.org/linux/man-pages/man1/cp.1.html">Link</a></td>
-<td></td>
-</tr>
-<tr>
-<td>mv (option) [name1] [name2]</td>
-<td style="text-align:left">Move name1 file to name2 file</td>
-<td>mv file1 Test/file2</td>
-<td><a href="https://man7.org/linux/man-pages/man1/mv.1.html">Link</a></td>
-<td></td>
-</tr>
-<tr>
-<td>rm (option) [name]</td>
-<td style="text-align:left">Delete files/directories called [name]</td>
-<td>rm file1</td>
-<td><a href="https://man7.org/linux/man-pages/man1/rm.1.html">Link</a></td>
-<td><a href="./LinuxCommand/rm.md">Link</a></td>
-</tr>
-<tr>
-<td>cat (option) (filename)</td>
-<td style="text-align:left">List [filename] contents</td>
-<td>cat file1</td>
-<td><a href="https://man7.org/linux/man-pages/man1/cat.1.html">Link</a></td>
-<td><a href="./LinuxCommand/cat.md">Link</a></td>
+<td>-T</td>
+<td>Prints TAB in the form of ^l.</td>
 </tr>
 </tbody>
 </table>
 </li>
 <li>
-<h3 id="linux-package-manager">Linux package manager</h3>
-<ol>
+<p>예시</p>
+<ul>
 <li>
-<p>Before we start&hellip;</p>
-<ol>
-<li>Commands with the <strong>CAUTION!</strong> mark shows commands with a <strong>risk of resetting the entire server</strong>. If you are trying to execute these commands on a lab server or someone else&rsquo;s server, please get confirmation from the person in charge before you execute them!</li>
-<li>The Caution mark is a command that poses a risk of conflict with existing packages. If there is a problem after execution, consider whether this command was the cause of the problem.</li>
-<li>Typically, the warning signs above are commands you have to install to use. Just as you need to be careful when installing them on Windows, you need to be careful when installing them on Linux.</li>
-</ol>
+<p>cat</p>
+<p><img src="Images/cat.png" alt="cat"></p>
 </li>
 <li>
-<p>Ubuntu</p>
-<pre><code> | Command                    | Description                                    | Example              | Caution      |
- | -------------------------- | ---------------------------------------------- | -------------------- | ------------ |
- | apt update                 | Check for updates of existing installed packages           | sudo apt update      |              |
- | apt upgrade                | Update if there is a package to update    | sudo apt upgrade     | **CAUTION!** |
- | apt install [package]      | install package and additional packages required by package
-</code></pre>
-<p>| sudo apt install gcc | <strong>CAUTION!</strong> |
-| apt-cache policy [package] | Displays which versions of a package are available from which repo at which priority. | apt-cache policy gcc | |</p>
+<p>cat -A</p>
+<p><img src="Images/cata.png" alt="cat -A"></p>
+</li>
+</ul>
 </li>
 </ol>
-</li>
-<li>
-<h3 id="others">Others</h3>
-<table>
-<thead>
-<tr>
-<th>command</th>
-<th>description</th>
-<th>example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>man [command]</td>
-<td>Prints the manual such as the role, usage, and options the command has. RTFM!</td>
-<td>man cat</td>
-</tr>
-</tbody>
-</table>
-</li>
-</ol>
-<hr>
-<!-- raw HTML omitted -->
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Contribution</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>raven724</td>
-<td>Create file, write information, Linux filesystem, Linux package manager</td>
-</tr>
-<tr>
-<td>daniel2231</td>
-<td>Translation to english, minor fixes</td>
-</tr>
-</tbody>
-</table>
 
         </div>
 
         
         
           <div class="btn-improve-page">
-              <a href="https://github.com/SKKU-SWForum/School_FAQs/edit/main/content/posts/linux/index.en.md" title="Improve this page" target="_blank" rel="noopener">
+              <a href="https://github.com/SKKU-SWForum/School_FAQs/edit/main/content/posts/linux/cat.en.md" title="Improve this page" target="_blank" rel="noopener">
                 <i class="fas fa-code-branch"></i>
                 Improve this page
               </a>
@@ -369,13 +257,15 @@
           
         
         <div class="col-md-6 next-article">
-          <a href="/posts/mobaxterm/" title="Mobaxterm" class="btn btn-outline-info">
+          <a href="/posts/linux/list/" title="Linux commands" class="btn btn-outline-info">
             <div>Next <i class="fas fa-chevron-circle-right"></i></div>
-            <div class="next-prev-text">Mobaxterm</div>
+            <div class="next-prev-text">Linux commands</div>
           </a>
         </div>
       
     
+  
+
   
 
   
@@ -404,7 +294,7 @@
     </a>
     <div class="dropdown-menu" aria-labelledby="languageSelector">
         
-        <a class="dropdown-item nav-link languages-item" href="/ko/posts/linux">
+        <a class="dropdown-item nav-link languages-item" href="/ko/posts/linux/cat">
             
             <img class="flag" src="https://www.countryflags.io/ko/flat/24.png" alt="ko">
             한국어
@@ -428,12 +318,9 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#basic-linux-commands">Basic Linux Commands</a>
+        <li>
           <ul>
-            <li><a href="#information">Information</a></li>
-            <li><a href="#linux-filesystem">Linux filesystem</a></li>
-            <li><a href="#linux-package-manager">Linux package manager</a></li>
-            <li><a href="#others">Others</a></li>
+            <li><a href="#cat---concatenate-files-and-print-on-the-standard-output">cat - concatenate files and print on the standard output</a></li>
           </ul>
         </li>
       </ul>

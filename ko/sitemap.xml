@@ -28,18 +28,40 @@
                 href="https://skkuoverflow.com/ko/posts/"
                 />
   </url><url>
-    <loc>https://skkuoverflow.com/ko/posts/linux/</loc>
+    <loc>https://skkuoverflow.com/ko/posts/linux/list/</loc>
     <lastmod>2021-04-29T00:07:30+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://skkuoverflow.com/posts/linux/"
+                href="https://skkuoverflow.com/posts/linux/list/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://skkuoverflow.com/ko/posts/linux/"
+                href="https://skkuoverflow.com/ko/posts/linux/list/"
                 />
+  </url><url>
+    <loc>https://skkuoverflow.com/ko/posts/linux/cat/</loc>
+    <lastmod>2021-04-29T00:07:30+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://skkuoverflow.com/posts/linux/cat/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://skkuoverflow.com/ko/posts/linux/cat/"
+                />
+  </url><url>
+    <loc>https://skkuoverflow.com/ko/posts/linux/cd/</loc>
+    <lastmod>2021-04-29T00:07:30+09:00</lastmod>
+  </url><url>
+    <loc>https://skkuoverflow.com/ko/posts/linux/ls/</loc>
+    <lastmod>2021-04-29T00:07:30+09:00</lastmod>
+  </url><url>
+    <loc>https://skkuoverflow.com/ko/posts/linux/rm/</loc>
+    <lastmod>2021-04-29T00:07:30+09:00</lastmod>
   </url><url>
     <loc>https://skkuoverflow.com/ko/</loc>
     <lastmod>2021-04-29T00:07:30+09:00</lastmod>

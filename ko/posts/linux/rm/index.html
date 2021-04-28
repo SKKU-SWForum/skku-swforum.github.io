@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Mobaxterm</title>
+    <title>리눅스 명령어: rm</title>
     
 
 
@@ -38,7 +38,7 @@
 <link rel="stylesheet" href="/css/style.css"/>
 
     
-<meta name="description" content="Mobaxterm" />
+<meta name="description" content="리눅스 명령어: rm" />
 <link
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css"
@@ -82,36 +82,14 @@
       <button class="navbar-toggler navbar-light" id="sidebar-toggler" type="button" onclick="toggleSidebar()">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="/">
-      <img src="/images/main-logo_hu864bbe108f1be1ae04b57f7f2fd9d631_5637_42x0_resize_box_2.png" alt="Logo">SKKU Software forum</a>
+    <a class="navbar-brand" href="/ko">
+      <img src="/images/main-logo_hu864bbe108f1be1ae04b57f7f2fd9d631_5637_42x0_resize_box_2.png" alt="Logo">성균관대학교 소프트웨어 포럼</a>
     <button class="navbar-toggler navbar-light" id="toc-toggler" type="button" onclick="toggleTOC()">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse lang-selector" id="top-nav-items">
       <ul class="navbar-nav ml-auto">
-      
-        
-
-  
-
-
-<li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" href="#" id="languageSelector" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      
-      <span class="flag-icon flag-icon-gb"></span>
-      English
-    </a>
-    <div class="dropdown-menu" aria-labelledby="languageSelector">
-      
-        <a class="dropdown-item nav-link languages-item" href="/ko/posts/mobaxterm">
-          
-          <span class="flag-icon flag-icon-ko"></span>
-          한국어
-        </a>
-      
-    </div>
-</li>
       
       </ul>
     </div>
@@ -133,7 +111,7 @@
         </form>
         <div class="sidebar-tree">
           <ul class="tree" id="tree">
-            <li id="list-heading"><a href="/posts" data-filter="all">Posts</a></li>
+            <li id="list-heading"><a href="/ko/posts" data-filter="all">게시글</a></li>
             <div class="subtree">
                 
 
@@ -163,24 +141,46 @@
         </div>
 
         <div class="title">
-          <h1>Mobaxterm</h1>
+          <h1>리눅스 명령어: rm</h1>
         </div>
 
         <div class="post-content" id="post-content">
-          <h1 id="how-to-use-mobaxterm">How to use Mobaxterm</h1>
-<p>Mobaxterm is a program that supports running remote programs such as ssh, sftp, and X11 forwarding. Mobaxterm has a free and paid version, but the free version is more than enough. Here&rsquo;s how to install:</p>
+          <h3 id="rm---remove-files-or-directories">rm - remove files or directories</h3>
 <ol>
-<li>Go to <a href="https://mobaxterm.mobatek.net/">https://mobaxterm.mobatek.net/</a> to download and install the installer.</li>
-<li>Open the program.</li>
-<li>Press &lsquo;session&rsquo; at the top left.</li>
-<li>Press the leftmost &lsquo;ssh&rsquo; and set it up.</li>
-</ol>
+<li>
+<p>용도: 파일 혹은 디렉토리를 삭제할 때 사용된다.</p>
+</li>
+<li>
+<p>옵션</p>
+<table>
+<thead>
+<tr>
+<th>Useful Options</th>
+<th>Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-f, &ndash;force</td>
+<td>드러나지 않은 파일도 삭제하고, 경고하지 않는다</td>
+</tr>
+<tr>
+<td>-r</td>
+<td>디렉토리와 그 안의 모든 컨텐츠(파일, 디렉토리 등)를 제거한다.</td>
+</tr>
+<tr>
+<td>&ndash;</td>
+<td>-로 시작하는 파일을 지울때 사용한다.</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>주의사항</p>
 <ul>
-<li>remote host: (Example) swji.skku.edu</li>
-<li>Port: (Example) 1398</li>
+<li>일반적으로 rm 을 하면 되돌리기 어렵습니다. 그러니 <strong>제발</strong> 조심해서 사용해주세요. 꼭 두번 이상 확인하고 이 명령어를 활용하시기 바랍니다. <strong>특히 -rf 옵션을 활용하면 뒷감당 안되는 결과가 나올 수 있습니다.</strong> 꼭! 조심하세요!!!!</li>
 </ul>
-<ol start="5">
-<li>Press OK and double-click the session created on the left to connect ssh.</li>
+</li>
 </ol>
 
         </div>
@@ -188,9 +188,9 @@
         
         
           <div class="btn-improve-page">
-              <a href="https://github.com/SKKU-SWForum/School_FAQs/edit/main/content/posts/mobaxterm.en.md" title="Improve this page" target="_blank" rel="noopener">
+              <a href="https://github.com/SKKU-SWForum/School_FAQs/edit/main/content/posts/linux/rm.ko.md" title="이 페이지를 개선" target="_blank" rel="noopener">
                 <i class="fas fa-code-branch"></i>
-                Improve this page
+                이 페이지를 개선
               </a>
           </div>
         
@@ -209,19 +209,36 @@
   
 
   
+
+  
     
       
       <div class="col-md-6 previous-article">
-        <a href="/posts/linux/list/" title="Linux commands" class="btn btn-outline-info">
-          <div><i class="fas fa-chevron-circle-left"></i> Prev</div>
-          <div class="next-prev-text">Linux commands</div>
+        <a href="/ko/posts/linux/ls/" title="리눅스 명령어: ls" class="btn btn-outline-info">
+          <div><i class="fas fa-chevron-circle-left"></i> 이전</div>
+          <div class="next-prev-text">리눅스 명령어: ls</div>
         </a>
       </div>
       
     
     
       
+        
+        
+          
+              
+          
+        
+        <div class="col-md-6 next-article">
+          <a href="/ko/posts/inuiyeji/" title="인의예지 클러스터" class="btn btn-outline-info">
+            <div>다음 <i class="fas fa-chevron-circle-right"></i></div>
+            <div class="next-prev-text">인의예지 클러스터</div>
+          </a>
+        </div>
+      
     
+  
+
   
 
 </div>
@@ -235,28 +252,6 @@
   
   <a id="scroll-to-top" class="btn"><i class="fas fa-chevron-circle-up"></i></a>
   
-    
-
-    
-
-
-<div class="dropdown languageSelector">
-    <a class="btn dropdown-toggle" href="#" id="languageSelector" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        
-        <img class="flag" src="https://www.countryflags.io/gb/flat/16.png" alt="gb">
-        English
-    </a>
-    <div class="dropdown-menu" aria-labelledby="languageSelector">
-        
-        <a class="dropdown-item nav-link languages-item" href="/ko/posts/mobaxterm">
-            
-            <img class="flag" src="https://www.countryflags.io/ko/flat/24.png" alt="ko">
-            한국어
-        </a>
-        
-    </div>
-</div>
-  
 </section>
 
 
@@ -265,12 +260,20 @@
   <section class="toc-section" id="toc-section">
     
     <div class="toc-holder">
-      <h5 class="text-center pl-3">Table of Contents</h5>
+      <h5 class="text-center pl-3">목차</h5>
       <hr>
       <div class="toc">
         <nav id="TableOfContents">
   <ul>
-    <li><a href="#how-to-use-mobaxterm">How to use Mobaxterm</a></li>
+    <li>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#rm---remove-files-or-directories">rm - remove files or directories</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
   </ul>
 </nav>
       </div>
@@ -308,7 +311,7 @@
   <div class="container pt-5">
     <div class="row text-left">
       <div class="col-md-4 col-sm-12">
-        <h5>Navigation</h5>
+        <h5>바로가기</h5>
         
 
       </div>
