@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Linux commands</title>
+    
+
+
+
+
+
+
+
+
+  
+
+
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+
+<link rel="stylesheet" href="/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="/css/layouts/main.css"/>
+<link rel="stylesheet" href="/css/style.css"/>
+<link rel="stylesheet" href="/css/navigators/navbar.css"/>
+<link rel="stylesheet" href="/css/plyr.css"/>
+<link rel="stylesheet" href="/css/flag-icon.min.css"/>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+
+
+<link rel="icon" type="image/png" href="/images/favicon_hu8376fd15465fef26ffe66b6bcf0ca686_13669_42x0_resize_box_2.png" />
+
+
+<link rel="stylesheet" href="/css/style.css"/>
+
+    
+<meta name="description" content="Linux commands" />
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css"
+/>
+<link rel="stylesheet" href="/css/layouts/single.css"/>
+<link rel="stylesheet" href="/css/navigators/sidebar.css">
+
+
+    
+    
+  </head>
+
+  <body data-spy="scroll" data-target="#TableOfContents" data-offset="80">
+    <div class="container-fluid bg-dimmed wrapper">
+      
+      
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+<nav class="navbar navbar-expand-xl top-navbar final-navbar shadow">
+  <div class="container">
+      <button class="navbar-toggler navbar-light" id="sidebar-toggler" type="button" onclick="toggleSidebar()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="/">
+      <img src="/images/main-logo_hu864bbe108f1be1ae04b57f7f2fd9d631_5637_42x0_resize_box_2.png" alt="Logo">SKKU Software forum</a>
+    <button class="navbar-toggler navbar-light" id="toc-toggler" type="button" onclick="toggleTOC()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse lang-selector" id="top-nav-items">
+      <ul class="navbar-nav ml-auto">
+      
+        
+
+  
+
+
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="languageSelector" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      
+      <span class="flag-icon flag-icon-gb"></span>
+      English
+    </a>
+    <div class="dropdown-menu" aria-labelledby="languageSelector">
+      
+        <a class="dropdown-item nav-link languages-item" href="/ko/posts/linux">
+          
+          <span class="flag-icon flag-icon-ko"></span>
+          한국어
+        </a>
+      
+    </div>
+</li>
+      
+      </ul>
+    </div>
+  </div>
+  
+  <img src="/images/main-logo_hu864bbe108f1be1ae04b57f7f2fd9d631_5637_42x0_resize_box_2.png" class="d-none" id="main-logo" alt="Logo">
+  <img src="/images/inverted-logo_hu8376fd15465fef26ffe66b6bcf0ca686_13669_42x0_resize_box_2.png" class="d-none" id="inverted-logo" alt="Inverted Logo">
+</nav>
+
+
+
+      
+      
+  <section class="sidebar-section" id="sidebar-section">
+    <div class="sidebar-holder">
+      <div class="sidebar" id="sidebar">
+        <form class="mx-auto" method="get" action="https://skkuoverflow.com/search">
+          <input type="text" name="keyword" value="" placeholder="Search" data-search="" id="search-box" />
+        </form>
+        <div class="sidebar-tree">
+          <ul class="tree" id="tree">
+            <li id="list-heading"><a href="/posts" data-filter="all">Posts</a></li>
+            <div class="subtree">
+                
+
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+      
+      
+<section class="content-section" id="content-section">
+  <div class="content">
+    <div class="container p-0 read-area">
+      
+      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url(https://skkuoverflow.com/images/default-hero.jpg);'>
+      </div>
+
+      
+      <div class="page-content">
+        <div class="author-profile ml-auto align-self-lg-center">
+          <img class="rounded-circle" src='/images/default-avatar.png' alt="Author Image">
+          <h5 class="author-name"></h5>
+          <p>April 29, 2021</p>
+        </div>
+
+        <div class="title">
+          <h1>Linux commands</h1>
+        </div>
+
+        <div class="post-content" id="post-content">
+          <h2 id="basic-linux-commands">Basic Linux Commands</h2>
+<ol>
+<li>
+<h3 id="information">Information</h3>
+<ul>
+<li>Commands that are applicable to both files and directories typically require additional options when attempting to apply to directories. Please check the options before you apply them.</li>
+<li>Please refer to the table below for other notations.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Notation</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(&mdash;&mdash;-)</td>
+<td>Additional Options (Not required)</td>
+</tr>
+<tr>
+<td>[&mdash;&mdash;]</td>
+<td>Required Options</td>
+</tr>
+<tr>
+<td>usage</td>
+<td>Links to more detailed explanations</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<h3 id="linux-filesystem">Linux filesystem</h3>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th style="text-align:left">Description</th>
+<th>Example</th>
+<th>Man page</th>
+<th>Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ls (option) (directory)</td>
+<td style="text-align:left">View the contents of (directory)</td>
+<td>ls</td>
+<td><a href="https://man7.org/linux/man-pages/man1/ls.1.html">Link</a></td>
+<td><a href="./LinuxCommand/ls.md">Link</a></td>
+</tr>
+<tr>
+<td>cd (directory)</td>
+<td style="text-align:left">Navigate through (directory)</td>
+<td>cd Test/</td>
+<td><a href="https://man7.org/linux/man-pages/man1/cd.1p.html">Link</a></td>
+<td><a href="./LinuxCommand/cd.md">Link</a></td>
+</tr>
+<tr>
+<td>mkdir [name]</td>
+<td style="text-align:left">Make a new directory with the name [name]</td>
+<td>mkdir Test</td>
+<td><a href="https://man7.org/linux/man-pages/man1/mkdir.1.html">Link</a></td>
+<td></td>
+</tr>
+<tr>
+<td>cp (option) [name1] [name2]</td>
+<td style="text-align:left">Copy name1 files/directories to name2 files/directories</td>
+<td>cp test1 test2</td>
+<td><a href="https://man7.org/linux/man-pages/man1/cp.1.html">Link</a></td>
+<td></td>
+</tr>
+<tr>
+<td>mv (option) [name1] [name2]</td>
+<td style="text-align:left">Move name1 file to name2 file</td>
+<td>mv file1 Test/file2</td>
+<td><a href="https://man7.org/linux/man-pages/man1/mv.1.html">Link</a></td>
+<td></td>
+</tr>
+<tr>
+<td>rm (option) [name]</td>
+<td style="text-align:left">Delete files/directories called [name]</td>
+<td>rm file1</td>
+<td><a href="https://man7.org/linux/man-pages/man1/rm.1.html">Link</a></td>
+<td><a href="./LinuxCommand/rm.md">Link</a></td>
+</tr>
+<tr>
+<td>cat (option) (filename)</td>
+<td style="text-align:left">List [filename] contents</td>
+<td>cat file1</td>
+<td><a href="https://man7.org/linux/man-pages/man1/cat.1.html">Link</a></td>
+<td><a href="./LinuxCommand/cat.md">Link</a></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<h3 id="linux-package-manager">Linux package manager</h3>
+<ol>
+<li>
+<p>Before we start&hellip;</p>
+<ol>
+<li>Commands with the <strong>CAUTION!</strong> mark shows commands with a <strong>risk of resetting the entire server</strong>. If you are trying to execute these commands on a lab server or someone else&rsquo;s server, please get confirmation from the person in charge before you execute them!</li>
+<li>The Caution mark is a command that poses a risk of conflict with existing packages. If there is a problem after execution, consider whether this command was the cause of the problem.</li>
+<li>Typically, the warning signs above are commands you have to install to use. Just as you need to be careful when installing them on Windows, you need to be careful when installing them on Linux.</li>
+</ol>
+</li>
+<li>
+<p>Ubuntu</p>
+<pre><code> | Command                    | Description                                    | Example              | Caution      |
+ | -------------------------- | ---------------------------------------------- | -------------------- | ------------ |
+ | apt update                 | Check for updates of existing installed packages           | sudo apt update      |              |
+ | apt upgrade                | Update if there is a package to update    | sudo apt upgrade     | **CAUTION!** |
+ | apt install [package]      | install package and additional packages required by package
+</code></pre>
+<p>| sudo apt install gcc | <strong>CAUTION!</strong> |
+| apt-cache policy [package] | Displays which versions of a package are available from which repo at which priority. | apt-cache policy gcc | |</p>
+</li>
+</ol>
+</li>
+<li>
+<h3 id="others">Others</h3>
+<table>
+<thead>
+<tr>
+<th>command</th>
+<th>description</th>
+<th>example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>man [command]</td>
+<td>Prints the manual such as the role, usage, and options the command has. RTFM!</td>
+<td>man cat</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+<hr>
+<!-- raw HTML omitted -->
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Contribution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>raven724</td>
+<td>Create file, write information, Linux filesystem, Linux package manager</td>
+</tr>
+<tr>
+<td>daniel2231</td>
+<td>Translation to english, minor fixes</td>
+</tr>
+</tbody>
+</table>
+
+        </div>
+
+        
+        
+          <div class="btn-improve-page">
+              <a href="https://github.com/SKKU-SWForum/School_FAQs/edit/main/content/posts/linux/index.en.md" title="Improve this page" target="_blank" rel="noopener">
+                <i class="fas fa-code-branch"></i>
+                Improve this page
+              </a>
+          </div>
+        
+
+        
+      <hr />
+        <div class="row next-prev-navigator">
+
+
+  
+
+  
+
+  
+    
+      
+      <div class="col-md-6 previous-article">
+        <a href="/posts/inuiyeji/" title="Inuiyeji cluster" class="btn btn-outline-info">
+          <div><i class="fas fa-chevron-circle-left"></i> Prev</div>
+          <div class="next-prev-text">Inuiyeji cluster</div>
+        </a>
+      </div>
+      
+    
+    
+      
+        
+        
+          
+              
+          
+        
+        <div class="col-md-6 next-article">
+          <a href="/posts/mobaxterm/" title="Mobaxterm" class="btn btn-outline-info">
+            <div>Next <i class="fas fa-chevron-circle-right"></i></div>
+            <div class="next-prev-text">Mobaxterm</div>
+          </a>
+        </div>
+      
+    
+  
+
+  
+
+</div>
+
+      <hr />
+      
+      
+      </div>
+    </div>
+  </div>
+  
+  <a id="scroll-to-top" class="btn"><i class="fas fa-chevron-circle-up"></i></a>
+  
+    
+
+    
+
+
+<div class="dropdown languageSelector">
+    <a class="btn dropdown-toggle" href="#" id="languageSelector" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        
+        <img class="flag" src="https://www.countryflags.io/gb/flat/16.png" alt="gb">
+        English
+    </a>
+    <div class="dropdown-menu" aria-labelledby="languageSelector">
+        
+        <a class="dropdown-item nav-link languages-item" href="/ko/posts/linux">
+            
+            <img class="flag" src="https://www.countryflags.io/ko/flat/24.png" alt="ko">
+            한국어
+        </a>
+        
+    </div>
+</div>
+  
+</section>
+
+
+      
+      
+  <section class="toc-section" id="toc-section">
+    
+    <div class="toc-holder">
+      <h5 class="text-center pl-3">Table of Contents</h5>
+      <hr>
+      <div class="toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#basic-linux-commands">Basic Linux Commands</a>
+          <ul>
+            <li><a href="#information">Information</a></li>
+            <li><a href="#linux-filesystem">Linux filesystem</a></li>
+            <li><a href="#linux-package-manager">Linux package manager</a></li>
+            <li><a href="#others">Others</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </div>
+    </div>
+    
+  </section>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+<footer class="container-fluid text-center align-content-center footer pb-2">
+  <div class="container pt-5">
+    <div class="row text-left">
+      <div class="col-md-4 col-sm-12">
+        <h5>Navigation</h5>
+        
+
+      </div>
+      
+      
+    </div>
+  </div>
+  <hr />
+  <div class="container">
+    <div class="row text-left">
+      <div class="col-md-4">
+        <a id="theme" href="https://github.com/hossainemruz/toha" target="_blank" rel="noopener">
+          <img src="/images/theme-logo_hu8376fd15465fef26ffe66b6bcf0ca686_13669_32x0_resize_box_2.png" alt="Toha Theme Logo">
+          Toha
+        </a>
+      </div>
+      <div class="col-md-4 text-center">© 2020 Copyright.</div>
+      <div class="col-md-4 text-right">
+        <a id="hugo" href="https://gohugo.io/" target="_blank" rel="noopener">Powered by
+        <img
+          src="/images/hugo-logo.svg"
+          alt="Hugo Logo"
+          height="18"
+        />
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="/js/popper.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/navbar.js"></script>
+<script type="text/javascript" src="/js/plyr.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+<script src="/js/single.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+
+  </body>
+</html>
