@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://skkuoverflow.com/ko/posts/mobaxterm/</loc>
     <lastmod>2021-04-29T00:07:30+09:00</lastmod>
@@ -15,9 +14,7 @@
                 hreflang="ko"
                 href="https://skkuoverflow.com/ko/posts/mobaxterm/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skkuoverflow.com/ko/posts/</loc>
     <lastmod>2021-04-29T00:07:30+09:00</lastmod>
     <xhtml:link
@@ -30,9 +27,7 @@
                 hreflang="ko"
                 href="https://skkuoverflow.com/ko/posts/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skkuoverflow.com/ko/posts/linux/</loc>
     <lastmod>2021-04-29T00:07:30+09:00</lastmod>
     <xhtml:link
@@ -45,9 +40,7 @@
                 hreflang="ko"
                 href="https://skkuoverflow.com/ko/posts/linux/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skkuoverflow.com/ko/</loc>
     <lastmod>2021-04-29T00:07:30+09:00</lastmod>
     <xhtml:link
@@ -60,9 +53,7 @@
                 hreflang="ko"
                 href="https://skkuoverflow.com/ko/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skkuoverflow.com/ko/posts/inuiyeji/</loc>
     <lastmod>2021-04-29T00:07:30+09:00</lastmod>
     <xhtml:link
@@ -75,9 +66,7 @@
                 hreflang="ko"
                 href="https://skkuoverflow.com/ko/posts/inuiyeji/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skkuoverflow.com/ko/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -89,9 +78,7 @@
                 hreflang="ko"
                 href="https://skkuoverflow.com/ko/categories/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skkuoverflow.com/ko/tags/</loc>
     <xhtml:link
                 rel="alternate"
@@ -104,5 +91,4 @@
                 href="https://skkuoverflow.com/ko/tags/"
                 />
   </url>
-  
 </urlset>
