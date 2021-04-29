@@ -242,9 +242,9 @@
 </table>
 <h1 id="faq">FAQ</h1>
 <h3 id="inuiyeji-cluster">Inuiyeji Cluster</h3>
-<ol start="0">
+<ol>
 <li>
-<p>Please note that the server is divided by &lsquo;In&rsquo; and &lsquo;uiyeji&rsquo;. + Read more about &lsquo;Inuiyeji&rsquo; here: <a href="../eng_translation/What%20is%20Inuiyeji.md">What is Inuiyeji?</a></p>
+<p>Please note that the server is divided by &lsquo;In&rsquo; and &lsquo;uiyeji&rsquo;.</p>
 </li>
 <li>
 <p>Is the server down?</p>
@@ -265,20 +265,29 @@
 </ul>
 </li>
 <li>
-<p>How can I send a file to &lsquo;Inuiyeji&rsquo;?</p>
+<p>How can I send/receive a file to/from &lsquo;Inuiyeji&rsquo;?</p>
 <ul>
 <li>You can use <code>scp</code> command-line utility.</li>
 </ul>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">scp -P <span style="color:#ae81ff">1398</span> <span style="color:#f92672">(</span>file you want to send<span style="color:#f92672">)</span> <span style="color:#f92672">(</span>your ID<span style="color:#f92672">)</span>@swji.skku.edu:/home/<span style="color:#f92672">(</span>your ID<span style="color:#f92672">)</span>/<span style="color:#f92672">(</span>Directory you want the file sent to<span style="color:#f92672">)</span>
+scp -P <span style="color:#ae81ff">1398</span> <span style="color:#f92672">(</span>자기ID<span style="color:#f92672">)</span>@swji.skku.edu:<span style="color:#f92672">(</span>파일 경로/파일명<span style="color:#f92672">)</span> <span style="color:#f92672">(</span>파일 다운로드 경로<span style="color:#f92672">)</span>
 </code></pre></div><ul>
 <li>You can use sftp programs if you don&rsquo;t want to use the command line. You can use <code>mobaxterm</code> for windows.</li>
 </ul>
-<p><a href="https://github.com/SKKU-SWForum/School_FAQs/blob/main/Mobaxterm%20%EC%82%AC%EC%9A%A9%EB%B2%95.md">Mobaxterm 사용법</a></p>
+<p><a href="https://skkuoverflow.com/posts/mobaxterm/">Mobaxterm 사용법</a></p>
 </li>
 <li>
 <p>I would like to change my password.</p>
 <ul>
 <li>You can use &lsquo;yppasswd&rsquo; command to change password.</li>
+</ul>
+</li>
+<li>
+<p>I can&rsquo;t copy the file. Is it because of permission problem?</p>
+<ul>
+<li>It generally happend when copying course assignment files.</li>
+<li>Firse, use command <code>cp /home/(Course ID)/(directory that your file is located)/* ~/</code>. If error is not occured, the you can copy the files. Check <code>cd</code> or <code>cd ~</code> to check if the file is properly copied.</li>
+<li>If error occures, you may cope with errors depends on which errors you got.</li>
 </ul>
 </li>
 </ol>
