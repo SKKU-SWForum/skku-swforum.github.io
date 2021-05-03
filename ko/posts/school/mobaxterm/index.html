@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>리눅스 명령어</title>
+    <title>Mobaxterm</title>
     
 
 
@@ -38,7 +38,7 @@
 <link rel="stylesheet" href="/css/style.css"/>
 
     
-<meta name="description" content="리눅스 명령어" />
+<meta name="description" content="Mobaxterm" />
 <link
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css"
@@ -104,7 +104,7 @@
     </a>
     <div class="dropdown-menu" aria-labelledby="languageSelector">
       
-        <a class="dropdown-item nav-link languages-item" href="/posts/linux/list">
+        <a class="dropdown-item nav-link languages-item" href="/posts/school/mobaxterm">
           
           <span class="flag-icon flag-icon-gb"></span>
           English
@@ -136,6 +136,24 @@
             <li id="list-heading"><a href="/ko/posts" data-filter="all">게시글</a></li>
             <div class="subtree">
                 
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/ko/posts/linux/" title="리눅스 기초 명령어">리눅스 기초 명령어</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/ko/posts/school/" title="학교">학교</a></li>
+  
+
 
             </div>
           </ul>
@@ -163,201 +181,28 @@
         </div>
 
         <div class="title">
-          <h1>리눅스 명령어</h1>
+          <h1>Mobaxterm</h1>
         </div>
 
         <div class="post-content" id="post-content">
-          <h2 id="리눅스-기초-명령어-모음">리눅스 기초 명령어 모음</h2>
+          <h1 id="mobaxterm-사용법">Mobaxterm 사용법</h1>
+<p>Mobaxterm은 ssh, sftp, X11 forwarding 등 원격 프로그램 실행, 명령어 사용 등을 지원하는 프로그램입니다. 무료 버전과 유료 버전이 있지만, 무료 버전만으로도 충분히 활용할 수 있습니다. 다음은 설치 방법입니다.</p>
 <ol>
-<li>
-<h6 id="information">Information</h6>
-<ul>
-<li>파일과 디렉토리에 모두 적용가능한 명령어의 경우 일반적으로 디렉토리에 적용하려할 경우 추가적인 옵션을 넣어야 하는 경우가 많습니다. 옵션 확인하셔서 적용하시기 바랍니다.</li>
-<li>기타 Notation들은 아래 표를 참고 바랍니다.</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>Notation</th>
-<th>Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>(&mdash;&mdash;-)</td>
-<td>입력하지 않아도 되는 부가 옵션</td>
-</tr>
-<tr>
-<td>[&mdash;&mdash;]</td>
-<td>command 실행에 필수적이거나 없으면 실행 전과 변화가 없는 옵션</td>
-</tr>
-<tr>
-<td>usage</td>
-<td>구체적인 활용법을 정리한 페이지로 링크</td>
-</tr>
-</tbody>
-</table>
-</li>
-<li>
-<h6 id="linux-filesystem">Linux filesystem</h6>
-<table>
-<thead>
-<tr>
-<th>command</th>
-<th style="text-align:left">description</th>
-<th>example</th>
-<th>man page</th>
-<th>usage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ls (option) (directory)</td>
-<td style="text-align:left">directory 내 리눅스 파일 정보 탐색</td>
-<td>ls</td>
-<td><a href="https://man7.org/linux/man-pages/man1/ls.1.html">Link</a></td>
-<td><a href="https://skkuoverflow.com/ko/posts/linux/ls/">Link</a></td>
-</tr>
-<tr>
-<td>cd (directory)</td>
-<td style="text-align:left">directory 로 경로를 이동</td>
-<td>cd Test/</td>
-<td><a href="https://man7.org/linux/man-pages/man1/cd.1p.html">Link</a></td>
-<td><a href="https://skkuoverflow.com/ko/posts/linux/cd/">Link</a></td>
-</tr>
-<tr>
-<td>mkdir [name]</td>
-<td style="text-align:left">name을 이름으로 가진 directory 생성</td>
-<td>mkdir Test</td>
-<td><a href="https://man7.org/linux/man-pages/man1/mkdir.1.html">Link</a></td>
-<td></td>
-</tr>
-<tr>
-<td>cp (option) [name1] [name2]</td>
-<td style="text-align:left">name1 파일/디렉토리를 name2 파일/디렉토리로 복사</td>
-<td>cp test1 test2</td>
-<td><a href="https://man7.org/linux/man-pages/man1/cp.1.html">Link</a></td>
-<td></td>
-</tr>
-<tr>
-<td>mv (option) [name1] [name2]</td>
-<td style="text-align:left">name1 파일을 name2파일로 이동</td>
-<td>mv file1 Test/file2</td>
-<td><a href="https://man7.org/linux/man-pages/man1/mv.1.html">Link</a></td>
-<td></td>
-</tr>
-<tr>
-<td>rm (option) [name]</td>
-<td style="text-align:left">name 파일/디렉토리를 삭제</td>
-<td>rm file1</td>
-<td><a href="https://man7.org/linux/man-pages/man1/rm.1.html">Link</a></td>
-<td><a href="https://skkuoverflow.com/ko/posts/linux/rm/">Link</a></td>
-</tr>
-<tr>
-<td>cat (option) (filename)</td>
-<td style="text-align:left">filename 내용을 출력</td>
-<td>cat file1</td>
-<td><a href="https://man7.org/linux/man-pages/man1/cat.1.html">Link</a></td>
-<td><a href="https://skkuoverflow.com/ko/posts/linux/cat/">Link</a></td>
-</tr>
-</tbody>
-</table>
-</li>
-<li>
-<h6 id="linux-package-manager">Linux package manager</h6>
-<ol>
-<li>
-<p>시작하기에 앞서&hellip;</p>
-<ol>
-<li><strong>CAUTION!</strong> 표시는 <strong>서버 전체를 재설정해야 할 수 있을 정도</strong>의 위험도를 가진 명령어입니다. 자기 데스크탑이면 몰라도 랩 서버 혹은 타인의 서버에서 하는 경우 꼭! 담당자에게 확인을 받고 실행을 하시기 바랍니다!</li>
-<li>Caution 표시는 기존 패키지와의 충돌 위험성이 있는 명령어입니다. 만약 실행 이후 문제가 생긴다면 이 명령어가 문제는 아니었는지 고려해보시면 됩니다.</li>
-<li>일반적으로 위의 경고 표시는 설치하는 명령어들입니다. 윈도우에서도 설치할 때 조심할 필요가 있듯, 리눅스도 그렇습니다.</li>
+<li><a href="https://mobaxterm.mobatek.net/">https://mobaxterm.mobatek.net/</a> 에 접속해서 설치 프로그램을 다운로드받고 설치합니다.</li>
+<li>프로그램을 켭니다.</li>
+<li>좌측 상단의 세션을 누릅니다.</li>
+<li>맨 왼쪽 ssh를 누르고 설정을 합니다.
+remote host: (예시) swji.skku.edu
+Port: (예시) 1398</li>
+<li>OK를 누르고 좌측에 생성된 세션을 더블클릭하면 ssh가 연결됩니다.</li>
 </ol>
-</li>
-<li>
-<p>Ubuntu</p>
-<table>
-<thead>
-<tr>
-<th>command</th>
-<th>description</th>
-<th>example</th>
-<th>caution</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>apt update</td>
-<td>기존에 설치된 패키지의 업데이트 확인</td>
-<td>sudo apt update</td>
-<td></td>
-</tr>
-<tr>
-<td>apt upgrade</td>
-<td>업데이트할 패키지가 있는 경우 업데이트 진행</td>
-<td>sudo apt upgrade</td>
-<td><strong>CAUTION!</strong></td>
-</tr>
-<tr>
-<td>apt install [package]</td>
-<td>package와 package가 요구하는 추가 package 설치</td>
-<td>sudo apt install gcc</td>
-<td>Caution</td>
-</tr>
-<tr>
-<td>apt-cache policy [package]</td>
-<td>package와 package에 대한 정보 탐색</td>
-<td>apt-cache policy gcc</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</li>
-</ol>
-</li>
-<li>
-<p>Others</p>
-<table>
-<thead>
-<tr>
-<th>command</th>
-<th>description</th>
-<th>example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>man [command]</td>
-<td>command의 역할, 활용법, 옵션 등 매뉴얼을 출력해줍니다. RTFM!</td>
-<td>man cat</td>
-</tr>
-</tbody>
-</table>
-</li>
-</ol>
-<hr>
-<!-- raw HTML omitted -->
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Contribution</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>raven724</td>
-<td>Create file, write information, Linux filesystem, Linux package manager</td>
-</tr>
-</tbody>
-</table>
 
         </div>
 
         
         
           <div class="btn-improve-page">
-              <a href="https://github.com/SKKU-SWForum/School_FAQs/edit/main/content/posts/linux/list.ko.md" title="이 페이지를 개선" target="_blank" rel="noopener">
+              <a href="https://github.com/SKKU-SWForum/School_FAQs/edit/main/content/posts/school/mobaxterm.ko.md" title="이 페이지를 개선" target="_blank" rel="noopener">
                 <i class="fas fa-code-branch"></i>
                 이 페이지를 개선
               </a>
@@ -370,34 +215,21 @@
 
 
   
-
-  
-    
-      
-      <div class="col-md-6 previous-article">
-        <a href="/ko/posts/mobaxterm/" title="Mobaxterm" class="btn btn-outline-info">
-          <div><i class="fas fa-chevron-circle-left"></i> 이전</div>
-          <div class="next-prev-text">Mobaxterm</div>
-        </a>
-      </div>
-      
     
     
       
         
         
-          
-              
-          
-        
-        <div class="col-md-6 next-article">
-          <a href="/ko/posts/linux/cat/" title="리눅스 명령어: cat" class="btn btn-outline-info">
+        <div class="col-md-12 next-article">
+          <a href="/ko/posts/linux/commands/" title="리눅스 명령어" class="btn btn-outline-info">
             <div>다음 <i class="fas fa-chevron-circle-right"></i></div>
-            <div class="next-prev-text">리눅스 명령어: cat</div>
+            <div class="next-prev-text">리눅스 명령어</div>
           </a>
         </div>
       
     
+  
+
   
 
   
@@ -434,7 +266,7 @@
     </a>
     <div class="dropdown-menu" aria-labelledby="languageSelector">
         
-        <a class="dropdown-item nav-link languages-item" href="/posts/linux/list">
+        <a class="dropdown-item nav-link languages-item" href="/posts/school/mobaxterm">
             
             <img class="flag" src="https://www.countryflags.io/gb/flat/24.png" alt="gb">
             English
@@ -456,29 +288,7 @@
       <div class="toc">
         <nav id="TableOfContents">
   <ul>
-    <li>
-      <ul>
-        <li><a href="#리눅스-기초-명령어-모음">리눅스 기초 명령어 모음</a>
-          <ul>
-            <li>
-              <ul>
-                <li>
-                  <ul>
-                    <li>
-                      <ul>
-                        <li><a href="#information">Information</a></li>
-                        <li><a href="#linux-filesystem">Linux filesystem</a></li>
-                        <li><a href="#linux-package-manager">Linux package manager</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </li>
+    <li><a href="#mobaxterm-사용법">Mobaxterm 사용법</a></li>
   </ul>
 </nav>
       </div>

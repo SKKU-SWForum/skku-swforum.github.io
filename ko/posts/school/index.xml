@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>학교 on 성균관대학교 소프트웨어 포럼</title>
+    <link>https://skkuoverflow.com/ko/posts/school/</link>
+    <description>Recent content in 학교 on 성균관대학교 소프트웨어 포럼</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 29 Apr 2021 00:07:30 +0900</lastBuildDate><atom:link href="https://skkuoverflow.com/ko/posts/school/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mobaxterm</title>
+      <link>https://skkuoverflow.com/ko/posts/school/mobaxterm/</link>
+      <pubDate>Thu, 29 Apr 2021 00:07:30 +0900</pubDate>
+      
+      <guid>https://skkuoverflow.com/ko/posts/school/mobaxterm/</guid>
+      <description>Mobaxterm 사용법 Mobaxterm은 ssh, sftp, X11 forwarding 등 원격 프로그램 실행, 명령어 사용 등을 지원하는 프로그램입니다. 무료 버전과 유료 버전이 있지만, 무료 버전만으로도 충분히 활용할 수 있습니다. 다음은 설치 방법입니다.
+ https://mobaxterm.mobatek.net/ 에 접속해서 설치 프로그램을 다운로드받고 설치합니다. 프로그램을 켭니다. 좌측 상단의 세션을 누릅니다. 맨 왼쪽 ssh를 누르고 설정을 합니다. remote host: (예시) swji.skku.edu Port: (예시) 1398 OK를 누르고 좌측에 생성된 세션을 더블클릭하면 ssh가 연결됩니다.  </description>
+    </item>
+    
+    <item>
+      <title>인의예지 클러스터</title>
+      <link>https://skkuoverflow.com/ko/posts/school/inuiyeji/</link>
+      <pubDate>Thu, 29 Apr 2021 00:07:30 +0900</pubDate>
+      
+      <guid>https://skkuoverflow.com/ko/posts/school/inuiyeji/</guid>
+      <description>인의예지 클러스터 인의예지 클러스터가 뭔가요? 인의예지 클러스터는 성균관대 소프트웨어대학 학생들 + 복수전공 학생들을 위해서 만들어진 리눅스 클러스터 서버입니다. 접속할 수 있는 Host 목록은 다음과 같습니다.
+ 인 : swin.skku.edu 의 : swui.skku.edu 예 : swye.skku.edu 지 : swji.skku.edu  원래는 모든 서버가 파일을 공유했으나, 모종의 사건으로 인해 현재는 인 서버가 독립되어 있고, 의, 예, 지 서버가 nfs로 묶여있습니다. 자세한 내용은 학과 공지를 참고해주세요!
+접속 가이드    항목 값 비고     포트 1398 성균관 설립 연도   ID 본인 학번 총 10자리 숫자   PW 성 (Last Name) 모든 글자를 영어 대문자로 입력; 실패할 경우 Full Name을 공백 없이 입력    예시) 학번이 2020123456 일 경우 ssh -p 1398 2020123456@swji.</description>
+    </item>
+    
+  </channel>
+</rss>

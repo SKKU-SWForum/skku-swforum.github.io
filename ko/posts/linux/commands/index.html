@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>인의예지 클러스터</title>
+    <title>리눅스 명령어</title>
     
 
 
@@ -38,7 +38,7 @@
 <link rel="stylesheet" href="/css/style.css"/>
 
     
-<meta name="description" content="인의예지 클러스터" />
+<meta name="description" content="리눅스 명령어" />
 <link
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css"
@@ -104,7 +104,7 @@
     </a>
     <div class="dropdown-menu" aria-labelledby="languageSelector">
       
-        <a class="dropdown-item nav-link languages-item" href="/posts/inuiyeji">
+        <a class="dropdown-item nav-link languages-item" href="/posts/linux/commands">
           
           <span class="flag-icon flag-icon-gb"></span>
           English
@@ -136,6 +136,24 @@
             <li id="list-heading"><a href="/ko/posts" data-filter="all">게시글</a></li>
             <div class="subtree">
                 
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/ko/posts/linux/" title="리눅스 기초 명령어">리눅스 기초 명령어</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/ko/posts/school/" title="학교">학교</a></li>
+  
+
 
             </div>
           </ul>
@@ -163,99 +181,194 @@
         </div>
 
         <div class="title">
-          <h1>인의예지 클러스터</h1>
+          <h1>리눅스 명령어</h1>
         </div>
 
         <div class="post-content" id="post-content">
-          <h1 id="인의예지-클러스터">인의예지 클러스터</h1>
-<h2 id="인의예지-클러스터가-뭔가요">인의예지 클러스터가 뭔가요?</h2>
-<p>인의예지 클러스터는 성균관대 소프트웨어대학 학생들 + 복수전공 학생들을 위해서 만들어진 리눅스 클러스터 서버입니다. 접속할 수 있는 Host 목록은 다음과 같습니다.</p>
+          <h1 id="리눅스-기초-명령어-모음">리눅스 기초 명령어 모음</h1>
+<div style="margin-top: 2rem;"></div>
+<hr>
+<h2 id="information">Information</h2>
 <ul>
-<li><strong>인</strong> : <code>swin.skku.edu</code></li>
-<li><strong>의</strong> : <code>swui.skku.edu</code></li>
-<li><strong>예</strong> : <code>swye.skku.edu</code></li>
-<li><strong>지</strong> : <code>swji.skku.edu</code></li>
-</ul>
-<p>원래는 모든 서버가 파일을 공유했으나, 모종의 사건으로 인해 현재는 <strong>인</strong> 서버가 독립되어 있고, <strong>의, 예, 지</strong> 서버가 nfs로 묶여있습니다. 자세한 내용은 <a href="https://cs.skku.edu/news/notice/view/2587">학과 공지</a>를 참고해주세요!</p>
-<h2 id="접속-가이드">접속 가이드</h2>
+<li>파일과 디렉토리에 모두 적용가능한 명령어의 경우 일반적으로 디렉토리에 적용하려할 경우 추가적인 옵션을 넣어야 하는 경우가 많습니다. 옵션 확인하셔서 적용하시기 바랍니다.</li>
+<li>기타 Notation들은 아래 표를 참고 바랍니다.
 <table>
 <thead>
 <tr>
-<th style="text-align:center">항목</th>
-<th style="text-align:center">값</th>
-<th>비고</th>
+<th>Notation</th>
+<th>Meaning</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center">포트</td>
-<td style="text-align:center">1398</td>
-<td>성균관 설립 연도</td>
+<td>(&mdash;&mdash;-)</td>
+<td>입력하지 않아도 되는 부가 옵션</td>
 </tr>
 <tr>
-<td style="text-align:center">ID</td>
-<td style="text-align:center">본인 학번</td>
-<td>총 10자리 숫자</td>
+<td>[&mdash;&mdash;]</td>
+<td>command 실행에 필수적이거나 없으면 실행 전과 변화가 없는 옵션</td>
 </tr>
 <tr>
-<td style="text-align:center">PW</td>
-<td style="text-align:center">성 (Last Name)</td>
-<td>모든 글자를 영어 대문자로 입력; 실패할 경우 Full Name을 공백 없이 입력</td>
+<td>usage</td>
+<td>구체적인 활용법을 정리한 페이지로 링크</td>
 </tr>
 </tbody>
 </table>
-<p>예시) 학번이 2020123456 일 경우 ssh -p 1398 <a href="mailto:2020123456@swji.skku.edu">2020123456@swji.skku.edu</a> (지 서버에 접속)</p>
-<h2 id="자주-묻는-질문">자주 묻는 질문</h2>
+</li>
+</ul>
+<div style="margin-top: 2rem;"></div>
+<hr>
+<h2 id="linux-filesystem">Linux filesystem</h2>
+<table>
+<thead>
+<tr>
+<th>command</th>
+<th style="text-align:left">description</th>
+<th>example</th>
+<th>man page</th>
+<th>usage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ls (option) (directory)</td>
+<td style="text-align:left">directory 내 리눅스 파일 정보 탐색</td>
+<td>ls</td>
+<td><a href="https://man7.org/linux/man-pages/man1/ls.1.html">Link</a></td>
+<td><a href="https://skkuoverflow.com/ko/posts/linux/ls/">Link</a></td>
+</tr>
+<tr>
+<td>cd (directory)</td>
+<td style="text-align:left">directory 로 경로를 이동</td>
+<td>cd Test/</td>
+<td><a href="https://man7.org/linux/man-pages/man1/cd.1p.html">Link</a></td>
+<td><a href="https://skkuoverflow.com/ko/posts/linux/cd/">Link</a></td>
+</tr>
+<tr>
+<td>mkdir [name]</td>
+<td style="text-align:left">name을 이름으로 가진 directory 생성</td>
+<td>mkdir Test</td>
+<td><a href="https://man7.org/linux/man-pages/man1/mkdir.1.html">Link</a></td>
+<td></td>
+</tr>
+<tr>
+<td>cp (option) [name1] [name2]</td>
+<td style="text-align:left">name1 파일/디렉토리를 name2 파일/디렉토리로 복사</td>
+<td>cp test1 test2</td>
+<td><a href="https://man7.org/linux/man-pages/man1/cp.1.html">Link</a></td>
+<td></td>
+</tr>
+<tr>
+<td>mv (option) [name1] [name2]</td>
+<td style="text-align:left">name1 파일을 name2파일로 이동</td>
+<td>mv file1 Test/file2</td>
+<td><a href="https://man7.org/linux/man-pages/man1/mv.1.html">Link</a></td>
+<td></td>
+</tr>
+<tr>
+<td>rm (option) [name]</td>
+<td style="text-align:left">name 파일/디렉토리를 삭제</td>
+<td>rm file1</td>
+<td><a href="https://man7.org/linux/man-pages/man1/rm.1.html">Link</a></td>
+<td><a href="https://skkuoverflow.com/ko/posts/linux/rm/">Link</a></td>
+</tr>
+<tr>
+<td>cat (option) (filename)</td>
+<td style="text-align:left">filename 내용을 출력</td>
+<td>cat file1</td>
+<td><a href="https://man7.org/linux/man-pages/man1/cat.1.html">Link</a></td>
+<td><a href="https://skkuoverflow.com/ko/posts/linux/cat/">Link</a></td>
+</tr>
+</tbody>
+</table>
+<div style="margin-top: 2rem;"></div>
+<hr>
+<h2 id="linux-package-manager">Linux package manager</h2>
+<h3 id="시작하기에-앞서">시작하기에 앞서&hellip;</h3>
 <ol>
-<li>
-<p><strong>인의예지 서버 죽었나요?</strong><br>
-서버야 죽지마ㅠㅠ 가 나노님의 공헌으로 준비중입니다!</p>
-</li>
-<li>
-<p><strong><code>Connection reset by peer</code> 오류가 뜨면서 인의예지가 접속이 안돼요! 어떡하죠??</strong><br>
-서버에서 현재 IP가 블락처리되었다는 신호입니다. 다른 IP로 접속을 시도해주세요.</p>
-</li>
-<li>
-<p><strong>오랜만에 의/예/지 서버에 접속하는데 비밀번호가 자꾸 틀렸대요!</strong><br>
-인 서버가 분리된 사건으로 인해 의/예/지 서버가 포맷되면서 비밀번호 또한 초기화되었습니다.<br>
-<code>pw(학번 뒷자리 8자리)</code>로 한 번 시도해보세요! (학번이 2020987654인 경우, <code>pw20987654</code> 시도)</p>
-<p>이것으로도 안 된다면, 해당 계정이 생성되지 않았을 수도 있습니다!<br>
-남범석 교수님께 연락드려 계정 생성을 요청해주세요. (<a href="mailto:bnam@skku.edu">bnam@skku.edu</a>)</p>
-</li>
-<li>
-<p><strong>인의예지에 파일을 보내고 싶은데 어떻게 보내죠?</strong><br>
-리눅스 명령어로는 <code>scp</code>를 이용하면 됩니다!<br>
-<code>scp -P 1398 (보내고 싶은 파일) (자기 ID)@swji.skku.edu:/home/(자기 ID)/(원하는 디렉토리)</code></p>
-<p>sftp를 지원하는 프로그램을 활용해도 되는데, 윈도우에는 대표적으로 Mobaxterm이 있습니다.<br>
-자세한 내용은 <a href="https://skkuoverflow.com/ko/posts/mobaxterm/">해당 문서</a>를 참고해주세요!</p>
-</li>
-<li>
-<p><strong>인의예지에서 파일을 받고 싶은데 어떻게 받죠?</strong></p>
-<p>위와 동일하게 리눅스 명령어로 <code>scp</code>를 이용하거나 sftp를 지원하는 프로그램을 활용하면 됩니다!</p>
-<p><code>scp -P 1398 (자기ID)@swji.skku.edu:(파일 경로/파일명) (파일 다운로드 경로)</code></p>
-</li>
-<li>
-<p><strong>인의예지 로그인 후 비밀번호를 바꾸고 싶어요!</strong></p>
-<ul>
-<li><code>yppasswd</code> 커맨드를 통해 비밀번호 변경 가능합니다!</li>
-</ul>
-</li>
-<li>
-<p><strong>파일 복사가 안돼요! 권한이 없는 건가요??</strong></p>
-<ul>
-<li>아마 일반적으로 학과 과제 파일을 복사하는 과정에서 문제가 생겼을 거라고 생각이 됩니다.</li>
-<li>먼저 <code>cp /home/(학수 번호)/(파일이 있는 디렉토리 위치)/* ~/</code>를 입력해보세요. 만약 에러가 따로 출력이 안되면 복사가 되는 겁니다. <code>cd</code> 혹은 <code>cd ~</code>를 입력하여 파일이 복사됐는지 확인해보세요.</li>
-<li>만약 에러가 뜬다면 에러에 따라 대처하시면 됩니다.</li>
-</ul>
-</li>
+<li><strong>CAUTION!</strong> 표시는 <strong>서버 전체를 재설정해야 할 수 있을 정도</strong>의 위험도를 가진 명령어입니다. 자기 데스크탑이면 몰라도 랩 서버 혹은 타인의 서버에서 하는 경우 꼭! 담당자에게 확인을 받고 실행을 하시기 바랍니다!</li>
+<li>Caution 표시는 기존 패키지와의 충돌 위험성이 있는 명령어입니다. 만약 실행 이후 문제가 생긴다면 이 명령어가 문제는 아니었는지 고려해보시면 됩니다.</li>
+<li>일반적으로 위의 경고 표시는 설치하는 명령어들입니다. 윈도우에서도 설치할 때 조심할 필요가 있듯, 리눅스도 그렇습니다.</li>
 </ol>
+<h3 id="ubuntu">Ubuntu</h3>
+<table>
+<thead>
+<tr>
+<th>command</th>
+<th>description</th>
+<th>example</th>
+<th>caution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>apt update</td>
+<td>기존에 설치된 패키지의 업데이트 확인</td>
+<td>sudo apt update</td>
+<td></td>
+</tr>
+<tr>
+<td>apt upgrade</td>
+<td>업데이트할 패키지가 있는 경우 업데이트 진행</td>
+<td>sudo apt upgrade</td>
+<td><strong>CAUTION!</strong></td>
+</tr>
+<tr>
+<td>apt install [package]</td>
+<td>package와 package가 요구하는 추가 package 설치</td>
+<td>sudo apt install gcc</td>
+<td>Caution</td>
+</tr>
+<tr>
+<td>apt-cache policy [package]</td>
+<td>package와 package에 대한 정보 탐색</td>
+<td>apt-cache policy gcc</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div style="margin-top: 2rem;"></div>
+<hr>
+<h2 id="others">Others</h2>
+<table>
+<thead>
+<tr>
+<th>command</th>
+<th>description</th>
+<th>example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>man [command]</td>
+<td>command의 역할, 활용법, 옵션 등 매뉴얼을 출력해줍니다. RTFM!</td>
+<td>man cat</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h1 id="contributors">Contributors</h1>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Contribution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>raven724</td>
+<td>Create file, write information, Linux filesystem, Linux package manager</td>
+</tr>
+</tbody>
+</table>
 
         </div>
 
         
         
           <div class="btn-improve-page">
-              <a href="https://github.com/SKKU-SWForum/School_FAQs/edit/main/content/posts/Inuiyeji.ko.md" title="이 페이지를 개선" target="_blank" rel="noopener">
+              <a href="https://github.com/SKKU-SWForum/School_FAQs/edit/main/content/posts/linux/commands/index.ko.md" title="이 페이지를 개선" target="_blank" rel="noopener">
                 <i class="fas fa-code-branch"></i>
                 이 페이지를 개선
               </a>
@@ -270,27 +383,42 @@
   
 
   
-
-  
-
-  
-
-  
-
-  
-
-  
     
       
       <div class="col-md-6 previous-article">
-        <a href="/ko/posts/linux/rm/" title="리눅스 명령어: rm" class="btn btn-outline-info">
+        <a href="/ko/posts/school/mobaxterm/" title="Mobaxterm" class="btn btn-outline-info">
           <div><i class="fas fa-chevron-circle-left"></i> 이전</div>
-          <div class="next-prev-text">리눅스 명령어: rm</div>
+          <div class="next-prev-text">Mobaxterm</div>
         </a>
       </div>
       
     
     
+      
+        
+        
+          
+              
+          
+        
+        <div class="col-md-6 next-article">
+          <a href="/ko/posts/linux/cat/" title="리눅스 명령어: cat" class="btn btn-outline-info">
+            <div>다음 <i class="fas fa-chevron-circle-right"></i></div>
+            <div class="next-prev-text">리눅스 명령어: cat</div>
+          </a>
+        </div>
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
   
 
 </div>
@@ -317,7 +445,7 @@
     </a>
     <div class="dropdown-menu" aria-labelledby="languageSelector">
         
-        <a class="dropdown-item nav-link languages-item" href="/posts/inuiyeji">
+        <a class="dropdown-item nav-link languages-item" href="/posts/linux/commands">
             
             <img class="flag" src="https://www.countryflags.io/gb/flat/24.png" alt="gb">
             English
@@ -339,13 +467,20 @@
       <div class="toc">
         <nav id="TableOfContents">
   <ul>
-    <li><a href="#인의예지-클러스터">인의예지 클러스터</a>
+    <li><a href="#리눅스-기초-명령어-모음">리눅스 기초 명령어 모음</a>
       <ul>
-        <li><a href="#인의예지-클러스터가-뭔가요">인의예지 클러스터가 뭔가요?</a></li>
-        <li><a href="#접속-가이드">접속 가이드</a></li>
-        <li><a href="#자주-묻는-질문">자주 묻는 질문</a></li>
+        <li><a href="#information">Information</a></li>
+        <li><a href="#linux-filesystem">Linux filesystem</a></li>
+        <li><a href="#linux-package-manager">Linux package manager</a>
+          <ul>
+            <li><a href="#시작하기에-앞서">시작하기에 앞서&hellip;</a></li>
+            <li><a href="#ubuntu">Ubuntu</a></li>
+          </ul>
+        </li>
+        <li><a href="#others">Others</a></li>
       </ul>
     </li>
+    <li><a href="#contributors">Contributors</a></li>
   </ul>
 </nav>
       </div>

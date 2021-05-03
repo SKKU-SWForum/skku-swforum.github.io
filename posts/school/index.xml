@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>School on SKKU Software forum</title>
+    <link>https://skkuoverflow.com/posts/school/</link>
+    <description>Recent content in School on SKKU Software forum</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 29 Apr 2021 00:07:30 +0900</lastBuildDate><atom:link href="https://skkuoverflow.com/posts/school/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Inuiyeji cluster</title>
+      <link>https://skkuoverflow.com/posts/school/inuiyeji/</link>
+      <pubDate>Thu, 29 Apr 2021 00:07:30 +0900</pubDate>
+      
+      <guid>https://skkuoverflow.com/posts/school/inuiyeji/</guid>
+      <description>What is Inuiyeji cluster? &amp;lsquo;Inuiyeji&amp;rsquo; cluster is a server cluster that is available for SKKU students who major in Software Engineering. Currently the &amp;lsquo;In&amp;rsquo; server is runs independently, and the &amp;lsquo;uiyeji&amp;rsquo; server is bounded with nfs.
+Translation of the below notice about the server. (https://cs.skku.edu/news/notice/view/2587)
+4-node Linux cluster server is now available for SW college students.
+Students who want to use it can use it freely.
+Hosts:
+- swin.skku.edu - swui.</description>
+    </item>
+    
+    <item>
+      <title>Mobaxterm</title>
+      <link>https://skkuoverflow.com/posts/school/mobaxterm/</link>
+      <pubDate>Thu, 29 Apr 2021 00:07:30 +0900</pubDate>
+      
+      <guid>https://skkuoverflow.com/posts/school/mobaxterm/</guid>
+      <description>How to use Mobaxterm Mobaxterm is a program that supports running remote programs such as ssh, sftp, and X11 forwarding. Mobaxterm has a free and paid version, but the free version is more than enough. Here&amp;rsquo;s how to install:
+ Go to https://mobaxterm.mobatek.net/ to download and install the installer. Open the program. Press &amp;lsquo;session&amp;rsquo; at the top left. Press the leftmost &amp;lsquo;ssh&amp;rsquo; and set it up.   remote host: (Example) swji.</description>
+    </item>
+    
+  </channel>
+</rss>

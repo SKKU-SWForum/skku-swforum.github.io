@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Linux commands</title>
+    <title>List of Linux commands</title>
     
 
 
@@ -38,7 +38,7 @@
 <link rel="stylesheet" href="/css/style.css"/>
 
     
-<meta name="description" content="Linux commands" />
+<meta name="description" content="List of Linux commands" />
 <link
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css"
@@ -104,7 +104,7 @@
     </a>
     <div class="dropdown-menu" aria-labelledby="languageSelector">
       
-        <a class="dropdown-item nav-link languages-item" href="/ko/posts/linux/list">
+        <a class="dropdown-item nav-link languages-item" href="/ko/posts/linux/commands">
           
           <span class="flag-icon flag-icon-ko"></span>
           한국어
@@ -136,6 +136,55 @@
             <li id="list-heading"><a href="/posts" data-filter="all">Posts</a></li>
             <div class="subtree">
                 
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li>
+      <i class="fas fa-minus-circle"></i><a class="active" href="/posts/linux/">Linux Basic Commands</a>
+      
+      <ul class="active">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/linux/cat/" title="cat">cat</a></li>
+  
+
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li><a class="active" href="/posts/linux/commands/" title="Lists of Linux commands">Lists of Linux commands</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/school/" title="School">School</a></li>
+  
+
 
             </div>
           </ul>
@@ -163,18 +212,17 @@
         </div>
 
         <div class="title">
-          <h1>Linux commands</h1>
+          <h1>List of Linux commands</h1>
         </div>
 
         <div class="post-content" id="post-content">
-          <h2 id="basic-linux-commands">Basic Linux Commands</h2>
-<ol>
-<li>
-<h3 id="information">Information</h3>
+          <h1 id="basic-linux-commands">Basic Linux Commands</h1>
+<div style="margin-top: 2rem;"></div>
+<hr>
+<h2 id="information">Information</h2>
 <ul>
 <li>Commands that are applicable to both files and directories typically require additional options when attempting to apply to directories. Please check the options before you apply them.</li>
-<li>Please refer to the table below for other notations.</li>
-</ul>
+<li>Please refer to the table below for other notations.
 <table>
 <thead>
 <tr>
@@ -198,8 +246,10 @@
 </tbody>
 </table>
 </li>
-<li>
-<h3 id="linux-filesystem">Linux filesystem</h3>
+</ul>
+<div style="margin-top: 2rem;"></div>
+<hr>
+<h2 id="linux-filesystem">Linux filesystem</h2>
 <table>
 <thead>
 <tr>
@@ -262,33 +312,55 @@
 </tr>
 </tbody>
 </table>
-</li>
-<li>
-<h3 id="linux-package-manager">Linux package manager</h3>
-<ol>
-<li>
-<p>Before we start&hellip;</p>
+<div style="margin-top: 2rem;"></div>
+<hr>
+<h2 id="linux-package-manager">Linux package manager</h2>
+<h3 id="before-we-start">Before we start&hellip;</h3>
 <ol>
 <li>Commands with the <strong>CAUTION!</strong> mark shows commands with a <strong>risk of resetting the entire server</strong>. If you are trying to execute these commands on a lab server or someone else&rsquo;s server, please get confirmation from the person in charge before you execute them!</li>
 <li>The Caution mark is a command that poses a risk of conflict with existing packages. If there is a problem after execution, consider whether this command was the cause of the problem.</li>
 <li>Typically, the warning signs above are commands you have to install to use. Just as you need to be careful when installing them on Windows, you need to be careful when installing them on Linux.</li>
 </ol>
-</li>
-<li>
-<p>Ubuntu</p>
-<pre><code> | Command                    | Description                                    | Example              | Caution      |
- | -------------------------- | ---------------------------------------------- | -------------------- | ------------ |
- | apt update                 | Check for updates of existing installed packages           | sudo apt update      |              |
- | apt upgrade                | Update if there is a package to update    | sudo apt upgrade     | **CAUTION!** |
- | apt install [package]      | install package and additional packages required by package
-</code></pre>
-<p>| sudo apt install gcc | <strong>CAUTION!</strong> |
-| apt-cache policy [package] | Displays which versions of a package are available from which repo at which priority. | apt-cache policy gcc | |</p>
-</li>
-</ol>
-</li>
-<li>
-<h3 id="others">Others</h3>
+<h3 id="ubuntu">Ubuntu</h3>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+<th>Example</th>
+<th>Caution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>apt update</td>
+<td>Check for updates of existing installed packages</td>
+<td>sudo apt update</td>
+<td></td>
+</tr>
+<tr>
+<td>apt upgrade</td>
+<td>Update if there is a package to update</td>
+<td>sudo apt upgrade</td>
+<td><strong>CAUTION!</strong></td>
+</tr>
+<tr>
+<td>apt install [package]</td>
+<td>install package and additional packages required by package</td>
+<td>sudo apt install gcc</td>
+<td><strong>CAUTION!</strong></td>
+</tr>
+<tr>
+<td>apt-cache policy [package]</td>
+<td>Displays which versions of a package are available from which repo at which priority.</td>
+<td>apt-cache policy gcc</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div style="margin-top: 2rem;"></div>
+<hr>
+<h2 id="others">Others</h2>
 <table>
 <thead>
 <tr>
@@ -305,10 +377,8 @@
 </tr>
 </tbody>
 </table>
-</li>
-</ol>
 <hr>
-<!-- raw HTML omitted -->
+<h1 id="contributors">Contributors</h1>
 <table>
 <thead>
 <tr>
@@ -333,7 +403,7 @@
         
         
           <div class="btn-improve-page">
-              <a href="https://github.com/SKKU-SWForum/School_FAQs/edit/main/content/posts/linux/list.en.md" title="Improve this page" target="_blank" rel="noopener">
+              <a href="https://github.com/SKKU-SWForum/School_FAQs/edit/main/content/posts/linux/commands/index.en.md" title="Improve this page" target="_blank" rel="noopener">
                 <i class="fas fa-code-branch"></i>
                 Improve this page
               </a>
@@ -371,7 +441,7 @@
           
         
         <div class="col-md-6 next-article">
-          <a href="/posts/mobaxterm/" title="Mobaxterm" class="btn btn-outline-info">
+          <a href="/posts/school/mobaxterm/" title="Mobaxterm" class="btn btn-outline-info">
             <div>Next <i class="fas fa-chevron-circle-right"></i></div>
             <div class="next-prev-text">Mobaxterm</div>
           </a>
@@ -406,7 +476,7 @@
     </a>
     <div class="dropdown-menu" aria-labelledby="languageSelector">
         
-        <a class="dropdown-item nav-link languages-item" href="/ko/posts/linux/list">
+        <a class="dropdown-item nav-link languages-item" href="/ko/posts/linux/commands">
             
             <img class="flag" src="https://www.countryflags.io/ko/flat/24.png" alt="ko">
             한국어
@@ -428,18 +498,20 @@
       <div class="toc">
         <nav id="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#basic-linux-commands">Basic Linux Commands</a>
       <ul>
-        <li><a href="#basic-linux-commands">Basic Linux Commands</a>
+        <li><a href="#information">Information</a></li>
+        <li><a href="#linux-filesystem">Linux filesystem</a></li>
+        <li><a href="#linux-package-manager">Linux package manager</a>
           <ul>
-            <li><a href="#information">Information</a></li>
-            <li><a href="#linux-filesystem">Linux filesystem</a></li>
-            <li><a href="#linux-package-manager">Linux package manager</a></li>
-            <li><a href="#others">Others</a></li>
+            <li><a href="#before-we-start">Before we start&hellip;</a></li>
+            <li><a href="#ubuntu">Ubuntu</a></li>
           </ul>
         </li>
+        <li><a href="#others">Others</a></li>
       </ul>
     </li>
+    <li><a href="#contributors">Contributors</a></li>
   </ul>
 </nav>
       </div>

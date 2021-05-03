@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux Basic Commands on SKKU Software forum</title>
+    <link>https://skkuoverflow.com/posts/linux/</link>
+    <description>Recent content in Linux Basic Commands on SKKU Software forum</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 29 Apr 2021 00:07:30 +0900</lastBuildDate><atom:link href="https://skkuoverflow.com/posts/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux command: cat</title>
+      <link>https://skkuoverflow.com/posts/linux/cat/</link>
+      <pubDate>Thu, 29 Apr 2021 00:07:30 +0900</pubDate>
+      
+      <guid>https://skkuoverflow.com/posts/linux/cat/</guid>
+      <description>cat concatenate files and print on the standard output
+  Usage Used to verify the contents of a file.
+  Options    Useful options Usage     -A The same results as -vET.   -v Prints strings that are not originally printed separately in the form of ^ and M-.   -E Prints $ at the end of each line.   -T Prints TAB in the form of ^l.</description>
+    </item>
+    
+    <item>
+      <title>List of Linux commands</title>
+      <link>https://skkuoverflow.com/posts/linux/commands/</link>
+      <pubDate>Thu, 29 Apr 2021 00:07:30 +0900</pubDate>
+      
+      <guid>https://skkuoverflow.com/posts/linux/commands/</guid>
+      <description>Basic Linux Commands   Information  Commands that are applicable to both files and directories typically require additional options when attempting to apply to directories. Please check the options before you apply them. Please refer to the table below for other notations.    Notation Meaning     (&amp;mdash;&amp;mdash;-) Additional Options (Not required)   [&amp;mdash;&amp;mdash;] Required Options   usage Links to more detailed explanations        Linux filesystem    Command Description Example Man page Usage     ls (option) (directory) View the contents of (directory) ls Link Link   cd (directory) Navigate through (directory) cd Test/ Link Link   mkdir [name] Make a new directory with the name [name] mkdir Test Link    cp (option) [name1] [name2] Copy name1 files/directories to name2 files/directories cp test1 test2 Link    mv (option) [name1] [name2] Move name1 file to name2 file mv file1 Test/file2 Link    rm (option) [name] Delete files/directories called [name] rm file1 Link Link   cat (option) (filename) List [filename] contents cat file1 Link Link      Linux package manager Before we start&amp;hellip;  Commands with the CAUTION!</description>
+    </item>
+    
+  </channel>
+</rss>

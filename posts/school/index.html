@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Categories</title>
+    <title>School</title>
     
 
 
@@ -77,8 +77,8 @@
       <button class="navbar-toggler navbar-light" id="sidebar-toggler" type="button" onclick="toggleSidebar()">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="/ko">
-      <img src="/images/main-logo_hu864bbe108f1be1ae04b57f7f2fd9d631_5637_42x0_resize_box_2.png" alt="Logo">성균관대학교 소프트웨어 포럼</a>
+    <a class="navbar-brand" href="/">
+      <img src="/images/main-logo_hu864bbe108f1be1ae04b57f7f2fd9d631_5637_42x0_resize_box_2.png" alt="Logo">SKKU Software forum</a>
     <button class="navbar-toggler navbar-light" id="toc-toggler" type="button" onclick="toggleTOC()">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -94,15 +94,15 @@
 <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" href="#" id="languageSelector" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       
-      <span class="flag-icon flag-icon-ko"></span>
-      한국어
+      <span class="flag-icon flag-icon-gb"></span>
+      English
     </a>
     <div class="dropdown-menu" aria-labelledby="languageSelector">
       
-        <a class="dropdown-item nav-link languages-item" href="/categories">
+        <a class="dropdown-item nav-link languages-item" href="/ko/posts/school">
           
-          <span class="flag-icon flag-icon-gb"></span>
-          English
+          <span class="flag-icon flag-icon-ko"></span>
+          한국어
         </a>
       
     </div>
@@ -133,7 +133,7 @@
         </form>
         <div class="sidebar-tree">
           <ul class="tree" id="tree">
-            <li id="list-heading"><a href="/ko/categories" data-filter="all"></a></li>
+            <li id="list-heading"><a href="/posts" data-filter="all">Posts</a></li>
             <div class="subtree">
                 
   
@@ -142,7 +142,18 @@
   
   
     
-    <li><a class="" href="/ko/posts/linux/" title="리눅스 기초 명령어">리눅스 기초 명령어</a></li>
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/posts/linux/">Linux Basic Commands</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/linux/cat/" title="cat">cat</a></li>
   
 
   
@@ -151,7 +162,24 @@
   
   
     
-    <li><a class="" href="/ko/posts/school/" title="학교">학교</a></li>
+    <li><a class="" href="/posts/linux/commands/" title="Lists of Linux commands">Lists of Linux commands</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li><a class="active" href="/posts/school/" title="School">School</a></li>
   
 
 
@@ -169,6 +197,62 @@
   <div class="content container-fluid" id="content">
     <div class="container-fluid post-card-holder" id="post-card-holder">
       
+      
+        
+          <div class="post-card">
+  <a href="/posts/school/inuiyeji/" class="post-card-link">
+    <div class="card">
+      <div class="card-head">
+        <img class="card-img-top" src='/images/default-hero.jpg' alt="Hero Image">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Inuiyeji cluster</h5>
+        <p class="card-text post-summary">What is Inuiyeji cluster? &lsquo;Inuiyeji&rsquo; cluster is a server cluster that is available for SKKU students who major in Software Engineering. Currently the &lsquo;In&rsquo; server is runs independently, and the &lsquo;uiyeji&rsquo; server is bounded with nfs.
+Translation of the below notice about the server. (https://cs.skku.edu/news/notice/view/2587)
+4-node Linux cluster server is now available for SW college students.
+Students who want to use it can use it freely.
+Hosts:
+- swin.skku.edu - swui.</p>
+      </div>
+      <div class="card-footer">
+        <span class="float-left">April 29, 2021</span>
+        <a
+        href="/posts/school/inuiyeji/"
+        class="float-right btn btn-outline-info btn-sm"
+        >Read</a
+        >
+      </div>
+    </div>
+  </a>
+</div>
+
+        
+      
+        
+          <div class="post-card">
+  <a href="/posts/school/mobaxterm/" class="post-card-link">
+    <div class="card">
+      <div class="card-head">
+        <img class="card-img-top" src='/images/default-hero.jpg' alt="Hero Image">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Mobaxterm</h5>
+        <p class="card-text post-summary">How to use Mobaxterm Mobaxterm is a program that supports running remote programs such as ssh, sftp, and X11 forwarding. Mobaxterm has a free and paid version, but the free version is more than enough. Here&rsquo;s how to install:
+ Go to https://mobaxterm.mobatek.net/ to download and install the installer. Open the program. Press &lsquo;session&rsquo; at the top left. Press the leftmost &lsquo;ssh&rsquo; and set it up.   remote host: (Example) swji.</p>
+      </div>
+      <div class="card-footer">
+        <span class="float-left">April 29, 2021</span>
+        <a
+        href="/posts/school/mobaxterm/"
+        class="float-right btn btn-outline-info btn-sm"
+        >Read</a
+        >
+      </div>
+    </div>
+  </a>
+</div>
+
+        
       
     </div>
     <div class="paginator">
@@ -212,7 +296,7 @@
   <div class="container pt-5">
     <div class="row text-left">
       <div class="col-md-4 col-sm-12">
-        <h5>바로가기</h5>
+        <h5>Navigation</h5>
         
 
       </div>
