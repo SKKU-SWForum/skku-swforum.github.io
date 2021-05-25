@@ -27,5 +27,16 @@
 접속 가이드    항목 값 비고     포트 1398 성균관 설립 연도   ID 본인 학번 총 10자리 숫자   PW 성 (Last Name) 모든 글자를 영어 대문자로 입력; 실패할 경우 Full Name을 공백 없이 입력    예시) 학번이 2020123456 일 경우 ssh -p 1398 2020123456@swji.</description>
     </item>
     
+    <item>
+      <title>학사 FAQ</title>
+      <link>https://skkuoverflow.com/ko/posts/school/academicfaq/</link>
+      <pubDate>Thu, 29 Apr 2021 00:07:30 +0900</pubDate>
+      
+      <guid>https://skkuoverflow.com/ko/posts/school/academicfaq/</guid>
+      <description>학사 FAQ  학사 관련해서 질문할 수 있는 방법
+ 학교 학사바로센터에 전화한다. (1811-8585, 평일 09:00~12:00, 13:00~17:00) 킹고봇을 활용한다. (카카오톡 플러스친구 &amp;lsquo;킹고&amp;rsquo; 추가 or 학교 포털의 킹고 봇 이용하기.)    졸업 유예 제도가 있는지, 있다면 어디서 확인 가능한지 궁금합니다.
+ 안녕하세요, 학사운영팀입니다. 졸업 유예제도가 따로 있지는 않습니다. 아래 내용 참고하여 주시기 바랍니다. 감사합니다.    학위 취득을 위해서는 의무등록학기 충족, 졸업이수학점 충족, 졸업기준 성적(평점평균) 충족, 3품인증 취득, 졸업평가 합격, 기타(교직 이수(대상자), 공학인증 이수(대상자)) 등 소정의 모든 요건을 갖추어야 합니다.</description>
+    </item>
+    
   </channel>
 </rss>
