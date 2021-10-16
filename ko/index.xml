@@ -5,7 +5,20 @@
     <link>https://skkuoverflow.com/ko/</link>
     <description>Recent content on 성균관대학교 소프트웨어 포럼</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 25 May 2021 11:11:30 +0900</lastBuildDate><atom:link href="https://skkuoverflow.com/ko/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 16 Oct 2021 16:30:00 +0900</lastBuildDate><atom:link href="https://skkuoverflow.com/ko/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>인의예지를 이용한 기본적인 리눅스 사용해보기</title>
+      <link>https://skkuoverflow.com/ko/posts/linux/basics/</link>
+      <pubDate>Sat, 16 Oct 2021 16:30:00 +0900</pubDate>
+      
+      <guid>https://skkuoverflow.com/ko/posts/linux/basics/</guid>
+      <description>인의예지를 이용한 기본적인 리눅스 사용해보기  인의예지란?
+ 인의예지는 학교에서 제공하는 리눅스 클러스터 서버입니다. 인의예지에 대한 자세한 설명은 여기를 참고하세요!    인의예지에 접속해보기
+  가장 편한 방법은 역시 GUI죠! Windows 환경이시면 MobaXterm이 좋은 선택지가 될 거 같네요. 설명은 여기를 참고하세요!
+  GUI를 쓰기 어려운 환경이신가요? 그러면 다음 명령어로 접속을 해봅시다.
+ssh -p 1398 (학번)@swji.skku.edu  ssh는 리눅스 클러스터 서버에 접속하기 위해 사용되는 인터넷 프로토콜이자 명령어입니다. -p 는 옵션으로 ssh 서버에 접속할 때 어느 포트에 접속할 것인지를 특정지어 줍니다.</description>
+    </item>
+    
     <item>
       <title>학사 FAQ</title>
       <link>https://skkuoverflow.com/ko/posts/school/academicfaq/</link>

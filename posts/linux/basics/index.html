@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>List of Linux commands</title>
+    <title>인의예지를 이용한 기본적인 리눅스 사용해보기</title>
     
 
 
@@ -40,7 +40,7 @@
 <link rel="stylesheet" href="/css/style.css"/>
 
     
-<meta name="description" content="List of Linux commands" />
+<meta name="description" content="인의예지를 이용한 기본적인 리눅스 사용해보기" />
 <link
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css"
@@ -110,7 +110,7 @@
     </a>
     <div class="dropdown-menu" aria-labelledby="languageSelector">
       
-        <a class="dropdown-item nav-link languages-item" href="/ko/posts/linux/commands">
+        <a class="dropdown-item nav-link languages-item" href="/ko/posts/linux/basics">
           
           <span class="flag-icon flag-icon-ko"></span>
           한국어
@@ -160,9 +160,12 @@
   
   
   
+    
+    
+  
   
     
-    <li><a class="" href="/posts/linux/basics/" title="basics">basics</a></li>
+    <li><a class="active" href="/posts/linux/basics/" title="basics">basics</a></li>
   
 
   
@@ -178,12 +181,9 @@
   
   
   
-    
-    
-  
   
     
-    <li><a class="active" href="/posts/linux/commands/" title="Lists of Linux commands">Lists of Linux commands</a></li>
+    <li><a class="" href="/posts/linux/commands/" title="Lists of Linux commands">Lists of Linux commands</a></li>
   
 
 
@@ -240,7 +240,7 @@
   <div class="content">
     <div class="container p-0 read-area">
       
-      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url(https://skkuoverflow.com/posts/linux/commands/images/commands-hero.png);'>
+      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url(https://skkuoverflow.com/images/default-hero.jpg);'>
       </div>
 
       
@@ -248,202 +248,121 @@
         <div class="author-profile ml-auto align-self-lg-center">
           <img class="rounded-circle" src='/images/default-avatar.png' alt="Author Image">
           <h5 class="author-name"></h5>
-          <p>April 29, 2021</p>
+          <p>October 16, 2021</p>
         </div>
 
         <div class="title">
-          <h1>List of Linux commands</h1>
+          <h1>인의예지를 이용한 기본적인 리눅스 사용해보기</h1>
         </div>
 
         <div class="post-content" id="post-content">
-          <h1 id="basic-linux-commands">Basic Linux Commands</h1>
-<div style="margin-top: 2rem;"></div>
-<hr>
-<h2 id="information">Information</h2>
+          <h1 id="인의예지를-이용한-기본적인-리눅스-사용해보기">인의예지를 이용한 기본적인 리눅스 사용해보기</h1>
+<ol start="0">
+<li>
+<p>인의예지란?</p>
 <ul>
-<li>Commands that are applicable to both files and directories typically require additional options when attempting to apply to directories. Please check the options before you apply them.</li>
-<li>Please refer to the table below for other notations.
-<table>
-<thead>
-<tr>
-<th>Notation</th>
-<th>Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>(&mdash;&mdash;-)</td>
-<td>Additional Options (Not required)</td>
-</tr>
-<tr>
-<td>[&mdash;&mdash;]</td>
-<td>Required Options</td>
-</tr>
-<tr>
-<td>usage</td>
-<td>Links to more detailed explanations</td>
-</tr>
-</tbody>
-</table>
+<li>인의예지는 학교에서 제공하는 리눅스 클러스터 서버입니다.</li>
+<li>인의예지에 대한 자세한 설명은 <a href="https://skkuoverflow.com/ko/posts/school/inuiyeji/">여기</a>를 참고하세요!</li>
+</ul>
+</li>
+<li>
+<p>인의예지에 접속해보기</p>
+<ol>
+<li>
+<p>가장 편한 방법은 역시 GUI죠! Windows 환경이시면 MobaXterm이 좋은 선택지가 될 거 같네요. 설명은 <a href="https://skkuoverflow.com/ko/posts/school/mobaxterm/">여기</a>를 참고하세요!</p>
+</li>
+<li>
+<p>GUI를 쓰기 어려운 환경이신가요? 그러면 다음 명령어로 접속을 해봅시다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">ssh -p <span style="color:#ae81ff">1398</span> <span style="color:#f92672">(</span>학번<span style="color:#f92672">)</span>@swji.skku.edu
+</code></pre></div><ul>
+<li>ssh는 리눅스 클러스터 서버에 접속하기 위해 사용되는 인터넷 프로토콜이자 명령어입니다.</li>
+<li>-p 는 옵션으로 ssh 서버에 접속할 때 어느 포트에 접속할 것인지를 특정지어 줍니다.</li>
+<li>@ 왼쪽의 (학번)은 서버에 부여된 자신의 ID입니다. @ 없이 swji.skku.edu를 입력하신다면 현재 계정의 ID로 로그인을 시도합니다.</li>
+<li>@ 오른쪽의 swji.skku.edu는 접속하기 위한 Host/서버 정보를 의미합니다. IP 주소로 입력을 하실 수도 있고, URL 주소로 입력을 하셔도 됩니다.</li>
+<li>정상적으로 접속이 됐다면 비밀번호를 입력하라는 창이 뜰 겁니다. 비밀번호를 입력해줍시다. 그러면 이제  리눅스 창이 뜰 겁니다.</li>
+</ul>
+</li>
+<li>
+<p>VSCode로 접속이 가능한가요?</p>
+</li>
+</ol>
+<ul>
+<li>
+<p>그럼요!</p>
+<ol>
+<li>
+<p>Remote-SSH 플러그인이 필요합니다. 설치해줍시다.</p>
+</li>
+<li>
+<p>Ctrl+Shift+P를 눌러 옵션 창을 연 다음에 Remote-SSH: Add New SSH Host를 검색합시다.</p>
+</li>
+<li>
+<p>명령어를 입력하는 창에 위의 명령어를 입력해봅시다. * 한글 사용자명을 가진 경우 문제가 있을 수 있다고 합니다. 혹시 확인되면 제보 바랍니다.</p>
+</li>
+<li>
+<p>오른쪽 아래에 Host added!가 뜨면 왼쪽의 Remote 탭을 통해서 접속을 시도합시다.</p>
+<img src="images/result.PNG"
+    
+    
+    
+    
+    
+>
+
+</li>
+<li>
+<p>이제 swji.skku.edu 옆의 폴더 버튼을 눌러 접속을 시도해봅시다. 새로운 창이 뜨면서 비밀번호를 입력하는 창이 뜨면 정상입니다!</p>
+</li>
+</ol>
 </li>
 </ul>
-<div style="margin-top: 2rem;"></div>
-<hr>
-<h2 id="linux-filesystem">Linux filesystem</h2>
-<table>
-<thead>
-<tr>
-<th>Command</th>
-<th style="text-align:left">Description</th>
-<th>Example</th>
-<th>Man page</th>
-<th>Usage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ls (option) (directory)</td>
-<td style="text-align:left">View the contents of (directory)</td>
-<td>ls</td>
-<td><a href="https://man7.org/linux/man-pages/man1/ls.1.html">Link</a></td>
-<td><a href="https://skkuoverflow.com/ko/posts/linux/ls">Link</a></td>
-</tr>
-<tr>
-<td>cd (directory)</td>
-<td style="text-align:left">Navigate through (directory)</td>
-<td>cd Test/</td>
-<td><a href="https://man7.org/linux/man-pages/man1/cd.1p.html">Link</a></td>
-<td><a href="https://skkuoverflow.com/ko/posts/linux/cd">Link</a></td>
-</tr>
-<tr>
-<td>mkdir [name]</td>
-<td style="text-align:left">Make a new directory with the name [name]</td>
-<td>mkdir Test</td>
-<td><a href="https://man7.org/linux/man-pages/man1/mkdir.1.html">Link</a></td>
-<td></td>
-</tr>
-<tr>
-<td>cp (option) [name1] [name2]</td>
-<td style="text-align:left">Copy name1 files/directories to name2 files/directories</td>
-<td>cp test1 test2</td>
-<td><a href="https://man7.org/linux/man-pages/man1/cp.1.html">Link</a></td>
-<td></td>
-</tr>
-<tr>
-<td>mv (option) [name1] [name2]</td>
-<td style="text-align:left">Move name1 file to name2 file</td>
-<td>mv file1 Test/file2</td>
-<td><a href="https://man7.org/linux/man-pages/man1/mv.1.html">Link</a></td>
-<td></td>
-</tr>
-<tr>
-<td>rm (option) [name]</td>
-<td style="text-align:left">Delete files/directories called [name]</td>
-<td>rm file1</td>
-<td><a href="https://man7.org/linux/man-pages/man1/rm.1.html">Link</a></td>
-<td><a href="https://skkuoverflow.com/ko/posts/linux/rm">Link</a></td>
-</tr>
-<tr>
-<td>cat (option) (filename)</td>
-<td style="text-align:left">List [filename] contents</td>
-<td>cat file1</td>
-<td><a href="https://man7.org/linux/man-pages/man1/cat.1.html">Link</a></td>
-<td><a href="https://skkuoverflow.com/ko/posts/linux/cat">Link</a></td>
-</tr>
-</tbody>
-</table>
-<div style="margin-top: 2rem;"></div>
-<hr>
-<h2 id="linux-package-manager">Linux package manager</h2>
-<h3 id="before-we-start">Before we start&hellip;</h3>
-<ol>
-<li>Commands with the <strong>CAUTION!</strong> mark shows commands with a <strong>risk of resetting the entire server</strong>. If you are trying to execute these commands on a lab server or someone else&rsquo;s server, please get confirmation from the person in charge before you execute them!</li>
-<li>The Caution mark is a command that poses a risk of conflict with existing packages. If there is a problem after execution, consider whether this command was the cause of the problem.</li>
-<li>Typically, the warning signs above are commands you have to install to use. Just as you need to be careful when installing them on Windows, you need to be careful when installing them on Linux.</li>
+</li>
+<li>
+<p>인의예지 서버에서 놀아보기</p>
+</li>
+<li>
+<p>옆에 있는 표시는 어떤 표시인가요? =&gt; 처음 접속하면 (학번)@swji:~ 의 형태로 나오는데, 순서대로 (ID)@(Hostname):(현재 디렉토리 위치)를 의미합니다.
+물결표(~)는 해당 계정의 홈 디렉토리에 있다는 것을 의미합니다. (Windows로 치면 C:\Users(계정이름)에 해당합니다.)</p>
+</li>
+<li>
+<p>내가 어느 디렉토리에 있는지 확인하기: pwd</p>
+</li>
+<li>
+<p>디렉토리를 생성하기: mkdir (생성할 디렉토리 이름)</p>
+</li>
+<li>
+<p>디렉토리 내 파일들 확인하기: ls (혹은 ls -a를 통해 숨겨진 파일 모두 보기)</p>
+</li>
+<li>
+<p>디렉토리의 위치를 이동해보기: cd (이동하고 싶은 디렉토리)</p>
+</li>
+<li>
+<p>빈 파일 (empty file)을 생성하기: touch (파일 이름)</p>
+</li>
+<li>
+<p>파일의 내용을 확인하기: cat (파일 이름)</p>
+</li>
+<li>
+<p>디렉토리에서 간단하게 편집하기: vi (파일 이름) 혹은 nano (파일 이름)</p>
+</li>
+<li>
+<p>어느 파일을 복사하기: cp (복사할 파일 이름) (복사 이후 파일 이름)</p>
+</li>
+<li>
+<p>어느 파일 위치 이동하기/이름 바꾸기: mv (이동할 or 이름을 바꿀 파일 이름) (이동할 위치 or 바꿀 이름)</p>
+</li>
 </ol>
-<h3 id="ubuntu">Ubuntu</h3>
-<table>
-<thead>
-<tr>
-<th>Command</th>
-<th>Description</th>
-<th>Example</th>
-<th>Caution</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>apt update</td>
-<td>Check for updates of existing installed packages</td>
-<td>sudo apt update</td>
-<td></td>
-</tr>
-<tr>
-<td>apt upgrade</td>
-<td>Update if there is a package to update</td>
-<td>sudo apt upgrade</td>
-<td><strong>CAUTION!</strong></td>
-</tr>
-<tr>
-<td>apt install [package]</td>
-<td>install package and additional packages required by package</td>
-<td>sudo apt install gcc</td>
-<td><strong>CAUTION!</strong></td>
-</tr>
-<tr>
-<td>apt-cache policy [package]</td>
-<td>Displays which versions of a package are available from which repo at which priority.</td>
-<td>apt-cache policy gcc</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<div style="margin-top: 2rem;"></div>
-<hr>
-<h2 id="others">Others</h2>
-<table>
-<thead>
-<tr>
-<th>command</th>
-<th>description</th>
-<th>example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>man [command]</td>
-<td>Prints the manual such as the role, usage, and options the command has. RTFM!</td>
-<td>man cat</td>
-</tr>
-</tbody>
-</table>
-<hr>
-<h1 id="contributors">Contributors</h1>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Contribution</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>raven724</td>
-<td>Create file, write information, Linux filesystem, Linux package manager</td>
-</tr>
-<tr>
-<td>daniel2231</td>
-<td>Translation to english, minor fixes</td>
-</tr>
-</tbody>
-</table>
+<ul>
+<li>이 모든 테스트를 하나의 이미지로 정리하면 다음과 같이 됩니다.</li>
+</ul>
+<p>{{ img src=&ldquo;images/allinone.PNG&rdquo; }}</p>
 
         </div>
 
         
         
           <div class="btn-improve-page">
-              <a href="https://github.com/SKKU-SWForum/School_FAQs/edit/main/content/posts/linux/commands/index.en.md" title="Improve this page" target="_blank" rel="noopener">
+              <a href="https://github.com/SKKU-SWForum/School_FAQs/edit/main/content/posts/linux/basics/index.en.md" title="Improve this page" target="_blank" rel="noopener">
                 <i class="fas fa-code-branch"></i>
                 Improve this page
               </a>
@@ -462,12 +381,16 @@
   
 
   
+
+  
+
+  
     
       
       <div class="col-md-6 previous-article">
-        <a href="/posts/linux/cat/" title="Linux command: cat" class="btn btn-outline-info">
+        <a href="/search/" title="Search Results" class="btn btn-outline-info">
           <div><i class="fas fa-chevron-circle-left"></i> Prev</div>
-          <div class="next-prev-text">Linux command: cat</div>
+          <div class="next-prev-text">Search Results</div>
         </a>
       </div>
       
@@ -481,17 +404,13 @@
           
         
         <div class="col-md-6 next-article">
-          <a href="/posts/school/mobaxterm/" title="Mobaxterm" class="btn btn-outline-info">
+          <a href="/posts/school/inuiyeji/" title="Inuiyeji cluster" class="btn btn-outline-info">
             <div>Next <i class="fas fa-chevron-circle-right"></i></div>
-            <div class="next-prev-text">Mobaxterm</div>
+            <div class="next-prev-text">Inuiyeji cluster</div>
           </a>
         </div>
       
     
-  
-
-  
-
   
 
 </div>
@@ -518,7 +437,7 @@
     </a>
     <div class="dropdown-menu" aria-labelledby="languageSelector">
         
-        <a class="dropdown-item nav-link languages-item" href="/ko/posts/linux/commands">
+        <a class="dropdown-item nav-link languages-item" href="/ko/posts/linux/basics">
             
             <img class="flag" src="https://www.countryflags.io/ko/flat/24.png" alt="ko">
             한국어
@@ -540,20 +459,7 @@
       <div class="toc">
         <nav id="TableOfContents">
   <ul>
-    <li><a href="#basic-linux-commands">Basic Linux Commands</a>
-      <ul>
-        <li><a href="#information">Information</a></li>
-        <li><a href="#linux-filesystem">Linux filesystem</a></li>
-        <li><a href="#linux-package-manager">Linux package manager</a>
-          <ul>
-            <li><a href="#before-we-start">Before we start&hellip;</a></li>
-            <li><a href="#ubuntu">Ubuntu</a></li>
-          </ul>
-        </li>
-        <li><a href="#others">Others</a></li>
-      </ul>
-    </li>
-    <li><a href="#contributors">Contributors</a></li>
+    <li><a href="#인의예지를-이용한-기본적인-리눅스-사용해보기">인의예지를 이용한 기본적인 리눅스 사용해보기</a></li>
   </ul>
 </nav>
       </div>
