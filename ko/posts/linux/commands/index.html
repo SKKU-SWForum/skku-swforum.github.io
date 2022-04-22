@@ -214,6 +214,15 @@
   
   
     
+    <li><a class="" href="/ko/posts/linux/cp/" title="cp">cp</a></li>
+  
+
+  
+  
+  
+  
+  
+    
     <li><a class="" href="/ko/posts/linux/ls/" title="ls">ls</a></li>
   
 
@@ -342,11 +351,11 @@
 </thead>
 <tbody>
 <tr>
-<td>(&mdash;&mdash;-)</td>
+<td>[&mdash;&mdash;]</td>
 <td>입력하지 않아도 되는 부가 옵션</td>
 </tr>
 <tr>
-<td>[&mdash;&mdash;]</td>
+<td>(&mdash;&mdash;)</td>
 <td>command 실행에 필수적이거나 없으면 실행 전과 변화가 없는 옵션</td>
 </tr>
 <tr>
@@ -372,50 +381,50 @@
 </thead>
 <tbody>
 <tr>
-<td>ls (option) (directory)</td>
-<td style="text-align:left">directory 내 리눅스 파일 정보 탐색</td>
+<td>ls [OPTION] [DIRECTORY]</td>
+<td style="text-align:left">DIRECTORY 내 리눅스 파일 정보 탐색</td>
 <td>ls</td>
 <td><a href="https://man7.org/linux/man-pages/man1/ls.1.html">Link</a></td>
 <td><a href="https://skkuoverflow.com/ko/posts/linux/ls/">Link</a></td>
 </tr>
 <tr>
-<td>cd (directory)</td>
-<td style="text-align:left">directory 로 경로를 이동</td>
+<td>cd [DIRECTORY]</td>
+<td style="text-align:left">DIRECTORY 로 경로를 이동</td>
 <td>cd Test/</td>
 <td><a href="https://man7.org/linux/man-pages/man1/cd.1p.html">Link</a></td>
 <td><a href="https://skkuoverflow.com/ko/posts/linux/cd/">Link</a></td>
 </tr>
 <tr>
-<td>mkdir [name]</td>
-<td style="text-align:left">name을 이름으로 가진 directory 생성</td>
+<td>mkdir (NAME)</td>
+<td style="text-align:left">NAME을 이름으로 가진 DIRECTORY 생성</td>
 <td>mkdir Test</td>
 <td><a href="https://man7.org/linux/man-pages/man1/mkdir.1.html">Link</a></td>
 <td></td>
 </tr>
 <tr>
-<td>cp (option) [name1] [name2]</td>
-<td style="text-align:left">name1 파일/디렉토리를 name2 파일/디렉토리로 복사</td>
+<td>cp [OPTION] (NAME1) (NAME2)</td>
+<td style="text-align:left">NAME1 파일/디렉토리를 NAME2 파일/디렉토리로 복사</td>
 <td>cp test1 test2</td>
 <td><a href="https://man7.org/linux/man-pages/man1/cp.1.html">Link</a></td>
 <td></td>
 </tr>
 <tr>
-<td>mv (option) [name1] [name2]</td>
-<td style="text-align:left">name1 파일을 name2파일로 이동</td>
+<td>mv [OPTION] (NAME1) (NAME2)</td>
+<td style="text-align:left">NAME1 파일을 NAME2파일로 이동</td>
 <td>mv file1 Test/file2</td>
 <td><a href="https://man7.org/linux/man-pages/man1/mv.1.html">Link</a></td>
 <td></td>
 </tr>
 <tr>
-<td>rm (option) [name]</td>
-<td style="text-align:left">name 파일/디렉토리를 삭제</td>
+<td>rm [OPTION] (NAME)</td>
+<td style="text-align:left">NAME 파일/디렉토리를 삭제</td>
 <td>rm file1</td>
 <td><a href="https://man7.org/linux/man-pages/man1/rm.1.html">Link</a></td>
 <td><a href="https://skkuoverflow.com/ko/posts/linux/rm/">Link</a></td>
 </tr>
 <tr>
-<td>cat (option) (filename)</td>
-<td style="text-align:left">filename 내용을 출력</td>
+<td>cat [OPTION] [FILENAME]</td>
+<td style="text-align:left">FILENAME 내용을 출력</td>
 <td>cat file1</td>
 <td><a href="https://man7.org/linux/man-pages/man1/cat.1.html">Link</a></td>
 <td><a href="https://skkuoverflow.com/ko/posts/linux/cat/">Link</a></td>
@@ -455,14 +464,14 @@
 <td><strong>CAUTION!</strong></td>
 </tr>
 <tr>
-<td>apt install [package]</td>
-<td>package와 package가 요구하는 추가 package 설치</td>
+<td>apt install (PACKAGE)</td>
+<td>PACKAGE와 PACKAGE가 요구하는 추가 PACKAGE 설치</td>
 <td>sudo apt install gcc</td>
 <td>Caution</td>
 </tr>
 <tr>
-<td>apt-cache policy [package]</td>
-<td>package와 package에 대한 정보 탐색</td>
+<td>apt-cache policy (PACKAGE)</td>
+<td>PACKAGE와 PACKAGE에 대한 정보 탐색</td>
 <td>apt-cache policy gcc</td>
 <td></td>
 </tr>
@@ -481,8 +490,8 @@
 </thead>
 <tbody>
 <tr>
-<td>man [command]</td>
-<td>command의 역할, 활용법, 옵션 등 매뉴얼을 출력해줍니다. RTFM!</td>
+<td>man (CMD)</td>
+<td>CMD 역할, 활용법, 옵션 등 매뉴얼을 출력해줍니다. RTFM!!</td>
 <td>man cat</td>
 </tr>
 </tbody>
@@ -500,6 +509,10 @@
 <tr>
 <td>raven724</td>
 <td>Create file, write information, Linux filesystem, Linux package manager</td>
+</tr>
+<tr>
+<td>daniel2231</td>
+<td>Update hero files, translate to English</td>
 </tr>
 </tbody>
 </table>
@@ -552,6 +565,8 @@
         </div>
       
     
+  
+
   
 
   
