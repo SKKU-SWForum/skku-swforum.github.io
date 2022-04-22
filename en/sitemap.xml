@@ -137,6 +137,18 @@
   </url><url>
     <loc>https://skkuoverflow.com/notes/</loc>
   </url><url>
+    <loc>https://skkuoverflow.com/posts/notice/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://skkuoverflow.com/ko/posts/notice/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://skkuoverflow.com/posts/notice/"
+                />
+  </url><url>
     <loc>https://skkuoverflow.com/search/</loc>
     <priority>0.1</priority>
   </url><url>
