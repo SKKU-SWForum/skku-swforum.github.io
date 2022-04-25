@@ -119,6 +119,19 @@ ssh -p 1398 (학번)@swji.skku.edu  ssh는 리눅스 클러스터 서버에 접�
     </item>
     
     <item>
+      <title>리눅스 명령어: mkdir</title>
+      <link>https://skkuoverflow.com/ko/posts/linux/mkdir/</link>
+      <pubDate>Thu, 29 Apr 2021 00:07:30 +0900</pubDate>
+      
+      <guid>https://skkuoverflow.com/ko/posts/linux/mkdir/</guid>
+      <description>mkdir make directories
+  용도 새로운 디렉토리를 생성하는데 활용한다.
+  명령어 포맷 mkdir [OPTION] (DIRECTORY NAME)
+  옵션   예시   mkdir (DIRECTORY NAME)
+   </description>
+    </item>
+    
+    <item>
       <title>리눅스 명령어: rm</title>
       <link>https://skkuoverflow.com/ko/posts/linux/rm/</link>
       <pubDate>Thu, 29 Apr 2021 00:07:30 +0900</pubDate>
