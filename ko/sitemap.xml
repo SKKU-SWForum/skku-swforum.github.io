@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://skkuoverflow.com/ko/posts/</loc>
-    <lastmod>2022-04-22T22:49:30+09:00</lastmod>
+    <lastmod>2022-06-30T22:07:30+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -14,6 +14,35 @@
                 hreflang="ko"
                 href="https://skkuoverflow.com/ko/posts/"
                 />
+  </url><url>
+    <loc>https://skkuoverflow.com/ko/</loc>
+    <lastmod>2022-06-30T22:07:30+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://skkuoverflow.com/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://skkuoverflow.com/ko/"
+                />
+  </url><url>
+    <loc>https://skkuoverflow.com/ko/posts/school/</loc>
+    <lastmod>2022-06-30T22:07:30+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://skkuoverflow.com/posts/school/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://skkuoverflow.com/ko/posts/school/"
+                />
+  </url><url>
+    <loc>https://skkuoverflow.com/ko/posts/school/schedule/</loc>
+    <lastmod>2022-06-30T22:07:30+09:00</lastmod>
   </url><url>
     <loc>https://skkuoverflow.com/ko/posts/linux/</loc>
     <lastmod>2022-04-22T22:49:30+09:00</lastmod>
@@ -30,19 +59,6 @@
   </url><url>
     <loc>https://skkuoverflow.com/ko/posts/linux/cp/</loc>
     <lastmod>2022-04-22T22:49:30+09:00</lastmod>
-  </url><url>
-    <loc>https://skkuoverflow.com/ko/</loc>
-    <lastmod>2022-04-22T22:49:30+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://skkuoverflow.com/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://skkuoverflow.com/ko/"
-                />
   </url><url>
     <loc>https://skkuoverflow.com/ko/posts/notice/</loc>
     <lastmod>2022-04-22T18:29:00+09:00</lastmod>
@@ -72,22 +88,6 @@
                 hreflang="ko"
                 href="https://skkuoverflow.com/ko/posts/linux/basics/"
                 />
-  </url><url>
-    <loc>https://skkuoverflow.com/ko/posts/school/</loc>
-    <lastmod>2021-06-30T22:07:30+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://skkuoverflow.com/posts/school/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://skkuoverflow.com/ko/posts/school/"
-                />
-  </url><url>
-    <loc>https://skkuoverflow.com/ko/posts/school/schedule/</loc>
-    <lastmod>2021-06-30T22:07:30+09:00</lastmod>
   </url><url>
     <loc>https://skkuoverflow.com/ko/posts/school/academicfaq/</loc>
     <lastmod>2021-05-25T11:11:30+09:00</lastmod>
