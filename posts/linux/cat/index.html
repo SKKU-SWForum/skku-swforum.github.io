@@ -2,43 +2,53 @@
 <html>
   <head>
     <title>Linux command: cat</title>
-    
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-<meta charset="UTF-8" />
+    <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
 
 <link rel="stylesheet" href="/css/bootstrap.min.css"/>
 <link rel="stylesheet" href="/css/layouts/main.css"/>
-<link rel="stylesheet" href="/css/style.css"/>
 <link rel="stylesheet" href="/css/navigators/navbar.css"/>
 <link rel="stylesheet" href="/css/plyr.css"/>
 <link rel="stylesheet" href="/css/flag-icon.min.css"/>
 
 
-<link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600">
 
 
-<link rel="icon" type="image/png" href="/images/site/main-logo_huf3f7cc9a3a663f6791b5b747e9ab4762_9984_42x0_resize_box_2.png" />
+<link rel="stylesheet" href="/fontawesome/css/all.min.css"/>
 
 
-<link rel="stylesheet" href="/css/style.css"/>
 
+
+
+
+
+  
+
+  
+  
+  
+    
+  
+  
+
+  <link rel="icon" type="image/png" href="/images/site/main-logo_huf3f7cc9a3a663f6791b5b747e9ab4762_9984_42x0_resize_box_3.png" />
+
+<meta property="og:title" content="Linux command: cat" />
+<meta property="og:description" content="cat concatenate files and print on the standard output
+Usage Used to verify the contents of a file.
+Options Useful options Usage -A The same results as -vET. -v Prints strings that are not originally printed separately in the form of ^ and M-. -E Prints $ at the end of each line. -T Prints TAB in the form of ^l. Examples cat
+cat -A" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://skkuoverflow.com/posts/linux/cat/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-04-29T00:07:30+09:00" />
+<meta property="article:modified_time" content="2021-04-29T00:07:30+09:00" /><meta property="og:site_name" content="SKKU Software forum" />
+
+
+
+    
     
 <meta name="description" content="Linux command: cat" />
 <link
@@ -48,10 +58,16 @@
 <link rel="stylesheet" href="/css/layouts/single.css"/>
 <link rel="stylesheet" href="/css/navigators/sidebar.css">
 
+<link rel="stylesheet" href="/css/style.css"/>
+
+
 
     
-    
-  </head>
+
+
+
+
+</head>
 
   <body data-spy="scroll" data-target="#TableOfContents" data-offset="80">
     <div class="container-fluid bg-dimmed wrapper">
@@ -66,21 +82,24 @@
   
 
 
-
   
 
 
 
 
-
+  
+  
+    
+  
   
 
 
 
-
-
   
-
+  
+    
+  
+  
 
 
 <nav class="navbar navbar-expand-xl top-navbar final-navbar shadow">
@@ -89,7 +108,9 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <a class="navbar-brand" href="/">
-      <img src="/images/site/main-logo_huf3f7cc9a3a663f6791b5b747e9ab4762_9984_42x0_resize_box_2.png" alt="Logo">SKKU Software forum</a>
+      
+        <img src="/images/site/main-logo_huf3f7cc9a3a663f6791b5b747e9ab4762_9984_42x0_resize_box_3.png" alt="Logo">
+      SKKU Software forum</a>
     <button class="navbar-toggler navbar-light" id="toc-toggler" type="button" onclick="toggleTOC()">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -105,26 +126,36 @@
 <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" href="#" id="languageSelector" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       
-      <span class="flag-icon flag-icon-gb"></span>
+        
+        <span class="flag-icon flag-icon-gb"></span>
+      
       English
     </a>
     <div class="dropdown-menu" aria-labelledby="languageSelector">
       
         <a class="dropdown-item nav-link languages-item" href="/ko/posts/linux/cat">
           
-          <span class="flag-icon flag-icon-ko"></span>
+            
+            <span class="flag-icon flag-icon-ko"></span>
+          
           한국어
         </a>
       
     </div>
 </li>
+
+      
       
       </ul>
     </div>
   </div>
   
-  <img src="/images/site/main-logo_huf3f7cc9a3a663f6791b5b747e9ab4762_9984_42x0_resize_box_2.png" class="d-none" id="main-logo" alt="Logo">
-  <img src="/images/site/main-logo_huf3f7cc9a3a663f6791b5b747e9ab4762_9984_42x0_resize_box_2.png" class="d-none" id="inverted-logo" alt="Inverted Logo">
+  
+    <img src="/images/site/main-logo_huf3f7cc9a3a663f6791b5b747e9ab4762_9984_42x0_resize_box_3.png" class="d-none" id="main-logo" alt="Logo">
+  
+  
+    <img src="/images/site/main-logo_huf3f7cc9a3a663f6791b5b747e9ab4762_9984_42x0_resize_box_3.png" class="d-none" id="inverted-logo" alt="Inverted Logo">
+  
 </nav>
 
 
@@ -134,7 +165,7 @@
   <section class="sidebar-section" id="sidebar-section">
     <div class="sidebar-holder">
       <div class="sidebar" id="sidebar">
-        <form class="mx-auto" method="get" action="https://skkuoverflow.com/search">
+        <form class="mx-auto" method="get" action="/search">
           <input type="text" name="keyword" value="" placeholder="Search" data-search="" id="search-box" />
         </form>
         <div class="sidebar-tree">
@@ -249,21 +280,21 @@
   <div class="content">
     <div class="container p-0 read-area">
       
-      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url(https://skkuoverflow.com/posts/linux/cat/images/cat-hero.png);'>
+      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url(/posts/linux/cat/images/cat-hero.png);'>
       </div>
 
       
       <div class="page-content">
         <div class="author-profile ml-auto align-self-lg-center">
-          <img class="rounded-circle" src='/images/default-avatar.png' alt="Author Image">
+          <img class="rounded-circle" src='/images/default-avatar_hu9bf48a08e17db6472c2e32b73058a6bb_47653_120x120_fit_box_3.png' alt="Author Image">
           <h5 class="author-name"></h5>
-          <p>April 29, 2021</p>
+          <p>Thursday, April 29, 2021</p>
         </div>
 
         <div class="title">
           <h1>Linux command: cat</h1>
         </div>
-
+        
         <div class="post-content" id="post-content">
           <h1 id="cat">cat</h1>
 <p>concatenate files and print on the standard output</p>
@@ -307,12 +338,12 @@
 <li>
 <p><em>cat</em></p>
 <img src="images/cat.png"
-    
-    
-    
-    
-    
->
+          
+          
+          
+          
+          
+      >
 
 </li>
 </ul>
@@ -321,12 +352,12 @@
 <li>
 <p><em>cat -A</em></p>
 <img src="images/cata.png"
-    
-    
-    
-    
-    
->
+         
+         
+         
+         
+         
+     >
 
 </li>
 </ul>
@@ -334,64 +365,99 @@
         </div>
 
         
+        <div class="row pl-3 pr-3">
         
-          <div class="btn-improve-page">
-              <a href="https://github.com/SKKU-SWForum/School_FAQs/edit/main/content/posts/linux/cat/index.en.md" title="Improve this page" target="_blank" rel="noopener">
+        <div class="col-md-6 share-buttons">
+        
+          </div>
+
+        
+        
+          
+            
+          
+          <div class="col-md-6 btn-improve-page">
+             
+               <a href="https://github.com/SKKU-SWForum/School_FAQs/edit/main/content/posts/linux/cat/index.en.md" title="Improve this page" target="_blank" rel="noopener">
+            
                 <i class="fas fa-code-branch"></i>
                 Improve this page
               </a>
           </div>
         
+        </div>
 
-        
+
+
+      
       <hr />
-        <div class="row next-prev-navigator">
+        
+
+
+
+
+
 
 
   
 
+
+
+
+
+  
   
 
   
     
+    
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+
+<div class="row next-prev-navigator">
+  
+    <div class="col-md-6 previous-article">
+      <a href="/posts/linux/basics/" title="인의예지를 이용한 기본적인 리눅스 사용해보기" class="btn btn-outline-info">
+        <div><i class="fas fa-chevron-circle-left"></i> Prev</div>
+        <div class="next-prev-text">인의예지를 이용한 기본적인 리눅스 사용해보기</div>
+      </a>
+    </div>
+  
+  
       
-      <div class="col-md-6 previous-article">
-        <a href="/posts/school/inuiyeji/" title="Inuiyeji cluster" class="btn btn-outline-info">
-          <div><i class="fas fa-chevron-circle-left"></i> Prev</div>
-          <div class="next-prev-text">Inuiyeji cluster</div>
+      
+        
+      
+      <div class="col-md-6 next-article">
+        <a href="/posts/linux/commands/" title="List of Linux commands" class="btn btn-outline-info">
+          <div>Next <i class="fas fa-chevron-circle-right"></i></div>
+          <div class="next-prev-text">List of Linux commands</div>
         </a>
       </div>
-      
     
-    
-      
-        
-        
-          
-              
-          
-        
-        <div class="col-md-6 next-article">
-          <a href="/posts/linux/commands/" title="List of Linux commands" class="btn btn-outline-info">
-            <div>Next <i class="fas fa-chevron-circle-right"></i></div>
-            <div class="next-prev-text">List of Linux commands</div>
-          </a>
-        </div>
-      
-    
-  
-
-  
-
-  
-
-  
-
 </div>
 
       <hr />
+
       
       
+
+      
+      
+
       </div>
     </div>
   </div>
@@ -406,19 +472,24 @@
 <div class="dropdown languageSelector">
     <a class="btn dropdown-toggle" href="#" id="languageSelector" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         
-        <img class="flag" src="https://www.countryflags.io/gb/flat/16.png" alt="gb">
+            
+            <span class="flag-icon flag-icon-gb"></span>
+        
         English
     </a>
     <div class="dropdown-menu" aria-labelledby="languageSelector">
         
         <a class="dropdown-item nav-link languages-item" href="/ko/posts/linux/cat">
             
-            <img class="flag" src="https://www.countryflags.io/ko/flat/24.png" alt="ko">
+                
+                <span class="flag-icon flag-icon-ko"></span>
+            
             한국어
         </a>
         
     </div>
 </div>
+
   
 </section>
 
@@ -450,11 +521,7 @@
     </div>
 
     
-
-
-
-
-
+    
 
 
 
@@ -466,47 +533,83 @@
 
 
   
+      
+  
 
 
 
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
 
 
+  
+  
+  
 
+  
+  
+  
 
-<footer class="container-fluid text-center align-content-center footer pb-2">
-  <div class="container pt-5">
-    <div class="row text-left">
-      <div class="col-md-4 col-sm-12">
-        <h5>Navigation</h5>
+  
+  
+  
+    
+  
+  
+
+  
+  
+  
+
+  <footer id="footer" class="container-fluid text-center align-content-center footer pb-2">
+    <div class="container pt-5">
+      <div class="row text-left">
         
+        <div class="col-md-4 col-sm-12">
+          <h5>Navigation</h5>
+          
+        </div>
+        
+        
+        
+        
+      </div>
+    </div>
+    
+    
+    <hr />
+    <div class="container">
+      <div class="row text-left">
+        <div class="col-md-4">
+          <a id="theme" href="https://github.com/hossainemruz/toha" target="_blank" rel="noopener">
+            <img src="/images/theme-logo_hu8376fd15465fef26ffe66b6bcf0ca686_13669_32x0_resize_box_3.png" alt="Toha Theme Logo">
+            Toha
+          </a>
+        </div>
+        <div class="col-md-4 text-center">© 2022 Copyright.</div>
+        <div class="col-md-4 text-right">
+          <a id="hugo" href="https://gohugo.io/" target="_blank" rel="noopener">Powered by
+          <img
+            src="/images/hugo-logo.svg"
+            alt="Hugo Logo"
+            height="18"
+          />
+          </a>
+        </div>
+      </div>
+    </div>
+    
+  </footer>
 
-      </div>
-      
-      
-    </div>
-  </div>
-  <hr />
-  <div class="container">
-    <div class="row text-left">
-      <div class="col-md-4">
-        <a id="theme" href="https://github.com/hossainemruz/toha" target="_blank" rel="noopener">
-          <img src="/images/theme-logo_hu8376fd15465fef26ffe66b6bcf0ca686_13669_32x0_resize_box_2.png" alt="Toha Theme Logo">
-          Toha
-        </a>
-      </div>
-      <div class="col-md-4 text-center">© 2020 Copyright.</div>
-      <div class="col-md-4 text-right">
-        <a id="hugo" href="https://gohugo.io/" target="_blank" rel="noopener">Powered by
-        <img
-          src="/images/hugo-logo.svg"
-          alt="Hugo Logo"
-          height="18"
-        />
-        </a>
-      </div>
-    </div>
-  </div>
-</footer>
 
     <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="/js/popper.min.js"></script>
@@ -515,6 +618,7 @@
 <script type="text/javascript" src="/js/navbar.js"></script>
 <script type="text/javascript" src="/js/plyr.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
+
 
 
     
@@ -526,5 +630,13 @@
 </script>
 
 
-  </body>
+
+
+
+
+
+
+
+    
+</body>
 </html>

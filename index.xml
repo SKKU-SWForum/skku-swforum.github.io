@@ -5,29 +5,15 @@
     <link>https://skkuoverflow.com/</link>
     <description>Recent content on SKKU Software forum</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 16 Oct 2021 16:30:00 +0900</lastBuildDate><atom:link href="https://skkuoverflow.com/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Search Results</title>
-      <link>https://skkuoverflow.com/search/</link>
-      <pubDate>Tue, 08 Jun 2010 08:06:25 +0600</pubDate>
-      
-      <guid>https://skkuoverflow.com/search/</guid>
-      <description>This file exists solely to respond to /search URL with the related search layout template.
-No content shown here is rendered, all content is based in the template layouts/page/search.html
-Setting a very low sitemap priority will tell search engines this is not important content.
-This implementation uses Fusejs, jquery and mark.js
-Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&amp;ldquo;HTML&amp;rdquo;, &amp;ldquo;JSON&amp;rdquo;] ```</description>
-    </item>
-    
-    <item>
+    <lastBuildDate>Sat, 16 Oct 2021 16:30:00 +0900</lastBuildDate><atom:link href="https://skkuoverflow.com/index.xml" rel="self" type="application/rss+xml" /><item>
       <title>인의예지를 이용한 기본적인 리눅스 사용해보기</title>
       <link>https://skkuoverflow.com/posts/linux/basics/</link>
       <pubDate>Sat, 16 Oct 2021 16:30:00 +0900</pubDate>
       
       <guid>https://skkuoverflow.com/posts/linux/basics/</guid>
-      <description>인의예지를 이용한 기본적인 리눅스 사용해보기 인의예지란?  인의예지는 학교에서 제공하는 리눅스 클러스터 서버입니다. 인의예지에 대한 자세한 설명은 여기를 참고하세요!  인의예지에 접속해보기   가장 편한 방법은 역시 GUI죠! Windows 환경이시면 MobaXterm이 좋은 선택지가 될 거 같네요. 설명은 여기를 참고하세요!
-  GUI를 쓰기 어려운 환경이신가요? 그러면 다음 명령어로 접속을 해봅시다.
-ssh -p 1398 (학번)@swji.skku.edu  ssh는 리눅스 클러스터 서버에 접속하기 위해 사용되는 인터넷 프로토콜이자 명령어입니다. -p 는 옵션으로 ssh 서버에 접속할 때 어느 포트에 접속할 것인지를 특정지어 줍니다.</description>
+      <description>인의예지를 이용한 기본적인 리눅스 사용해보기 인의예지란? 인의예지는 학교에서 제공하는 리눅스 클러스터 서버입니다. 인의예지에 대한 자세한 설명은 여기를 참고하세요! 인의예지에 접속해보기 가장 편한 방법은 역시 GUI죠! Windows 환경이시면 MobaXterm이 좋은 선택지가 될 거 같네요. 설명은 여기를 참고하세요!
+GUI를 쓰기 어려운 환경이신가요? 그러면 다음 명령어로 접속을 해봅시다.
+ssh -p 1398 (학번)@swji.skku.edu ssh는 리눅스 클러스터 서버에 접속하기 위해 사용되는 인터넷 프로토콜이자 명령어입니다. -p 는 옵션으로 ssh 서버에 접속할 때 어느 포트에 접속할 것인지를 특정지어 줍니다.</description>
     </item>
     
     <item>
@@ -51,8 +37,9 @@ Hosts:
       
       <guid>https://skkuoverflow.com/posts/linux/cat/</guid>
       <description>cat concatenate files and print on the standard output
-  Usage Used to verify the contents of a file.
-  Options    Useful options Usage     -A The same results as -vET.   -v Prints strings that are not originally printed separately in the form of ^ and M-.   -E Prints $ at the end of each line.   -T Prints TAB in the form of ^l.</description>
+Usage Used to verify the contents of a file.
+Options Useful options Usage -A The same results as -vET. -v Prints strings that are not originally printed separately in the form of ^ and M-. -E Prints $ at the end of each line. -T Prints TAB in the form of ^l. Examples cat
+cat -A</description>
     </item>
     
     <item>
@@ -61,7 +48,7 @@ Hosts:
       <pubDate>Thu, 29 Apr 2021 00:07:30 +0900</pubDate>
       
       <guid>https://skkuoverflow.com/posts/linux/commands/</guid>
-      <description>Basic Linux Commands   Information  Commands that are applicable to both files and directories typically require additional options when attempting to apply to directories. Please check the options before you apply them. Please refer to the table below for other notations.    Notation Meaning     (&amp;mdash;&amp;mdash;-) Additional Options (Not required)   [&amp;mdash;&amp;mdash;] Required Options   usage Links to more detailed explanations        Linux filesystem    Command Description Example Man page Usage     ls (option) (directory) View the contents of (directory) ls Link Link   cd (directory) Navigate through (directory) cd Test/ Link Link   mkdir [name] Make a new directory with the name [name] mkdir Test Link    cp (option) [name1] [name2] Copy name1 files/directories to name2 files/directories cp test1 test2 Link    mv (option) [name1] [name2] Move name1 file to name2 file mv file1 Test/file2 Link    rm (option) [name] Delete files/directories called [name] rm file1 Link Link   cat (option) (filename) List [filename] contents cat file1 Link Link      Linux package manager Before we start&amp;hellip;  Commands with the CAUTION!</description>
+      <description>Basic Linux Commands Information Commands that are applicable to both files and directories typically require additional options when attempting to apply to directories. Please check the options before you apply them. Please refer to the table below for other notations. Notation Meaning (&amp;mdash;&amp;mdash;-) Additional Options (Not required) [&amp;mdash;&amp;mdash;] Required Options usage Links to more detailed explanations Linux filesystem Command Description Example Man page Usage ls (option) (directory) View the contents of (directory) ls Link Link cd (directory) Navigate through (directory) cd Test/ Link Link mkdir [name] Make a new directory with the name [name] mkdir Test Link cp (option) [name1] [name2] Copy name1 files/directories to name2 files/directories cp test1 test2 Link mv (option) [name1] [name2] Move name1 file to name2 file mv file1 Test/file2 Link rm (option) [name] Delete files/directories called [name] rm file1 Link Link cat (option) (filename) List [filename] contents cat file1 Link Link Linux package manager Before we start&amp;hellip; Commands with the CAUTION!</description>
     </item>
     
     <item>
@@ -71,21 +58,33 @@ Hosts:
       
       <guid>https://skkuoverflow.com/posts/school/mobaxterm/</guid>
       <description>How to use Mobaxterm Mobaxterm is a program that supports running remote programs such as ssh, sftp, and X11 forwarding. Mobaxterm has a free and paid version, but the free version is more than enough. Here&amp;rsquo;s how to install:
- Go to https://mobaxterm.mobatek.net/ to download and install the installer. Open the program. Press &amp;lsquo;session&amp;rsquo; at the top left. Press the leftmost &amp;lsquo;ssh&amp;rsquo; and set it up.   remote host: (Example) swji.</description>
+Go to https://mobaxterm.mobatek.net/ to download and install the installer. Open the program. Press &amp;lsquo;session&amp;rsquo; at the top left. Press the leftmost &amp;lsquo;ssh&amp;rsquo; and set it up. remote host: (Example) swji.skku.edu Port: (Example) 1398 Press OK and double-click the session created on the left to connect ssh.</description>
     </item>
     
-    <item>
-      <title>Search Results</title>
-      <link>https://skkuoverflow.com/search/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://skkuoverflow.com/search/</guid>
-      <description>This file exists solely to respond to /search URL with the related search layout template.
-No content shown here is rendered, all content is based in the template layouts/page/search.html
-Setting a very low sitemap priority will tell search engines this is not important content.
-This implementation uses Fusejs, jquery and mark.js
-Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&amp;ldquo;HTML&amp;rdquo;, &amp;ldquo;JSON&amp;rdquo;] ```</description>
-    </item>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
   </channel>
 </rss>

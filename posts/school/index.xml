@@ -5,8 +5,7 @@
     <link>https://skkuoverflow.com/posts/school/</link>
     <description>Recent content in School on SKKU Software forum</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 29 Apr 2021 00:07:30 +0900</lastBuildDate><atom:link href="https://skkuoverflow.com/posts/school/index.xml" rel="self" type="application/rss+xml" />
-    <item>
+    <lastBuildDate>Thu, 29 Apr 2021 00:07:30 +0900</lastBuildDate><atom:link href="https://skkuoverflow.com/posts/school/index.xml" rel="self" type="application/rss+xml" /><item>
       <title>Inuiyeji cluster</title>
       <link>https://skkuoverflow.com/posts/school/inuiyeji/</link>
       <pubDate>Thu, 29 Apr 2021 00:07:30 +0900</pubDate>
@@ -27,8 +26,9 @@ Hosts:
       
       <guid>https://skkuoverflow.com/posts/school/mobaxterm/</guid>
       <description>How to use Mobaxterm Mobaxterm is a program that supports running remote programs such as ssh, sftp, and X11 forwarding. Mobaxterm has a free and paid version, but the free version is more than enough. Here&amp;rsquo;s how to install:
- Go to https://mobaxterm.mobatek.net/ to download and install the installer. Open the program. Press &amp;lsquo;session&amp;rsquo; at the top left. Press the leftmost &amp;lsquo;ssh&amp;rsquo; and set it up.   remote host: (Example) swji.</description>
+Go to https://mobaxterm.mobatek.net/ to download and install the installer. Open the program. Press &amp;lsquo;session&amp;rsquo; at the top left. Press the leftmost &amp;lsquo;ssh&amp;rsquo; and set it up. remote host: (Example) swji.skku.edu Port: (Example) 1398 Press OK and double-click the session created on the left to connect ssh.</description>
     </item>
+    
     
   </channel>
 </rss>

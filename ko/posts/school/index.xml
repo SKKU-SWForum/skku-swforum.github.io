@@ -5,15 +5,14 @@
     <link>https://skkuoverflow.com/ko/posts/school/</link>
     <description>Recent content in 학교 on 성균관대학교 소프트웨어 포럼</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 30 Jun 2022 22:07:30 +0900</lastBuildDate><atom:link href="https://skkuoverflow.com/ko/posts/school/index.xml" rel="self" type="application/rss+xml" />
-    <item>
+    <lastBuildDate>Thu, 30 Jun 2022 22:07:30 +0900</lastBuildDate><atom:link href="https://skkuoverflow.com/ko/posts/school/index.xml" rel="self" type="application/rss+xml" /><item>
       <title>학사일정</title>
       <link>https://skkuoverflow.com/ko/posts/school/schedule/</link>
       <pubDate>Thu, 30 Jun 2022 22:07:30 +0900</pubDate>
       
       <guid>https://skkuoverflow.com/ko/posts/school/schedule/</guid>
       <description>학사일정 구글 캘린더를 통해서 공개되는 학사 일정은 학생회 발표 + 학교 공식 학사 일정을 기준으로 작성됩니다. 일정이 수작업으로 변경되고 있기 때문에 오류가 있거나 수정 사항이 반영이 되지 않을 수 있습니다. 정확한 일정은 학교/학생회 공지를 참고해주시기 바랍니다! 주기적으로 일정 확인, 추가 등의 기여가 가능한 분은 issue를 통해서 알려주시면 권한을 추가드리겠습니다.
- 캘린더 추가하기 아래 iCal 공개 주소를 통해서 캘린더를 추가할 수 있습니다. https://calendar.google.com/calendar/ical/u0pobd4ls20l4okh66g1gb8jjg%40group.calendar.google.com/public/basic.ics 구글 캘린더의 경우 캘린더 추가 -&amp;gt; url로 추가 -&amp;gt; 입력창에 위 주소를 입력한 이후 캘린더를 추가하면 추가가 완료됩니다.</description>
+캘린더 추가하기 아래 iCal 공개 주소를 통해서 캘린더를 추가할 수 있습니다. https://calendar.google.com/calendar/ical/u0pobd4ls20l4okh66g1gb8jjg%40group.calendar.google.com/public/basic.ics 구글 캘린더의 경우 캘린더 추가 -&amp;gt; url로 추가 -&amp;gt; 입력창에 위 주소를 입력한 이후 캘린더를 추가하면 추가가 완료됩니다.</description>
     </item>
     
     <item>
@@ -22,9 +21,9 @@
       <pubDate>Tue, 25 May 2021 11:11:30 +0900</pubDate>
       
       <guid>https://skkuoverflow.com/ko/posts/school/academicfaq/</guid>
-      <description>학사 FAQ  학사 관련해서 질문할 수 있는 방법
- 학교 학사바로센터에 전화한다. (1811-8585, 평일 09:00~12:00, 13:00~17:00) 킹고봇을 활용한다. (카카오톡 플러스친구 &amp;lsquo;킹고&amp;rsquo; 추가 or 학교 포털의 킹고 봇 이용하기.)    졸업 유예 제도가 있는지, 있다면 어디서 확인 가능한지 궁금합니다. (학사운영팀)
- 졸업 유예제도가 따로 있지는 않습니다. 아래 내용 참고하여 주시기 바랍니다.    학위 취득을 위해서는 의무등록학기 충족, 졸업이수학점 충족, 졸업기준 성적(평점평균) 충족, 3품인증 취득, 졸업평가 합격, 기타(교직 이수(대상자), 공학인증 이수(대상자)) 등 소정의 모든 요건을 갖추어야 합니다.</description>
+      <description>학사 FAQ 학사 관련해서 질문할 수 있는 방법
+학교 학사바로센터에 전화한다. (1811-8585, 평일 09:00~12:00, 13:00~17:00) 킹고봇을 활용한다. (카카오톡 플러스친구 &amp;lsquo;킹고&amp;rsquo; 추가 or 학교 포털의 킹고 봇 이용하기.) 졸업 유예 제도가 있는지, 있다면 어디서 확인 가능한지 궁금합니다. (학사운영팀)
+졸업 유예제도가 따로 있지는 않습니다. 아래 내용 참고하여 주시기 바랍니다. 학위 취득을 위해서는 의무등록학기 충족, 졸업이수학점 충족, 졸업기준 성적(평점평균) 충족, 3품인증 취득, 졸업평가 합격, 기타(교직 이수(대상자), 공학인증 이수(대상자)) 등 소정의 모든 요건을 갖추어야 합니다.</description>
     </item>
     
     <item>
@@ -34,7 +33,7 @@
       
       <guid>https://skkuoverflow.com/ko/posts/school/mobaxterm/</guid>
       <description>Mobaxterm 사용법 Mobaxterm은 ssh, sftp, X11 forwarding 등 원격 프로그램 실행, 명령어 사용 등을 지원하는 프로그램입니다. 무료 버전과 유료 버전이 있지만, 무료 버전만으로도 충분히 활용할 수 있습니다. 다음은 설치 방법입니다.
- https://mobaxterm.mobatek.net/ 에 접속해서 설치 프로그램을 다운로드받고 설치합니다. 프로그램을 켭니다. 좌측 상단의 세션을 누릅니다. 맨 왼쪽 ssh를 누르고 설정을 합니다. remote host: (예시) swji.skku.edu Port: (예시) 1398 OK를 누르고 좌측에 생성된 세션을 더블클릭하면 ssh가 연결됩니다.  </description>
+https://mobaxterm.mobatek.net/ 에 접속해서 설치 프로그램을 다운로드받고 설치합니다. 프로그램을 켭니다. 좌측 상단의 세션을 누릅니다. 맨 왼쪽 ssh를 누르고 설정을 합니다. remote host: (예시) swji.skku.edu Port: (예시) 1398 OK를 누르고 좌측에 생성된 세션을 더블클릭하면 ssh가 연결됩니다. </description>
     </item>
     
     <item>
@@ -44,11 +43,13 @@
       
       <guid>https://skkuoverflow.com/ko/posts/school/vscode/</guid>
       <description>VSCode - Remote SSH 연동 Visual Studio Code(이하 VSCode)는 다양한 플러그인을 활용할 수 있는 강력한 텍스트 에디터입니다. Mobaxterm을 대체하여 VSCode를 인의예지 서버와 연동하여 다양한 기능을 활용할 수 있습니다.
-설치 방법   VSCode가 설치되지 않은 경우, 여기를 클릭하여 VSCode를 설치합니다.
-  VSCode를 켜고 아이콘을 클릭합니다.
-  새로 열린 창에서 Remote - SSH를 검색하고 나오는 플러그인을 설치합니다.
-  왼쪽 상단 아이콘을 클릭합니다.
-  위의 Remote Explorer가 SSH Target인지 확인합니다.</description>
+설치 방법 VSCode가 설치되지 않은 경우, 여기를 클릭하여 VSCode를 설치합니다.
+VSCode를 켜고 아이콘을 클릭합니다.
+새로 열린 창에서 Remote - SSH를 검색하고 나오는 플러그인을 설치합니다.
+왼쪽 상단 아이콘을 클릭합니다.
+위의 Remote Explorer가 SSH Target인지 확인합니다.
+SSH TARGETS 옆에 있는 + 버튼을 클릭합니다.
+중앙 상단에 SSH Connection Command를 입력하라는 창이 뜹니다.</description>
     </item>
     
     <item>
@@ -58,9 +59,10 @@
       
       <guid>https://skkuoverflow.com/ko/posts/school/inuiyeji/</guid>
       <description>인의예지 클러스터 인의예지 클러스터가 뭔가요? 인의예지 클러스터는 성균관대 소프트웨어대학 학생들 + 복수전공 학생들을 위해서 만들어진 리눅스 클러스터 서버입니다. 접속할 수 있는 Host 목록은 다음과 같습니다.
- 인 : swin.skku.edu 의 : swui.skku.edu 예 : swye.skku.edu 지 : swji.skku.edu  원래는 모든 서버가 파일을 공유했으나, 모종의 사건으로 인해 현재는 인 서버가 독립되어 있고, 의, 예, 지 서버가 nfs로 묶여있습니다. 자세한 내용은 학과 공지를 참고해주세요!
-접속 가이드    항목 값 비고     포트 1398 성균관 설립 연도   ID 본인 학번 총 10자리 숫자   PW 성 (Last Name) 모든 글자를 영어 대문자로 입력, 실패시 pw(학번 뒷자리 8자리)로 시도    예시) 학번이 2020123456 일 경우 ssh -p 1398 2020123456@swji.</description>
+인 : swin.skku.edu 의 : swui.skku.edu 예 : swye.skku.edu 지 : swji.skku.edu 원래는 모든 서버가 파일을 공유했으나, 모종의 사건으로 인해 현재는 인 서버가 독립되어 있고, 의, 예, 지 서버가 nfs로 묶여있습니다. 자세한 내용은 학과 공지를 참고해주세요!
+접속 가이드 항목 값 비고 포트 1398 성균관 설립 연도 ID 본인 학번 총 10자리 숫자 PW 성 (Last Name) 모든 글자를 영어 대문자로 입력, 실패시 pw(학번 뒷자리 8자리)로 시도 예시) 학번이 2020123456 일 경우 ssh -p 1398 2020123456@swji.</description>
     </item>
+    
     
   </channel>
 </rss>

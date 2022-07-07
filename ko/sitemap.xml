@@ -2,6 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://skkuoverflow.com/ko/search/</loc>
+    <lastmod>2010-06-08T08:06:25+06:00</lastmod>
+    <priority>0.1</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://skkuoverflow.com/search/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://skkuoverflow.com/ko/search/"
+                />
+  </url><url>
+    <loc>https://skkuoverflow.com/ko/search/</loc>
+    <lastmod>2010-06-08T08:06:25+06:00</lastmod>
+    <priority>0.1</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://skkuoverflow.com/search/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://skkuoverflow.com/ko/search/"
+                />
+  </url><url>
     <loc>https://skkuoverflow.com/ko/posts/</loc>
     <lastmod>2022-06-30T22:07:30+09:00</lastmod>
     <xhtml:link
@@ -157,6 +185,19 @@
                 rel="alternate"
                 hreflang="ko"
                 href="https://skkuoverflow.com/ko/posts/school/inuiyeji/"
+                />
+  </url><url>
+    <loc>https://skkuoverflow.com/ko/notes/</loc>
+    <lastmod>2010-06-08T08:06:25+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://skkuoverflow.com/notes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://skkuoverflow.com/ko/notes/"
                 />
   </url><url>
     <loc>https://skkuoverflow.com/ko/categories/</loc>

@@ -2,43 +2,50 @@
 <html>
   <head>
     <title>리눅스 명령어</title>
-    
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-<meta charset="UTF-8" />
+    <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
 
 <link rel="stylesheet" href="/css/bootstrap.min.css"/>
 <link rel="stylesheet" href="/css/layouts/main.css"/>
-<link rel="stylesheet" href="/css/style.css"/>
 <link rel="stylesheet" href="/css/navigators/navbar.css"/>
 <link rel="stylesheet" href="/css/plyr.css"/>
 <link rel="stylesheet" href="/css/flag-icon.min.css"/>
 
 
-<link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600">
 
 
-<link rel="icon" type="image/png" href="/images/site/main-logo_huf3f7cc9a3a663f6791b5b747e9ab4762_9984_42x0_resize_box_2.png" />
+<link rel="stylesheet" href="/fontawesome/css/all.min.css"/>
 
 
-<link rel="stylesheet" href="/css/style.css"/>
 
+
+
+
+
+  
+
+  
+  
+  
+    
+  
+  
+
+  <link rel="icon" type="image/png" href="/images/site/main-logo_huf3f7cc9a3a663f6791b5b747e9ab4762_9984_42x0_resize_box_3.png" />
+
+<meta property="og:title" content="리눅스 명령어" />
+<meta property="og:description" content="리눅스 기초 명령어 모음 Information 파일과 디렉토리에 모두 적용가능한 명령어의 경우 일반적으로 디렉토리에 적용하려할 경우 추가적인 옵션을 넣어야 하는 경우가 많습니다. 옵션 확인하셔서 적용하시기 바랍니다. 기타 Notation들은 아래 표를 참고 바랍니다. Notation Meaning [&mdash;&mdash;] 입력하지 않아도 되는 부가 옵션 (&mdash;&mdash;) command 실행에 필수적이거나 없으면 실행 전과 변화가 없는 옵션 usage 구체적인 활용법을 정리한 페이지로 링크 Linux filesystem command description example man page usage ls [OPTION] [DIRECTORY] DIRECTORY 내 리눅스 파일 정보 탐색 ls Link Link cd [DIRECTORY] DIRECTORY 로 경로를 이동 cd Test/ Link Link mkdir (NAME) NAME을 이름으로 가진 DIRECTORY 생성 mkdir Test Link cp [OPTION] (NAME1) (NAME2) NAME1 파일/디렉토리를 NAME2 파일/디렉토리로 복사 cp test1 test2 Link mv [OPTION] (NAME1) (NAME2) NAME1 파일을 NAME2파일로 이동 mv file1 Test/file2 Link rm [OPTION] (NAME) NAME 파일/디렉토리를 삭제 rm file1 Link Link cat [OPTION] [FILENAME] FILENAME 내용을 출력 cat file1 Link Link Linux package manager 시작하기에 앞서&hellip; CAUTION!" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://skkuoverflow.com/ko/posts/linux/commands/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-04-29T00:07:30+09:00" />
+<meta property="article:modified_time" content="2021-04-29T00:07:30+09:00" /><meta property="og:site_name" content="성균관대학교 소프트웨어 포럼" />
+
+
+
+    
     
 <meta name="description" content="리눅스 명령어" />
 <link
@@ -48,10 +55,16 @@
 <link rel="stylesheet" href="/css/layouts/single.css"/>
 <link rel="stylesheet" href="/css/navigators/sidebar.css">
 
+<link rel="stylesheet" href="/css/style.css"/>
+
+
 
     
-    
-  </head>
+
+
+
+
+</head>
 
   <body data-spy="scroll" data-target="#TableOfContents" data-offset="80">
     <div class="container-fluid bg-dimmed wrapper">
@@ -66,21 +79,24 @@
   
 
 
-
   
 
 
 
 
-
+  
+  
+    
+  
   
 
 
 
-
-
   
-
+  
+    
+  
+  
 
 
 <nav class="navbar navbar-expand-xl top-navbar final-navbar shadow">
@@ -89,7 +105,9 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <a class="navbar-brand" href="/ko">
-      <img src="/images/site/main-logo_huf3f7cc9a3a663f6791b5b747e9ab4762_9984_42x0_resize_box_2.png" alt="Logo">성균관대학교 소프트웨어 포럼</a>
+      
+        <img src="/images/site/main-logo_huf3f7cc9a3a663f6791b5b747e9ab4762_9984_42x0_resize_box_3.png" alt="Logo">
+      성균관대학교 소프트웨어 포럼</a>
     <button class="navbar-toggler navbar-light" id="toc-toggler" type="button" onclick="toggleTOC()">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -105,26 +123,36 @@
 <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" href="#" id="languageSelector" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       
-      <span class="flag-icon flag-icon-ko"></span>
+        
+        <span class="flag-icon flag-icon-ko"></span>
+      
       한국어
     </a>
     <div class="dropdown-menu" aria-labelledby="languageSelector">
       
         <a class="dropdown-item nav-link languages-item" href="/posts/linux/commands">
           
-          <span class="flag-icon flag-icon-gb"></span>
+            
+            <span class="flag-icon flag-icon-gb"></span>
+          
           English
         </a>
       
     </div>
 </li>
+
+      
       
       </ul>
     </div>
   </div>
   
-  <img src="/images/site/main-logo_huf3f7cc9a3a663f6791b5b747e9ab4762_9984_42x0_resize_box_2.png" class="d-none" id="main-logo" alt="Logo">
-  <img src="/images/site/main-logo_huf3f7cc9a3a663f6791b5b747e9ab4762_9984_42x0_resize_box_2.png" class="d-none" id="inverted-logo" alt="Inverted Logo">
+  
+    <img src="/images/site/main-logo_huf3f7cc9a3a663f6791b5b747e9ab4762_9984_42x0_resize_box_3.png" class="d-none" id="main-logo" alt="Logo">
+  
+  
+    <img src="/images/site/main-logo_huf3f7cc9a3a663f6791b5b747e9ab4762_9984_42x0_resize_box_3.png" class="d-none" id="inverted-logo" alt="Inverted Logo">
+  
 </nav>
 
 
@@ -134,8 +162,8 @@
   <section class="sidebar-section" id="sidebar-section">
     <div class="sidebar-holder">
       <div class="sidebar" id="sidebar">
-        <form class="mx-auto" method="get" action="https://skkuoverflow.com/search">
-          <input type="text" name="keyword" value="" placeholder="Search" data-search="" id="search-box" />
+        <form class="mx-auto" method="get" action="/ko/search">
+          <input type="text" name="keyword" value="" placeholder="찾다" data-search="" id="search-box" />
         </form>
         <div class="sidebar-tree">
           <ul class="tree" id="tree">
@@ -337,21 +365,21 @@
   <div class="content">
     <div class="container p-0 read-area">
       
-      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url(https://skkuoverflow.com/ko/posts/linux/commands/images/commands-hero.png);'>
+      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url(/ko/posts/linux/commands/images/commands-hero.png);'>
       </div>
 
       
       <div class="page-content">
         <div class="author-profile ml-auto align-self-lg-center">
-          <img class="rounded-circle" src='/images/default-avatar.png' alt="Author Image">
+          <img class="rounded-circle" src='/images/default-avatar_hu9bf48a08e17db6472c2e32b73058a6bb_47653_120x120_fit_box_3.png' alt="Author Image">
           <h5 class="author-name"></h5>
-          <p>April 29, 2021</p>
+          <p>2021년 4월 29일 목요일</p>
         </div>
 
         <div class="title">
           <h1>리눅스 명령어</h1>
         </div>
-
+        
         <div class="post-content" id="post-content">
           <h1 id="리눅스-기초-명령어-모음">리눅스 기초 명령어 모음</h1>
 <div style="margin-top: 2rem;"></div>
@@ -538,80 +566,123 @@
         </div>
 
         
+        <div class="row pl-3 pr-3">
         
-          <div class="btn-improve-page">
-              <a href="https://github.com/SKKU-SWForum/School_FAQs/edit/main/content/posts/linux/commands/index.ko.md" title="이 페이지를 개선" target="_blank" rel="noopener">
+        <div class="col-md-6 share-buttons">
+        
+          </div>
+
+        
+        
+          
+            
+          
+          <div class="col-md-6 btn-improve-page">
+             
+               <a href="https://github.com/SKKU-SWForum/School_FAQs/edit/main/content/posts/linux/commands/index.ko.md" title="이 페이지를 개선" target="_blank" rel="noopener">
+            
                 <i class="fas fa-code-branch"></i>
                 이 페이지를 개선
               </a>
           </div>
         
+        </div>
 
-        
+
+
+      
       <hr />
-        <div class="row next-prev-navigator">
+        
+
+
+
+
+
 
 
   
 
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
   
 
   
     
+    
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+
+<div class="row next-prev-navigator">
+  
+    <div class="col-md-6 previous-article">
+      <a href="/ko/posts/linux/rm/" title="리눅스 명령어: rm" class="btn btn-outline-info">
+        <div><i class="fas fa-chevron-circle-left"></i> 이전</div>
+        <div class="next-prev-text">리눅스 명령어: rm</div>
+      </a>
+    </div>
+  
+  
       
-      <div class="col-md-6 previous-article">
-        <a href="/ko/posts/school/vscode/" title="VSCode" class="btn btn-outline-info">
-          <div><i class="fas fa-chevron-circle-left"></i> 이전</div>
-          <div class="next-prev-text">VSCode</div>
+      
+        
+      
+      <div class="col-md-6 next-article">
+        <a href="/ko/posts/school/academicfaq/" title="학사 FAQ" class="btn btn-outline-info">
+          <div>다음 <i class="fas fa-chevron-circle-right"></i></div>
+          <div class="next-prev-text">학사 FAQ</div>
         </a>
       </div>
-      
     
-    
-      
-        
-        
-          
-              
-          
-        
-        <div class="col-md-6 next-article">
-          <a href="/ko/posts/linux/cat/" title="리눅스 명령어: cat" class="btn btn-outline-info">
-            <div>다음 <i class="fas fa-chevron-circle-right"></i></div>
-            <div class="next-prev-text">리눅스 명령어: cat</div>
-          </a>
-        </div>
-      
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
 </div>
 
       <hr />
+
       
       
+
+      
+      
+
       </div>
     </div>
   </div>
@@ -626,19 +697,24 @@
 <div class="dropdown languageSelector">
     <a class="btn dropdown-toggle" href="#" id="languageSelector" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         
-        <img class="flag" src="https://www.countryflags.io/ko/flat/16.png" alt="ko">
+            
+            <span class="flag-icon flag-icon-ko"></span>
+        
         한국어
     </a>
     <div class="dropdown-menu" aria-labelledby="languageSelector">
         
         <a class="dropdown-item nav-link languages-item" href="/posts/linux/commands">
             
-            <img class="flag" src="https://www.countryflags.io/gb/flat/24.png" alt="gb">
+                
+                <span class="flag-icon flag-icon-gb"></span>
+            
             English
         </a>
         
     </div>
 </div>
+
   
 </section>
 
@@ -677,11 +753,7 @@
     </div>
 
     
-
-
-
-
-
+    
 
 
 
@@ -693,47 +765,83 @@
 
 
   
+      
+  
 
 
 
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
 
 
+  
+  
+  
 
+  
+  
+  
 
-<footer class="container-fluid text-center align-content-center footer pb-2">
-  <div class="container pt-5">
-    <div class="row text-left">
-      <div class="col-md-4 col-sm-12">
-        <h5>바로가기</h5>
+  
+  
+  
+    
+  
+  
+
+  
+  
+  
+
+  <footer id="footer" class="container-fluid text-center align-content-center footer pb-2">
+    <div class="container pt-5">
+      <div class="row text-left">
         
+        <div class="col-md-4 col-sm-12">
+          <h5>바로가기</h5>
+          
+        </div>
+        
+        
+        
+        
+      </div>
+    </div>
+    
+    
+    <hr />
+    <div class="container">
+      <div class="row text-left">
+        <div class="col-md-4">
+          <a id="theme" href="https://github.com/hossainemruz/toha" target="_blank" rel="noopener">
+            <img src="/images/theme-logo_hu8376fd15465fef26ffe66b6bcf0ca686_13669_32x0_resize_box_3.png" alt="Toha Theme Logo">
+            Toha
+          </a>
+        </div>
+        <div class="col-md-4 text-center">© 2022 Copyright.</div>
+        <div class="col-md-4 text-right">
+          <a id="hugo" href="https://gohugo.io/" target="_blank" rel="noopener">Powered by
+          <img
+            src="/images/hugo-logo.svg"
+            alt="Hugo Logo"
+            height="18"
+          />
+          </a>
+        </div>
+      </div>
+    </div>
+    
+  </footer>
 
-      </div>
-      
-      
-    </div>
-  </div>
-  <hr />
-  <div class="container">
-    <div class="row text-left">
-      <div class="col-md-4">
-        <a id="theme" href="https://github.com/hossainemruz/toha" target="_blank" rel="noopener">
-          <img src="/images/theme-logo_hu8376fd15465fef26ffe66b6bcf0ca686_13669_32x0_resize_box_2.png" alt="Toha Theme Logo">
-          Toha
-        </a>
-      </div>
-      <div class="col-md-4 text-center">© 2020 Copyright.</div>
-      <div class="col-md-4 text-right">
-        <a id="hugo" href="https://gohugo.io/" target="_blank" rel="noopener">Powered by
-        <img
-          src="/images/hugo-logo.svg"
-          alt="Hugo Logo"
-          height="18"
-        />
-        </a>
-      </div>
-    </div>
-  </div>
-</footer>
 
     <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="/js/popper.min.js"></script>
@@ -742,6 +850,7 @@
 <script type="text/javascript" src="/js/navbar.js"></script>
 <script type="text/javascript" src="/js/plyr.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
+
 
 
     
@@ -753,5 +862,13 @@
 </script>
 
 
-  </body>
+
+
+
+
+
+
+
+    
+</body>
 </html>

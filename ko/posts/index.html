@@ -2,51 +2,62 @@
 <html>
   <head>
     <title>게시판</title>
-    
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-<meta charset="UTF-8" />
+    <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
 
 <link rel="stylesheet" href="/css/bootstrap.min.css"/>
 <link rel="stylesheet" href="/css/layouts/main.css"/>
-<link rel="stylesheet" href="/css/style.css"/>
 <link rel="stylesheet" href="/css/navigators/navbar.css"/>
 <link rel="stylesheet" href="/css/plyr.css"/>
 <link rel="stylesheet" href="/css/flag-icon.min.css"/>
 
 
-<link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600">
 
 
-<link rel="icon" type="image/png" href="/images/site/main-logo_huf3f7cc9a3a663f6791b5b747e9ab4762_9984_42x0_resize_box_2.png" />
+<link rel="stylesheet" href="/fontawesome/css/all.min.css"/>
 
 
-<link rel="stylesheet" href="/css/style.css"/>
 
+
+
+
+
+  
+
+  
+  
+  
+    
+  
+  
+
+  <link rel="icon" type="image/png" href="/images/site/main-logo_huf3f7cc9a3a663f6791b5b747e9ab4762_9984_42x0_resize_box_3.png" />
+
+<meta property="og:title" content="게시판" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://skkuoverflow.com/ko/posts/" /><meta property="og:site_name" content="성균관대학교 소프트웨어 포럼" />
+
+
+
+    
     
     <link rel="stylesheet" href="/css/layouts/list.css">
     <link rel="stylesheet" href="/css/navigators/sidebar.css">
+    
+    <link rel="stylesheet" href="/css/style.css"/>
+
 
 
     
-    
-  </head>
+
+
+
+
+</head>
 
   <body data-spy="scroll" data-target="#TableOfContents" data-offset="80">
     <div class="container-fluid bg-dimmed wrapper">
@@ -61,21 +72,24 @@
   
 
 
-
   
 
 
 
 
-
+  
+  
+    
+  
   
 
 
 
-
-
   
-
+  
+    
+  
+  
 
 
 <nav class="navbar navbar-expand-xl top-navbar final-navbar shadow">
@@ -84,7 +98,9 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <a class="navbar-brand" href="/ko">
-      <img src="/images/site/main-logo_huf3f7cc9a3a663f6791b5b747e9ab4762_9984_42x0_resize_box_2.png" alt="Logo">성균관대학교 소프트웨어 포럼</a>
+      
+        <img src="/images/site/main-logo_huf3f7cc9a3a663f6791b5b747e9ab4762_9984_42x0_resize_box_3.png" alt="Logo">
+      성균관대학교 소프트웨어 포럼</a>
     <button class="navbar-toggler navbar-light" id="toc-toggler" type="button" onclick="toggleTOC()">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -100,26 +116,36 @@
 <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" href="#" id="languageSelector" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       
-      <span class="flag-icon flag-icon-ko"></span>
+        
+        <span class="flag-icon flag-icon-ko"></span>
+      
       한국어
     </a>
     <div class="dropdown-menu" aria-labelledby="languageSelector">
       
         <a class="dropdown-item nav-link languages-item" href="/posts">
           
-          <span class="flag-icon flag-icon-gb"></span>
+            
+            <span class="flag-icon flag-icon-gb"></span>
+          
           English
         </a>
       
     </div>
 </li>
+
+      
       
       </ul>
     </div>
   </div>
   
-  <img src="/images/site/main-logo_huf3f7cc9a3a663f6791b5b747e9ab4762_9984_42x0_resize_box_2.png" class="d-none" id="main-logo" alt="Logo">
-  <img src="/images/site/main-logo_huf3f7cc9a3a663f6791b5b747e9ab4762_9984_42x0_resize_box_2.png" class="d-none" id="inverted-logo" alt="Inverted Logo">
+  
+    <img src="/images/site/main-logo_huf3f7cc9a3a663f6791b5b747e9ab4762_9984_42x0_resize_box_3.png" class="d-none" id="main-logo" alt="Logo">
+  
+  
+    <img src="/images/site/main-logo_huf3f7cc9a3a663f6791b5b747e9ab4762_9984_42x0_resize_box_3.png" class="d-none" id="inverted-logo" alt="Inverted Logo">
+  
 </nav>
 
 
@@ -134,8 +160,8 @@
   <section class="sidebar-section" id="sidebar-section">
     <div class="sidebar-holder">
       <div class="sidebar" id="sidebar">
-        <form class="mx-auto" method="get" action="https://skkuoverflow.com/search">
-          <input type="text" name="keyword" value="" placeholder="Search" data-search="" id="search-box" />
+        <form class="mx-auto" method="get" action="/ko/search">
+          <input type="text" name="keyword" value="" placeholder="찾다" data-search="" id="search-box" />
         </form>
         <div class="sidebar-tree">
           <ul class="tree" id="tree">
@@ -332,6 +358,7 @@
     <div class="container-fluid post-card-holder" id="post-card-holder">
       
       
+      
         
           <div class="post-card">
   <a href="/ko/posts/school/schedule/" class="post-card-link">
@@ -342,7 +369,7 @@
       <div class="card-body">
         <h5 class="card-title">학사일정</h5>
         <p class="card-text post-summary">학사일정 구글 캘린더를 통해서 공개되는 학사 일정은 학생회 발표 + 학교 공식 학사 일정을 기준으로 작성됩니다. 일정이 수작업으로 변경되고 있기 때문에 오류가 있거나 수정 사항이 반영이 되지 않을 수 있습니다. 정확한 일정은 학교/학생회 공지를 참고해주시기 바랍니다! 주기적으로 일정 확인, 추가 등의 기여가 가능한 분은 issue를 통해서 알려주시면 권한을 추가드리겠습니다.
- 캘린더 추가하기 아래 iCal 공개 주소를 통해서 캘린더를 추가할 수 있습니다. https://calendar.google.com/calendar/ical/u0pobd4ls20l4okh66g1gb8jjg%40group.calendar.google.com/public/basic.ics 구글 캘린더의 경우 캘린더 추가 -&gt; url로 추가 -&gt; 입력창에 위 주소를 입력한 이후 캘린더를 추가하면 추가가 완료됩니다.</p>
+캘린더 추가하기 아래 iCal 공개 주소를 통해서 캘린더를 추가할 수 있습니다. https://calendar.google.com/calendar/ical/u0pobd4ls20l4okh66g1gb8jjg%40group.calendar.google.com/public/basic.ics 구글 캘린더의 경우 캘린더 추가 -&gt; url로 추가 -&gt; 입력창에 위 주소를 입력한 이후 캘린더를 추가하면 추가가 완료됩니다.</p>
       </div>
       <div class="card-footer">
         <span class="float-left">June 30, 2022</span>
@@ -368,11 +395,10 @@
       <div class="card-body">
         <h5 class="card-title">리눅스 명령어 cp</h5>
         <p class="card-text post-summary">cp copy files and directories
-  용도 파일 혹은 디렉토리를 복사하는 데 활용한다.
-  명령어 포맷 cp [OPTION] (SOURCE) (DEST)
-  옵션    Useful options Usage     -R, -r &ndash;recursive 디렉토리의 하위 파일들도 모두 복사한다      예시   cp file1 file2
-   cp -r test/ test2/
-   </p>
+용도 파일 혹은 디렉토리를 복사하는 데 활용한다.
+명령어 포맷 cp [OPTION] (SOURCE) (DEST)
+옵션 Useful options Usage -R, -r &ndash;recursive 디렉토리의 하위 파일들도 모두 복사한다 예시 cp file1 file2
+cp -r test/ test2/</p>
       </div>
       <div class="card-footer">
         <span class="float-left">April 22, 2022</span>
@@ -397,7 +423,7 @@
       </div>
       <div class="card-body">
         <h5 class="card-title">페이지 공지</h5>
-        <p class="card-text post-summary">공통 공지  내용에 대한 문의사항은 Issue를 통해서 받고 있습니다. 내용의 정정이 필요한 경우 Issue를 통해서 올려주세요. 모든 내용은 공개하고 있습니다. 따라서 자유롭게 복사하셔도 됩니다. 하지만 출처는 꼭 남겨주시길 부탁드립니다. Contribution도 받고 있습니다! 많은 분들의 기여 부탁드립니다!  학사 관련 공지 (학교 탭)  학과 혹은 교과목 공지를 통해서 사이트 내용을 언급하시는 경우 부디 여기를 통해서 알려주시길 부탁드립니다.  이는 인용이 어디서 되는지 확인할 목적 뿐만 아니라 내용에 문제가 없는지 재확인할 필요가 있기 때문입니다.</p>
+        <p class="card-text post-summary">공통 공지 내용에 대한 문의사항은 Issue를 통해서 받고 있습니다. 내용의 정정이 필요한 경우 Issue를 통해서 올려주세요. 모든 내용은 공개하고 있습니다. 따라서 자유롭게 복사하셔도 됩니다. 하지만 출처는 꼭 남겨주시길 부탁드립니다. Contribution도 받고 있습니다! 많은 분들의 기여 부탁드립니다! 학사 관련 공지 (학교 탭) 학과 혹은 교과목 공지를 통해서 사이트 내용을 언급하시는 경우 부디 여기를 통해서 알려주시길 부탁드립니다. 이는 인용이 어디서 되는지 확인할 목적 뿐만 아니라 내용에 문제가 없는지 재확인할 필요가 있기 때문입니다. 인용을 위해서 확인하는 중 수정이 필요한 내용이 있는 경우 언급하시면서 같이 알려주시거나 직접 기여해주시면 됩니다.</p>
       </div>
       <div class="card-footer">
         <span class="float-left">April 22, 2022</span>
@@ -422,9 +448,9 @@
       </div>
       <div class="card-body">
         <h5 class="card-title">인의예지를 이용한 기본적인 리눅스 사용해보기</h5>
-        <p class="card-text post-summary">인의예지를 이용한 기본적인 리눅스 사용해보기 인의예지란?  인의예지는 학교에서 제공하는 리눅스 클러스터 서버입니다. 인의예지에 대한 자세한 설명은 여기를 참고하세요!   인의예지에 접속해보기   가장 편한 방법은 역시 GUI죠! Windows 환경이시면 MobaXterm이 좋은 선택지가 될 거 같네요. 설명은 여기를 참고하세요!
-  GUI를 쓰기 어려운 환경이신가요? 그러면 다음 명령어로 접속을 해봅시다.
-ssh -p 1398 (학번)@swji.skku.edu  ssh는 리눅스 클러스터 서버에 접속하기 위해 사용되는 인터넷 프로토콜이자 명령어입니다. -p 는 옵션으로 ssh 서버에 접속할 때 어느 포트에 접속할 것인지를 특정지어 줍니다.</p>
+        <p class="card-text post-summary">인의예지를 이용한 기본적인 리눅스 사용해보기 인의예지란? 인의예지는 학교에서 제공하는 리눅스 클러스터 서버입니다. 인의예지에 대한 자세한 설명은 여기를 참고하세요! 인의예지에 접속해보기 가장 편한 방법은 역시 GUI죠! Windows 환경이시면 MobaXterm이 좋은 선택지가 될 거 같네요. 설명은 여기를 참고하세요!
+GUI를 쓰기 어려운 환경이신가요? 그러면 다음 명령어로 접속을 해봅시다.
+ssh -p 1398 (학번)@swji.skku.edu ssh는 리눅스 클러스터 서버에 접속하기 위해 사용되는 인터넷 프로토콜이자 명령어입니다. -p 는 옵션으로 ssh 서버에 접속할 때 어느 포트에 접속할 것인지를 특정지어 줍니다.</p>
       </div>
       <div class="card-footer">
         <span class="float-left">October 16, 2021</span>
@@ -449,9 +475,9 @@ ssh -p 1398 (학번)@swji.skku.edu  ssh는 리눅스 클러스터 서버에 접�
       </div>
       <div class="card-body">
         <h5 class="card-title">학사 FAQ</h5>
-        <p class="card-text post-summary">학사 FAQ  학사 관련해서 질문할 수 있는 방법
- 학교 학사바로센터에 전화한다. (1811-8585, 평일 09:00~12:00, 13:00~17:00) 킹고봇을 활용한다. (카카오톡 플러스친구 &lsquo;킹고&rsquo; 추가 or 학교 포털의 킹고 봇 이용하기.)    졸업 유예 제도가 있는지, 있다면 어디서 확인 가능한지 궁금합니다. (학사운영팀)
- 졸업 유예제도가 따로 있지는 않습니다. 아래 내용 참고하여 주시기 바랍니다.    학위 취득을 위해서는 의무등록학기 충족, 졸업이수학점 충족, 졸업기준 성적(평점평균) 충족, 3품인증 취득, 졸업평가 합격, 기타(교직 이수(대상자), 공학인증 이수(대상자)) 등 소정의 모든 요건을 갖추어야 합니다.</p>
+        <p class="card-text post-summary">학사 FAQ 학사 관련해서 질문할 수 있는 방법
+학교 학사바로센터에 전화한다. (1811-8585, 평일 09:00~12:00, 13:00~17:00) 킹고봇을 활용한다. (카카오톡 플러스친구 &lsquo;킹고&rsquo; 추가 or 학교 포털의 킹고 봇 이용하기.) 졸업 유예 제도가 있는지, 있다면 어디서 확인 가능한지 궁금합니다. (학사운영팀)
+졸업 유예제도가 따로 있지는 않습니다. 아래 내용 참고하여 주시기 바랍니다. 학위 취득을 위해서는 의무등록학기 충족, 졸업이수학점 충족, 졸업기준 성적(평점평균) 충족, 3품인증 취득, 졸업평가 합격, 기타(교직 이수(대상자), 공학인증 이수(대상자)) 등 소정의 모든 요건을 갖추어야 합니다.</p>
       </div>
       <div class="card-footer">
         <span class="float-left">May 25, 2021</span>
@@ -477,7 +503,7 @@ ssh -p 1398 (학번)@swji.skku.edu  ssh는 리눅스 클러스터 서버에 접�
       <div class="card-body">
         <h5 class="card-title">Mobaxterm</h5>
         <p class="card-text post-summary">Mobaxterm 사용법 Mobaxterm은 ssh, sftp, X11 forwarding 등 원격 프로그램 실행, 명령어 사용 등을 지원하는 프로그램입니다. 무료 버전과 유료 버전이 있지만, 무료 버전만으로도 충분히 활용할 수 있습니다. 다음은 설치 방법입니다.
- https://mobaxterm.mobatek.net/ 에 접속해서 설치 프로그램을 다운로드받고 설치합니다. 프로그램을 켭니다. 좌측 상단의 세션을 누릅니다. 맨 왼쪽 ssh를 누르고 설정을 합니다. remote host: (예시) swji.skku.edu Port: (예시) 1398 OK를 누르고 좌측에 생성된 세션을 더블클릭하면 ssh가 연결됩니다.  </p>
+https://mobaxterm.mobatek.net/ 에 접속해서 설치 프로그램을 다운로드받고 설치합니다. 프로그램을 켭니다. 좌측 상단의 세션을 누릅니다. 맨 왼쪽 ssh를 누르고 설정을 합니다. remote host: (예시) swji.skku.edu Port: (예시) 1398 OK를 누르고 좌측에 생성된 세션을 더블클릭하면 ssh가 연결됩니다. </p>
       </div>
       <div class="card-footer">
         <span class="float-left">April 29, 2021</span>
@@ -503,11 +529,13 @@ ssh -p 1398 (학번)@swji.skku.edu  ssh는 리눅스 클러스터 서버에 접�
       <div class="card-body">
         <h5 class="card-title">VSCode</h5>
         <p class="card-text post-summary">VSCode - Remote SSH 연동 Visual Studio Code(이하 VSCode)는 다양한 플러그인을 활용할 수 있는 강력한 텍스트 에디터입니다. Mobaxterm을 대체하여 VSCode를 인의예지 서버와 연동하여 다양한 기능을 활용할 수 있습니다.
-설치 방법   VSCode가 설치되지 않은 경우, 여기를 클릭하여 VSCode를 설치합니다.
-  VSCode를 켜고 아이콘을 클릭합니다.
-  새로 열린 창에서 Remote - SSH를 검색하고 나오는 플러그인을 설치합니다.
-  왼쪽 상단 아이콘을 클릭합니다.
-  위의 Remote Explorer가 SSH Target인지 확인합니다.</p>
+설치 방법 VSCode가 설치되지 않은 경우, 여기를 클릭하여 VSCode를 설치합니다.
+VSCode를 켜고 아이콘을 클릭합니다.
+새로 열린 창에서 Remote - SSH를 검색하고 나오는 플러그인을 설치합니다.
+왼쪽 상단 아이콘을 클릭합니다.
+위의 Remote Explorer가 SSH Target인지 확인합니다.
+SSH TARGETS 옆에 있는 + 버튼을 클릭합니다.
+중앙 상단에 SSH Connection Command를 입력하라는 창이 뜹니다.</p>
       </div>
       <div class="card-footer">
         <span class="float-left">April 29, 2021</span>
@@ -532,7 +560,7 @@ ssh -p 1398 (학번)@swji.skku.edu  ssh는 리눅스 클러스터 서버에 접�
       </div>
       <div class="card-body">
         <h5 class="card-title">리눅스 명령어</h5>
-        <p class="card-text post-summary">리눅스 기초 명령어 모음   Information  파일과 디렉토리에 모두 적용가능한 명령어의 경우 일반적으로 디렉토리에 적용하려할 경우 추가적인 옵션을 넣어야 하는 경우가 많습니다. 옵션 확인하셔서 적용하시기 바랍니다. 기타 Notation들은 아래 표를 참고 바랍니다.    Notation Meaning     [&mdash;&mdash;] 입력하지 않아도 되는 부가 옵션   (&mdash;&mdash;) command 실행에 필수적이거나 없으면 실행 전과 변화가 없는 옵션   usage 구체적인 활용법을 정리한 페이지로 링크        Linux filesystem    command description example man page usage     ls [OPTION] [DIRECTORY] DIRECTORY 내 리눅스 파일 정보 탐색 ls Link Link   cd [DIRECTORY] DIRECTORY 로 경로를 이동 cd Test/ Link Link   mkdir (NAME) NAME을 이름으로 가진 DIRECTORY 생성 mkdir Test Link    cp [OPTION] (NAME1) (NAME2) NAME1 파일/디렉토리를 NAME2 파일/디렉토리로 복사 cp test1 test2 Link    mv [OPTION] (NAME1) (NAME2) NAME1 파일을 NAME2파일로 이동 mv file1 Test/file2 Link    rm [OPTION] (NAME) NAME 파일/디렉토리를 삭제 rm file1 Link Link   cat [OPTION] [FILENAME] FILENAME 내용을 출력 cat file1 Link Link      Linux package manager 시작하기에 앞서&hellip;  CAUTION!</p>
+        <p class="card-text post-summary">리눅스 기초 명령어 모음 Information 파일과 디렉토리에 모두 적용가능한 명령어의 경우 일반적으로 디렉토리에 적용하려할 경우 추가적인 옵션을 넣어야 하는 경우가 많습니다. 옵션 확인하셔서 적용하시기 바랍니다. 기타 Notation들은 아래 표를 참고 바랍니다. Notation Meaning [&mdash;&mdash;] 입력하지 않아도 되는 부가 옵션 (&mdash;&mdash;) command 실행에 필수적이거나 없으면 실행 전과 변화가 없는 옵션 usage 구체적인 활용법을 정리한 페이지로 링크 Linux filesystem command description example man page usage ls [OPTION] [DIRECTORY] DIRECTORY 내 리눅스 파일 정보 탐색 ls Link Link cd [DIRECTORY] DIRECTORY 로 경로를 이동 cd Test/ Link Link mkdir (NAME) NAME을 이름으로 가진 DIRECTORY 생성 mkdir Test Link cp [OPTION] (NAME1) (NAME2) NAME1 파일/디렉토리를 NAME2 파일/디렉토리로 복사 cp test1 test2 Link mv [OPTION] (NAME1) (NAME2) NAME1 파일을 NAME2파일로 이동 mv file1 Test/file2 Link rm [OPTION] (NAME) NAME 파일/디렉토리를 삭제 rm file1 Link Link cat [OPTION] [FILENAME] FILENAME 내용을 출력 cat file1 Link Link Linux package manager 시작하기에 앞서&hellip; CAUTION!</p>
       </div>
       <div class="card-footer">
         <span class="float-left">April 29, 2021</span>
@@ -558,8 +586,9 @@ ssh -p 1398 (학번)@swji.skku.edu  ssh는 리눅스 클러스터 서버에 접�
       <div class="card-body">
         <h5 class="card-title">리눅스 명령어: cat</h5>
         <p class="card-text post-summary">cat Concatenate files and print on the standard output
-  용도 파일의 내용을 확인하는 과정에 사용된다.
-  옵션    Useful options Usage     -A -vET와 같은 결과가 나온다.   -v 원래 따로 출력되지 않는 string을 ^ 와 M- 의 형태로 출력한다.   -E 각 줄의 마지막에 $를 출력한다.   -T ^l의 형태로 TAB을 출력한다.      예시   cat</p>
+용도 파일의 내용을 확인하는 과정에 사용된다.
+옵션 Useful options Usage -A -vET와 같은 결과가 나온다. -v 원래 따로 출력되지 않는 string을 ^ 와 M- 의 형태로 출력한다. -E 각 줄의 마지막에 $를 출력한다. -T ^l의 형태로 TAB을 출력한다. 예시 cat
+cat -A</p>
       </div>
       <div class="card-footer">
         <span class="float-left">April 29, 2021</span>
@@ -585,9 +614,10 @@ ssh -p 1398 (학번)@swji.skku.edu  ssh는 리눅스 클러스터 서버에 접�
       <div class="card-body">
         <h5 class="card-title">리눅스 명령어: cd</h5>
         <p class="card-text post-summary">cd Change the working directory
-  용도 작업중인 디렉토리의 위치를 변경한다
+용도 작업중인 디렉토리의 위치를 변경한다
 주의사항 이동할 디렉토리를 지정하지 않으면 해당 계정의 HOME Directory (일반적으로 /home/(계정이름)/ or ~)로 이동한다.
-  디렉토리 명에서 활용하는 기호    Notation Meanings     ~ 사용자의 home directory (일반적으로 /home/(username))   / root directory   . 지금 작업중인 디렉토리   .. 지금 작업중인 디렉토리의 상위 디렉토리   - 지금 작업하기 이전의 디렉토리 (뒤로가기)      예시   cd</p>
+디렉토리 명에서 활용하는 기호 Notation Meanings ~ 사용자의 home directory (일반적으로 /home/(username)) / root directory . 지금 작업중인 디렉토리 .. 지금 작업중인 디렉토리의 상위 디렉토리 - 지금 작업하기 이전의 디렉토리 (뒤로가기) 예시 cd
+cd (directory)</p>
       </div>
       <div class="card-footer">
         <span class="float-left">April 29, 2021</span>
@@ -613,8 +643,12 @@ ssh -p 1398 (학번)@swji.skku.edu  ssh는 리눅스 클러스터 서버에 접�
       <div class="card-body">
         <h5 class="card-title">리눅스 명령어: ls</h5>
         <p class="card-text post-summary">ls list directory contents
-  용도 디렉토리 내의 파일 정보를 확인하기 위해서 사용한다.
-  옵션    Useful options Usage     -a, &ndash;all 숨김 파일(.으로 시작하는 파일들)도 포함해서 출력   -l 파일의 종류, 권한, 소유자 등 자세한 정보를 포함해서 출력   -h, &ndash;human-readable 파일의 사이즈를 숫자만이 아닌 단위로 표기 (e.g. 1K, 234M, 2G)      예시   ls</p>
+용도 디렉토리 내의 파일 정보를 확인하기 위해서 사용한다.
+옵션 Useful options Usage -a, &ndash;all 숨김 파일(.으로 시작하는 파일들)도 포함해서 출력 -l 파일의 종류, 권한, 소유자 등 자세한 정보를 포함해서 출력 -h, &ndash;human-readable 파일의 사이즈를 숫자만이 아닌 단위로 표기 (e.g. 1K, 234M, 2G) 예시 ls
+ls -a
+ls -l
+ls -al
+ls -alh</p>
       </div>
       <div class="card-footer">
         <span class="float-left">April 29, 2021</span>
@@ -640,10 +674,9 @@ ssh -p 1398 (학번)@swji.skku.edu  ssh는 리눅스 클러스터 서버에 접�
       <div class="card-body">
         <h5 class="card-title">리눅스 명령어: mkdir</h5>
         <p class="card-text post-summary">mkdir make directories
-  용도 새로운 디렉토리를 생성하는데 활용한다.
-  명령어 포맷 mkdir [OPTION] (DIRECTORY NAME)
-  옵션   예시   mkdir (DIRECTORY NAME)
-   </p>
+용도 새로운 디렉토리를 생성하는데 활용한다.
+명령어 포맷 mkdir [OPTION] (DIRECTORY NAME)
+옵션 예시 mkdir (DIRECTORY NAME)</p>
       </div>
       <div class="card-footer">
         <span class="float-left">April 29, 2021</span>
@@ -662,28 +695,26 @@ ssh -p 1398 (학번)@swji.skku.edu  ssh는 리눅스 클러스터 서버에 접�
     </div>
     <div class="paginator">
       
-<ul class="pagination">
-  <li class="page-item">
-    <a href="/ko/posts/" class="page-link" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
-  </li>
-  <li class="page-item disabled">
-    <a  class="page-link" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
-  </li>
-  <li class="page-item active">
-    <a class="page-link" href="/ko/posts/">1</a>
-  </li>
-  <li class="page-item">
-    <a class="page-link" href="/ko/posts/page/2/">2</a>
-  </li>
-  <li class="page-item">
-    <a href="/ko/posts/page/2/" class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
-  </li>
-  <li class="page-item">
-    <a href="/ko/posts/page/2/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
-  </li>
-</ul>
-
-
+    <ul class="pagination pagination-default">
+      <li class="page-item disabled">
+        <a aria-disabled="true" aria-label="First" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;&laquo;</span></a>
+      </li>
+      <li class="page-item disabled">
+        <a aria-disabled="true" aria-label="Previous" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;</span></a>
+      </li>
+      <li class="page-item active">
+        <a aria-current="page" aria-label="Page 1" class="page-link" role="button">1</a>
+      </li>
+      <li class="page-item">
+        <a href="/ko/posts/page/2/" aria-label="Page 2" class="page-link" role="button">2</a>
+      </li>
+      <li class="page-item">
+        <a href="/ko/posts/page/2/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/ko/posts/page/2/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
+      </li>
+    </ul>
     </div>
   </div>
 </section>
@@ -694,11 +725,7 @@ ssh -p 1398 (학번)@swji.skku.edu  ssh는 리눅스 클러스터 서버에 접�
     </div>
 
     
-
-
-
-
-
+    
 
 
 
@@ -710,47 +737,83 @@ ssh -p 1398 (학번)@swji.skku.edu  ssh는 리눅스 클러스터 서버에 접�
 
 
   
+      
+  
 
 
 
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
 
 
+  
+  
+  
 
+  
+  
+  
 
-<footer class="container-fluid text-center align-content-center footer pb-2">
-  <div class="container pt-5">
-    <div class="row text-left">
-      <div class="col-md-4 col-sm-12">
-        <h5>바로가기</h5>
+  
+  
+  
+    
+  
+  
+
+  
+  
+  
+
+  <footer id="footer" class="container-fluid text-center align-content-center footer pb-2">
+    <div class="container pt-5">
+      <div class="row text-left">
         
+        <div class="col-md-4 col-sm-12">
+          <h5>바로가기</h5>
+          
+        </div>
+        
+        
+        
+        
+      </div>
+    </div>
+    
+    
+    <hr />
+    <div class="container">
+      <div class="row text-left">
+        <div class="col-md-4">
+          <a id="theme" href="https://github.com/hossainemruz/toha" target="_blank" rel="noopener">
+            <img src="/images/theme-logo_hu8376fd15465fef26ffe66b6bcf0ca686_13669_32x0_resize_box_3.png" alt="Toha Theme Logo">
+            Toha
+          </a>
+        </div>
+        <div class="col-md-4 text-center">© 2022 Copyright.</div>
+        <div class="col-md-4 text-right">
+          <a id="hugo" href="https://gohugo.io/" target="_blank" rel="noopener">Powered by
+          <img
+            src="/images/hugo-logo.svg"
+            alt="Hugo Logo"
+            height="18"
+          />
+          </a>
+        </div>
+      </div>
+    </div>
+    
+  </footer>
 
-      </div>
-      
-      
-    </div>
-  </div>
-  <hr />
-  <div class="container">
-    <div class="row text-left">
-      <div class="col-md-4">
-        <a id="theme" href="https://github.com/hossainemruz/toha" target="_blank" rel="noopener">
-          <img src="/images/theme-logo_hu8376fd15465fef26ffe66b6bcf0ca686_13669_32x0_resize_box_2.png" alt="Toha Theme Logo">
-          Toha
-        </a>
-      </div>
-      <div class="col-md-4 text-center">© 2020 Copyright.</div>
-      <div class="col-md-4 text-right">
-        <a id="hugo" href="https://gohugo.io/" target="_blank" rel="noopener">Powered by
-        <img
-          src="/images/hugo-logo.svg"
-          alt="Hugo Logo"
-          height="18"
-        />
-        </a>
-      </div>
-    </div>
-  </div>
-</footer>
 
     <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="/js/popper.min.js"></script>
@@ -761,9 +824,12 @@ ssh -p 1398 (학번)@swji.skku.edu  ssh는 리눅스 클러스터 서버에 접�
 <script type="text/javascript" src="/js/main.js"></script>
 
 
+
     
     
     <script src="/js/list.js"></script>
 
-  </body>
+
+    
+</body>
 </html>
