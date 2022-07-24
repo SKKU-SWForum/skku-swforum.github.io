@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>다양한 기술들 on 성균관대학교 소프트웨어 포럼</title>
+    <link>https://skkuoverflow.com/ko/posts/tech/</link>
+    <description>Recent content in 다양한 기술들 on 성균관대학교 소프트웨어 포럼</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 24 Jul 2022 13:05:30 +0900</lastBuildDate><atom:link href="https://skkuoverflow.com/ko/posts/tech/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Docker 사용하기</title>
+      <link>https://skkuoverflow.com/ko/posts/tech/usingdocker/</link>
+      <pubDate>Sun, 24 Jul 2022 13:05:30 +0900</pubDate>
+      
+      <guid>https://skkuoverflow.com/ko/posts/tech/usingdocker/</guid>
+      <description>Contributor: 김성보 동문님 JAVA 환경설정 1. JDK 설치 $ sudo apt-get update $ sudo apt-get install openjdk-8-jdk 2. JDK 버전 확인 $ java -version 3. JAVA_HOME 설정 $ readlink -f $(which java) /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java 위 명령어를 통해 출력되는 결과는 다양할 수 있다. 이때, 해당 출력 결과의 끝에서 /bin/java를 제외한 경로를 [경로] 라고 하자.
+4. JAVA_HOME [경로] 등록 $ sudo vi /etc/profile 위 명령어를 통해 켜진 편집기에서 맨 마지막 줄에 아래 코드를 입력한다.</description>
+    </item>
+    
+    
+  </channel>
+</rss>

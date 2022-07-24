@@ -282,5 +282,17 @@
                 hreflang="en"
                 href="https://skkuoverflow.com/tags/"
                 />
+  </url><url>
+    <loc>https://skkuoverflow.com/posts/tech/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://skkuoverflow.com/ko/posts/tech/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://skkuoverflow.com/posts/tech/"
+                />
   </url>
 </urlset>

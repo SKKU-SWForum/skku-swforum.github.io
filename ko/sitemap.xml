@@ -30,8 +30,11 @@
                 href="https://skkuoverflow.com/ko/search/"
                 />
   </url><url>
+    <loc>https://skkuoverflow.com/ko/posts/tech/usingdocker/</loc>
+    <lastmod>2022-07-24T13:05:30+09:00</lastmod>
+  </url><url>
     <loc>https://skkuoverflow.com/ko/posts/</loc>
-    <lastmod>2022-06-30T22:07:30+09:00</lastmod>
+    <lastmod>2022-07-24T13:05:30+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -43,8 +46,21 @@
                 href="https://skkuoverflow.com/ko/posts/"
                 />
   </url><url>
+    <loc>https://skkuoverflow.com/ko/posts/tech/</loc>
+    <lastmod>2022-07-24T13:05:30+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://skkuoverflow.com/posts/tech/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://skkuoverflow.com/ko/posts/tech/"
+                />
+  </url><url>
     <loc>https://skkuoverflow.com/ko/</loc>
-    <lastmod>2022-06-30T22:07:30+09:00</lastmod>
+    <lastmod>2022-07-24T13:05:30+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
