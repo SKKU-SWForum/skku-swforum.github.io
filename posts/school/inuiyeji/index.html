@@ -323,18 +323,17 @@ Hosts:
 - swji.skku.edu
 </code></pre><ul>
 <li>
-<p>SSH Port: 1398 (SKKU&rsquo;s date of establishment)</p>
+<p>SSH Port: 1398 (SKKU&rsquo;s year of establishment)</p>
 </li>
 <li>
-<p>ID: Student ID</p>
+<p>ID: Last 8 digits from your student ID</p>
 </li>
 <li>
-<p>Password: Last Name in full capital letters.</p>
+<p>Password: Last Name</p>
 </li>
-</ul>
-<pre tabindex="0"><code>ex: PARK (If this throws an error, try writing your full name in capital letters, with no spaces)
-</code></pre><ul>
-<li>Others:</li>
+<li>
+<p>Others:</p>
+</li>
 </ul>
 <ol>
 <li>All accounts are shared by four nodes by NIS.</li>
@@ -370,13 +369,13 @@ Hosts:
 </tr>
 <tr>
 <td style="text-align:center">ID</td>
-<td style="text-align:center">Student ID</td>
-<td>10 digit</td>
+<td style="text-align:center">Last 8 digits from Student ID</td>
+<td></td>
 </tr>
 <tr>
 <td style="text-align:center">PW</td>
 <td style="text-align:center">Last Name</td>
-<td>All in capital letters; If this throws an error, try writing your full name in capital letters, with no spaces</td>
+<td></td>
 </tr>
 </tbody>
 </table>
@@ -384,22 +383,13 @@ Hosts:
 <h3 id="inuiyeji-cluster">Inuiyeji Cluster</h3>
 <ol>
 <li>
-<p>Please note that the server is divided by &lsquo;In&rsquo; and &lsquo;uiyeji&rsquo;.</p>
-</li>
-<li>
-<p>Is the server down?</p>
-<ul>
-<li>We&rsquo;ll provide a server status service soon.</li>
-</ul>
-</li>
-<li>
 <p>I can&rsquo;t connect to the server.</p>
 <ul>
 <li>This depends on the error.
 <ul>
 <li><code>Connection reset by peer</code>: This is probably the server blocking your IP. Try accessing from a different IP.</li>
 <li>It says my password is different: If you&rsquo;ve ever connected to &lsquo;Inuiyeji&rsquo; server before, try inserting your password and your last 8 digits of your student ID.</li>
-<li>If the above solution doesn&rsquo;t work: If you haven&rsquo;t logged in for a long time, your account may not have been created. You can contact Professor Nam Bum-suk and ask him to create an account for you. (Email address: <a href="mailto:bnam@skku.edu">bnam@skku.edu</a>)</li>
+<li>If the above solution doesn&rsquo;t work: If you haven&rsquo;t logged in for a long time, your account may locked or not created. You can contact below mail to create an account for you. (Email address: (<a href="mailto:inuiyeji-skku@googlegroups.com">inuiyeji-skku@googlegroups.com</a>))</li>
 </ul>
 </li>
 </ul>
@@ -419,7 +409,8 @@ Hosts:
 <li>
 <p>I would like to change my password.</p>
 <ul>
-<li>You can use &lsquo;yppasswd&rsquo; command to change password.</li>
+<li>Change the password at <code>in</code> server. (Master Node)</li>
+<li>After several times, other servers will also change the password via NIS.</li>
 </ul>
 </li>
 <li>
@@ -676,7 +667,7 @@ Hosts:
             Toha
           </a>
         </div>
-        <div class="col-md-4 text-center">© 2023 Copyright.</div>
+        <div class="col-md-4 text-center">© 2024 Copyright.</div>
         <div class="col-md-4 text-right">
           <a id="hugo" href="https://gohugo.io/" target="_blank" rel="noopener">Powered by
           <img
