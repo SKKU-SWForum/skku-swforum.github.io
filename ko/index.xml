@@ -170,7 +170,7 @@ ls -alh</description>
       
       <guid>https://skkuoverflow.com/ko/posts/school/inuiyeji/</guid>
       <description>인의예지 클러스터 인의예지 클러스터가 뭔가요? 인의예지 클러스터는 성균관대 소프트웨어대학 학생들 + 복수전공 학생들을 위해서 만들어진 리눅스 클러스터 서버입니다. 접속할 수 있는 Host 목록은 다음과 같습니다.
-인 : swin.skku.edu 의 : swui.skku.edu 예 : swye.skku.edu 지 : swji.skku.edu 접속 가이드 항목 값 비고 포트 1398 성균관 설립 연도 ID s + 본인 학번 뒷 8자리 총 10자리 숫자 중 8자리 PW pw + 본인 학번 뒷 8자리 학번 총 10자리 숫자 중 8자리 예시) 학번이 1234567890 일 경우 ssh -p 1398 S34567890@swji.</description>
+인 : swin.skku.edu 의 : swui.skku.edu 예 : swye.skku.edu 지 : swji.skku.edu 접속 가이드 항목 값 비고 포트 1398 성균관 설립 연도 ID s + 본인 학번 뒷 8자리 총 10자리 숫자 중 8자리 PW pw + 본인 학번 뒷 8자리 학번 총 10자리 숫자 중 8자리 예시) 학번이 1234567890 일 경우 ssh -p 1398 s34567890@swji.</description>
     </item>
     
     <item>

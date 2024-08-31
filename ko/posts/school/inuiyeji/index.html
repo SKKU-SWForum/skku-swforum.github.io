@@ -38,7 +38,7 @@
 
 <meta property="og:title" content="인의예지 클러스터" />
 <meta property="og:description" content="인의예지 클러스터 인의예지 클러스터가 뭔가요? 인의예지 클러스터는 성균관대 소프트웨어대학 학생들 &#43; 복수전공 학생들을 위해서 만들어진 리눅스 클러스터 서버입니다. 접속할 수 있는 Host 목록은 다음과 같습니다.
-인 : swin.skku.edu 의 : swui.skku.edu 예 : swye.skku.edu 지 : swji.skku.edu 접속 가이드 항목 값 비고 포트 1398 성균관 설립 연도 ID s &#43; 본인 학번 뒷 8자리 총 10자리 숫자 중 8자리 PW pw &#43; 본인 학번 뒷 8자리 학번 총 10자리 숫자 중 8자리 예시) 학번이 1234567890 일 경우 ssh -p 1398 S34567890@swji." />
+인 : swin.skku.edu 의 : swui.skku.edu 예 : swye.skku.edu 지 : swji.skku.edu 접속 가이드 항목 값 비고 포트 1398 성균관 설립 연도 ID s &#43; 본인 학번 뒷 8자리 총 10자리 숫자 중 8자리 PW pw &#43; 본인 학번 뒷 8자리 학번 총 10자리 숫자 중 8자리 예시) 학번이 1234567890 일 경우 ssh -p 1398 s34567890@swji." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://skkuoverflow.com/ko/posts/school/inuiyeji/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-04-29T00:07:30+09:00" />
@@ -443,7 +443,7 @@
 </tr>
 </tbody>
 </table>
-<p>예시) 학번이 1234567890 일 경우 ssh -p 1398 <a href="mailto:S34567890@swji.skku.edu">S34567890@swji.skku.edu</a> (지 서버에 접속)</p>
+<p>예시) 학번이 1234567890 일 경우 ssh -p 1398 <a href="mailto:s34567890@swji.skku.edu">s34567890@swji.skku.edu</a> (지 서버에 접속)</p>
 <h2 id="자주-묻는-질문">자주 묻는 질문</h2>
 <ol>
 <li>
@@ -467,8 +467,9 @@
 파일 받기: <code>scp -P 1398 (자기ID)@swji.skku.edu:(파일 경로/파일명) (파일 다운로드 경로)</code></p>
 <p>sftp를 지원하는 프로그램을 활용해도 되는데, 윈도우에는 대표적으로 Mobaxterm이 있습니다.
 자세한 내용은 <a href="https://skkuoverflow.com/ko/posts/school/mobaxterm/">해당 문서</a>를 참고해주세요!</p>
-<p>또다른 방법으로는 VSCode를 연동해서 파일을 보내는 방법도 있습니다. 자세한 내용은 <a href="https://skkuoverflow.com/ko/posts/school/vscode">해당 문서</a>를 참고해주세요! <br>
-다만 VSCode는 메모리 사용량이 높은 편입니다. 부디 사용하실 때 주의해주세요!</p>
+<p><del>또다른 방법으로는 VSCode를 연동해서 파일을 보내는 방법도 있습니다. 자세한 내용은 <a href="https://skkuoverflow.com/ko/posts/school/vscode">해당 문서</a>를 참고해주세요!</del>
+<del>다만 VSCode는 메모리 사용량이 높아 인의예지 서버에서 사용시 문제가 생길 수 있습니다. 부디 사용하실 때 주의해주세요!</del>
+VSCode의 시스템 요구 사항 문제로 인의예지에서는 가급적 VSCode 사용을 자제 부탁드립니다.</p>
 </li>
 <li>
 <p><strong>인의예지 로그인 후 비밀번호를 바꾸고 싶어요!</strong></p>
@@ -506,7 +507,7 @@
 <li>여기 리포 관리자가 졸업을 한 관계로 어떤 변화가 있는지 추적하기 어렵습니다.</li>
 <li>변경 사항이 있고, 내용 수정이 필요한 경우 아래 링크에 issue를 남겨주시면 알림이 오기 때문에 더 빨리 반응할 수 있습니다.</li>
 <li>내용 추가/수정이 필요한 경우 아래 링크를 통해서 수정 요청을 해주세요.
-<strong>다른 방식은 관리자가 확인을 못할 수 있습니다!</strong>
+<strong>다른 방식들은 관리자가 확인을 못할 수 있습니다!</strong>
 <ul>
 <li><a href="https://github.com/SKKU-SWForum/School_FAQs/issues">Issue</a></li>
 <li><a href="https://github.com/SKKU-SWForum/School_FAQs/discussions/28">discussion</a></li>
@@ -518,7 +519,8 @@
 <p><strong>VSCode가 동작하지 않습니다.</strong></p>
 <ul>
 <li>현재 서버 용량 한계로 VSCode Remote 기능이 잠금되어 있을 수 있습니다.</li>
-<li>WSL을 사용한 개발/테스트, Docker를 활용한 개발/테스트, VMWare를 활용한 개발/테스트를 작성할 예정입니다. 나중에 이쪽을 참고해주세요.</li>
+<li>WSL을 사용한 개발/테스트, Docker를 활용한 개발/테스트, VMWare를 활용한 개발/테스트를 작성할 예정입니다. 나중에 이쪽을 참고해주세요.
+=&gt; 이 내용은 현재 repo 관리자의 PC 문제로 임시 중단되었습니다.</li>
 </ul>
 </li>
 <li>
@@ -527,7 +529,7 @@
 <li>예전에 인의예지 클러스터를 접속한 분 중에서 이런 창이 뜨는 경우, 인의예지 클러스터 장비 변경으로 인해 공개 키가 변경되어 나오는 경고창입니다.</li>
 <li>만약 새로 바뀐 인의예지 클러스터에 접속한 경험이 없으신 분은 그냥 키를 날리고서 새로 하시면 됩니다.</li>
 <li><strong>다만 이 창은 엄연히 보안 경고 창입니다. 혹여 새로 바뀐 인의예지 클러스터에 접속한 경험이 있고, 해당 장비에서 이 창이 나오는 경우 공유기 등을 바꿔보신 후 다시 시도해보세요.</strong></li>
-<li>**만약 경고창이 나오지 않는 경우 공유기 등 네트워크를 꼭 점검하세요. 뭔가 문제가 있을 수 있습니다. (자세한 내용은 중간자 공격/MITM Attack 참조)</li>
+<li>**공유기 변경 이후 접속시 경고창이 나오지 않는 경우 <strong>공유기 등 네트워크를 꼭 점검하세요. 뭔가 문제가 있을 수 있습니다.</strong> (자세한 내용은 중간자 공격/MITM Attack 참조)</li>
 </ul>
 </li>
 </ol>
